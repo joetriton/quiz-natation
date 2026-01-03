@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz : Quel est ton risque de blessure en natation ?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0077B6 0%, #03045E 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #0077B6 0%, #00B4D8 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .progress-container {
+            padding: 20px 30px 10px;
+            background: #f8f9fa;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #0077B6, #00B4D8);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        
+        .progress-text {
+            text-align: center;
+            margin-top: 8px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .question-container {
+            display: none;
+        }
+        
+        .question-container.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .question-number {
+            color: #0077B6;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        
+        .question-text {
+            font-size: 1.3rem;
+            color: #03045E;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+        
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .option {
+            padding: 18px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .option:hover {
+            border-color: #0077B6;
+            background: #f0f8ff;
+        }
+        
+        .option.selected {
+            border-color: #0077B6;
+            background: #e6f3fa;
+        }
+        
+        .option-icon {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+        }
+        
+        .option.selected .option-icon {
+            background: #0077B6;
+            border-color: #0077B6;
+        }
+        
+        .option.selected .option-icon::after {
+            content: '✓';
+            color: white;
+            font-size: 14px;
+        }
+        
+        .option-text {
+            font-size: 1rem;
+            color: #333;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-prev {
+            background: #f0f0f0;
+            color: #666;
+        }
+        
+        .btn-prev:hover {
+            background: #e0e0e0;
+        }
+        
+        .btn-next {
+            background: linear-gradient(135deg, #0077B6, #00B4D8);
+            color: white;
+            flex-grow: 1;
+        }
+        
+        .btn-next:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,119,182,0.4);
+        }
+        
+        .btn-next:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        /* RÉSULTATS */
+        .results-container {
+            display: none;
+            text-align: center;
+        }
+        
+        .results-container.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .score-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .score-circle.low {
+            background: linear-gradient(135deg, #27AE60, #2ECC71);
+        }
+        
+        .score-circle.medium {
+            background: linear-gradient(135deg, #F39C12, #F1C40F);
+        }
+        
+        .score-circle.high {
+            background: linear-gradient(135deg, #E74C3C, #C0392B);
+        }
+        
+        .score-value {
+            font-size: 3rem;
+        }
+        
+        .score-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .result-title {
+            font-size: 1.6rem;
+            color: #03045E;
+            margin-bottom: 15px;
+        }
+        
+        .result-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+        
+        .recommendations {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        .recommendations h3 {
+            color: #0077B6;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .recommendations ul {
+            list-style: none;
+        }
+        
+        .recommendations li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .recommendations li:last-child {
+            border-bottom: none;
+        }
+        
+        .recommendations li::before {
+            content: '✓';
+            color: #0077B6;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #03045E, #0077B6);
+            border-radius: 15px;
+            padding: 30px;
+            color: white;
+        }
+        
+        .cta-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        
+        .cta-box p {
+            opacity: 0.9;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: #90E0EF;
+            color: #03045E;
+            padding: 15px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-btn:hover {
+            background: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .email-form {
+            margin-top: 25px;
+            padding: 25px;
+            background: #f0f8ff;
+            border-radius: 15px;
+            border: 2px dashed #0077B6;
+        }
+        
+        .email-form h4 {
+            color: #03045E;
+            margin-bottom: 15px;
+        }
+        
+        .email-input {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        
+        .email-input:focus {
+            outline: none;
+            border-color: #0077B6;
+        }
+        
+        .email-submit {
+            width: 100%;
+            padding: 14px;
+            background: #0077B6;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .email-submit:hover {
+            background: #005f8a;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #888;
+            font-size: 0.85rem;
+        }
+        
+        .footer a {
+            color: #0077B6;
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.4rem;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .score-circle {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .score-value {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏊 Évalue ton risque de blessure en natation</h1>
+            <p>Quiz gratuit en 10 questions • Résultat personnalisé immédiat</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Question 1 sur 10</div>
+        </div>
+        
+        <div class="content">
+            <!-- Questions -->
+            <div id="questionsContainer">
+                <!-- Les questions seront injectées ici par JavaScript -->
+            </div>
+            
+            <!-- Résultats -->
+            <div class="results-container" id="resultsContainer">
+                <div class="score-circle" id="scoreCircle">
+                    <span class="score-value" id="scoreValue">0</span>
+                    <span class="score-label">/ 100</span>
+                </div>
+                
+                <h2 class="result-title" id="resultTitle">Ton niveau de risque</h2>
+                <p class="result-description" id="resultDescription"></p>
+                
+                <div class="recommendations">
+                    <h3>📋 Tes recommandations personnalisées :</h3>
+                    <ul id="recommendationsList"></ul>
+                </div>
+                
+                <div class="cta-box">
+                    <h3>🎯 Passe à l'action maintenant !</h3>
+                    <p>Découvre le guide complet "Nagez Sans Douleur" avec 22 exercices de prévention, 8 tests d'auto-évaluation et des protocoles validés scientifiquement.</p>
+                    <a href="https://gumroad.com/l/nagez-sans-douleur" class="cta-btn" target="_blank">
+                        Obtenir le guide complet →
+                    </a>
+                </div>
+                
+                <div class="email-form">
+                    <h4>📧 Reçois ton résultat détaillé + 3 exercices gratuits</h4>
+                    <input type="email" class="email-input" id="emailInput" placeholder="Ton adresse email">
+                    <button class="email-submit" onclick="submitEmail()">Recevoir mes exercices gratuits</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Quiz créé par <a href="https://instagram.com/one_to_tri_trail" target="_blank">@one_to_tri_trail</a> • Johan, Kinésithérapeute du sport
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "Combien de kilomètres nages-tu par semaine en moyenne ?",
+                options: [
+                    { text: "Moins de 5 km", score: 0 },
+                    { text: "Entre 5 et 10 km", score: 5 },
+                    { text: "Entre 10 et 20 km", score: 10 },
+                    { text: "Plus de 20 km", score: 15 }
+                ]
+            },
+            {
+                question: "Réalises-tu un échauffement AVANT d'entrer dans l'eau ?",
+                options: [
+                    { text: "Oui, toujours (mobilisation + activation)", score: 0 },
+                    { text: "Parfois, quelques mouvements rapides", score: 5 },
+                    { text: "Rarement, je m'échauffe dans l'eau", score: 10 },
+                    { text: "Jamais, je plonge directement", score: 15 }
+                ]
+            },
+            {
+                question: "As-tu déjà ressenti des douleurs à l'épaule pendant ou après la nage ?",
+                options: [
+                    { text: "Jamais", score: 0 },
+                    { text: "Rarement (1-2 fois par an)", score: 5 },
+                    { text: "Régulièrement (plusieurs fois par mois)", score: 12 },
+                    { text: "Très souvent (presque à chaque séance)", score: 18 }
+                ]
+            },
+            {
+                question: "Fais-tu du renforcement musculaire spécifique pour la natation ?",
+                options: [
+                    { text: "Oui, régulièrement (2+ fois/semaine)", score: 0 },
+                    { text: "Parfois (1 fois/semaine)", score: 5 },
+                    { text: "Rarement (quelques fois par mois)", score: 10 },
+                    { text: "Jamais", score: 15 }
+                ]
+            },
+            {
+                question: "Utilises-tu des plaquettes (paddles) pendant tes séances ?",
+                options: [
+                    { text: "Jamais ou moins de 10% du volume", score: 0 },
+                    { text: "Entre 10 et 20% du volume", score: 5 },
+                    { text: "Entre 20 et 30% du volume", score: 10 },
+                    { text: "Plus de 30% du volume", score: 15 }
+                ]
+            },
+            {
+                question: "Quelle est ta nage principale ?",
+                options: [
+                    { text: "Dos (la plus protectrice)", score: 0 },
+                    { text: "Crawl (avec respiration bilatérale)", score: 3 },
+                    { text: "Crawl (respiration d'un seul côté)", score: 8 },
+                    { text: "Papillon ou brasse principalement", score: 12 }
+                ]
+            },
+            {
+                question: "As-tu augmenté ton volume d'entraînement récemment ?",
+                options: [
+                    { text: "Non, volume stable depuis plusieurs mois", score: 0 },
+                    { text: "Légère augmentation (<10%/semaine)", score: 3 },
+                    { text: "Augmentation modérée (10-20%/semaine)", score: 8 },
+                    { text: "Forte augmentation (>20%/semaine)", score: 15 }
+                ]
+            },
+            {
+                question: "Ressens-tu des douleurs au dos (lombaires ou cervicales) ?",
+                options: [
+                    { text: "Jamais", score: 0 },
+                    { text: "Rarement et légères", score: 4 },
+                    { text: "Régulièrement mais gérables", score: 10 },
+                    { text: "Fréquentes et limitantes", score: 15 }
+                ]
+            },
+            {
+                question: "Comment décrirais-tu ta mobilité d'épaule ?",
+                options: [
+                    { text: "Excellente, très souple", score: 0 },
+                    { text: "Bonne, dans la moyenne", score: 3 },
+                    { text: "Limitée, je sens des raideurs", score: 8 },
+                    { text: "Mauvaise, difficultés à lever les bras", score: 15 }
+                ]
+            },
+            {
+                question: "Prends-tu le temps de récupérer entre les séances ?",
+                options: [
+                    { text: "Oui, étirements + sommeil suffisant", score: 0 },
+                    { text: "Moyennement, je fais attention au sommeil", score: 4 },
+                    { text: "Pas vraiment, j'enchaîne les séances", score: 10 },
+                    { text: "Non, je suis souvent fatigué(e)", score: 15 }
+                ]
+            }
+        ];
+
+        let currentQuestion = 0;
+        let answers = [];
+        
+        function initQuiz() {
+            const container = document.getElementById('questionsContainer');
+            
+            questions.forEach((q, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question-container' + (index === 0 ? ' active' : '');
+                questionDiv.id = `question-${index}`;
+                
+                let optionsHtml = '';
+                q.options.forEach((opt, optIndex) => {
+                    optionsHtml += `
+                        <div class="option" onclick="selectOption(${index}, ${optIndex}, ${opt.score})">
+                            <div class="option-icon"></div>
+                            <span class="option-text">${opt.text}</span>
+                        </div>
+                    `;
+                });
+                
+                questionDiv.innerHTML = `
+                    <div class="question-number">Question ${index + 1} sur ${questions.length}</div>
+                    <div class="question-text">${q.question}</div>
+                    <div class="options">${optionsHtml}</div>
+                    <div class="nav-buttons">
+                        ${index > 0 ? '<button class="btn btn-prev" onclick="prevQuestion()">← Précédent</button>' : '<div></div>'}
+                        <button class="btn btn-next" id="nextBtn-${index}" onclick="nextQuestion()" disabled>
+                            ${index === questions.length - 1 ? 'Voir mes résultats →' : 'Suivant →'}
+                        </button>
+                    </div>
+                `;
+                
+                container.appendChild(questionDiv);
+            });
+        }
+        
+        function selectOption(questionIndex, optionIndex, score) {
+            answers[questionIndex] = score;
+            
+            // Visuel
+            const questionDiv = document.getElementById(`question-${questionIndex}`);
+            const options = questionDiv.querySelectorAll('.option');
+            options.forEach((opt, idx) => {
+                opt.classList.toggle('selected', idx === optionIndex);
+            });
+            
+            // Activer le bouton suivant
+            document.getElementById(`nextBtn-${questionIndex}`).disabled = false;
+        }
+        
+        function nextQuestion() {
+            if (currentQuestion < questions.length - 1) {
+                document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                currentQuestion++;
+                document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                updateProgress();
+            } else {
+                showResults();
+            }
+        }
+        
+        function prevQuestion() {
+            if (currentQuestion > 0) {
+                document.getElementById(`question-${currentQuestion}`).classList.remove('active');
+                currentQuestion--;
+                document.getElementById(`question-${currentQuestion}`).classList.add('active');
+                updateProgress();
+            }
+        }
+        
+        function updateProgress() {
+            const progress = ((currentQuestion + 1) / questions.length) * 100;
+            document.getElementById('progressFill').style.width = `${progress}%`;
+            document.getElementById('progressText').textContent = `Question ${currentQuestion + 1} sur ${questions.length}`;
+        }
+        
+        function showResults() {
+            document.getElementById('questionsContainer').style.display = 'none';
+            document.querySelector('.progress-container').style.display = 'none';
+            document.getElementById('resultsContainer').classList.add('active');
+            
+            const totalScore = answers.reduce((sum, score) => sum + score, 0);
+            const maxScore = 140; // Score maximum possible
+            const percentage = Math.round((totalScore / maxScore) * 100);
+            
+            const scoreCircle = document.getElementById('scoreCircle');
+            const scoreValue = document.getElementById('scoreValue');
+            const resultTitle = document.getElementById('resultTitle');
+            const resultDescription = document.getElementById('resultDescription');
+            const recommendationsList = document.getElementById('recommendationsList');
+            
+            scoreValue.textContent = percentage;
+            
+            let title, description, recommendations, riskClass;
+            
+            if (percentage <= 25) {
+                riskClass = 'low';
+                title = '✅ Risque faible - Bravo !';
+                description = 'Tu as de bonnes habitudes de prévention. Continue ainsi et reste vigilant pour maintenir cette excellente hygiène sportive. Quelques ajustements peuvent encore optimiser ta pratique.';
+                recommendations = [
+                    'Continue ton échauffement systématique avant chaque séance',
+                    'Maintiens ton renforcement musculaire régulier',
+                    'Varie les nages pour équilibrer les sollicitations',
+                    'Surveille ta charge d\'entraînement lors des pics de volume'
+                ];
+            } else if (percentage <= 50) {
+                riskClass = 'medium';
+                title = '⚠️ Risque modéré - Attention requise';
+                description = 'Certains facteurs de risque sont présents. Sans action, tu pourrais développer des douleurs dans les prochains mois. C\'est le moment idéal pour agir en prévention !';
+                recommendations = [
+                    'Instaure un échauffement à sec SYSTÉMATIQUE (5 min)',
+                    'Ajoute 2 séances de renforcement épaules par semaine',
+                    'Limite l\'utilisation des plaquettes à 15% max du volume',
+                    'Travaille la respiration bilatérale en crawl',
+                    'Surveille les signaux d\'alerte (douleurs, fatigue)'
+                ];
+            } else if (percentage <= 75) {
+                riskClass = 'medium';
+                title = '🔶 Risque élevé - Action nécessaire';
+                description = 'Plusieurs facteurs de risque importants sont identifiés. Tu es dans une zone où les blessures peuvent survenir rapidement si rien ne change. Il est urgent d\'agir !';
+                recommendations = [
+                    'STOP aux plaquettes jusqu\'à nouvel ordre',
+                    'Échauffement obligatoire : 5 min à sec + 400m progressif',
+                    'Renforcement quotidien de la coiffe des rotateurs (10 min)',
+                    'Réduire le volume de 20% pendant 2-3 semaines',
+                    'Consulte un kiné du sport pour un bilan complet',
+                    'Adopte la respiration bilatérale systématiquement'
+                ];
+            } else {
+                riskClass = 'high';
+                title = '🚨 Risque très élevé - Urgence prévention';
+                description = 'Ton profil présente de nombreux facteurs de risque cumulés. Une blessure est très probable si tu ne changes pas rapidement tes habitudes. La bonne nouvelle : tout est modifiable !';
+                recommendations = [
+                    'Consulte un professionnel de santé rapidement',
+                    'Réduis immédiatement ton volume de 30-40%',
+                    'AUCUNE plaquette ni pull-buoy pendant 1 mois',
+                    'Échauffement complet obligatoire (10 min à sec)',
+                    'Programme de renforcement quotidien (15 min)',
+                    'Privilégie le dos crawlé pendant 2-3 semaines',
+                    'Améliore ta récupération (sommeil, nutrition, étirements)'
+                ];
+            }
+            
+            scoreCircle.className = 'score-circle ' + riskClass;
+            resultTitle.textContent = title;
+            resultDescription.textContent = description;
+            
+            recommendationsList.innerHTML = recommendations.map(rec => `<li>${rec}</li>`).join('');
+        }
+        
+        function submitEmail() {
+            const email = document.getElementById('emailInput').value;
+            if (email && email.includes('@')) {
+                // Ici tu peux intégrer ton service d'email (Mailchimp, ConvertKit, etc.)
+                alert('Merci ! Tu recevras ton résultat détaillé et tes 3 exercices gratuits dans quelques minutes. Vérifie tes spams si tu ne vois rien !');
+                // window.location.href = 'https://ton-service-email.com/subscribe?email=' + encodeURIComponent(email);
+            } else {
+                alert('Merci d\'entrer une adresse email valide.');
+            }
+        }
+        
+        // Initialiser le quiz
+        initQuiz();
+        updateProgress();
+    </script>
+</body>
+</html>
