@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balnéothérapie - Piscine Espalion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0077B6 0%, #03045E 100%);
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .app-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0077B6 0%, #00B4D8 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .header h1 {
+            font-size: 1.6rem;
+            margin-bottom: 6px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        /* Navigation onglets */
+        .tabs {
+            display: flex;
+            background: white;
+            border-bottom: 2px solid #e0e0e0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .tab {
+            flex: 1;
+            padding: 14px 10px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tab:hover {
+            color: #0077B6;
+            background: #f0f8ff;
+        }
+
+        .tab.active {
+            color: #0077B6;
+            border-bottom-color: #0077B6;
+            background: #f0f8ff;
+        }
+
+        /* Panneaux */
+        .panel {
+            display: none;
+            background: white;
+            padding: 25px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            min-height: 400px;
+        }
+
+        .panel.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            color: #03045E;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8f4f8;
+        }
+
+        /* Formulaire ajout participant */
+        .add-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .add-form input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        .add-form input:focus {
+            outline: none;
+            border-color: #0077B6;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0077B6, #00B4D8);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0,119,182,0.4);
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+            color: white;
+            padding: 6px 12px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+        }
+
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+
+        .btn-success {
+            background: #27ae60;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #219a52;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(39,174,96,0.4);
+        }
+
+        .btn-secondary {
+            background: #95a5a6;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #7f8c8d;
+        }
+
+        .btn-export {
+            background: #8e44ad;
+            color: white;
+        }
+
+        .btn-export:hover {
+            background: #7d3c98;
+            transform: translateY(-1px);
+        }
+
+        /* Liste participants */
+        .participants-list {
+            list-style: none;
+        }
+
+        .participant-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            transition: all 0.2s;
+        }
+
+        .participant-item:hover {
+            background: #f8f9fa;
+            border-color: #ddd;
+        }
+
+        .participant-name {
+            font-weight: 500;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .participant-source {
+            font-size: 0.75rem;
+            color: #999;
+            margin-left: 8px;
+        }
+
+        .participant-count {
+            background: #e8f4f8;
+            color: #0077B6;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        /* Sélection de date */
+        .date-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .date-selector label {
+            font-weight: 600;
+            color: #03045E;
+            font-size: 0.95rem;
+        }
+
+        .date-selector input[type="date"] {
+            padding: 10px 14px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .date-selector input[type="date"]:focus {
+            outline: none;
+            border-color: #0077B6;
+        }
+
+        .day-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .day-badge.lundi {
+            background: #d4efdf;
+            color: #1e8449;
+        }
+
+        .day-badge.vendredi {
+            background: #d6eaf8;
+            color: #2471a3;
+        }
+
+        .day-badge.invalid {
+            background: #fadbd8;
+            color: #c0392b;
+        }
+
+        /* Liste de présence */
+        .attendance-list {
+            list-style: none;
+        }
+
+        .attendance-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 16px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .attendance-item:hover {
+            background: #f0f8ff;
+            border-color: #b3d9f2;
+        }
+
+        .attendance-item.present {
+            background: #d4efdf;
+            border-color: #82e0aa;
+        }
+
+        .attendance-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.2s;
+        }
+
+        .attendance-item.present .attendance-checkbox {
+            background: #27ae60;
+            border-color: #27ae60;
+            color: white;
+        }
+
+        .attendance-item.present .attendance-checkbox::after {
+            content: '\2713';
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .attendance-name {
+            font-size: 1rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .attendance-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .attendance-summary {
+            margin-top: 15px;
+            padding: 12px 18px;
+            background: #e8f4f8;
+            border-radius: 10px;
+            color: #0077B6;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Historique */
+        .history-filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .history-filters select {
+            padding: 10px 14px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .history-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .history-card:hover {
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .history-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 18px;
+            background: #f8f9fa;
+            cursor: pointer;
+        }
+
+        .history-card-header:hover {
+            background: #eef5fa;
+        }
+
+        .history-date {
+            font-weight: 600;
+            color: #03045E;
+            font-size: 1rem;
+        }
+
+        .history-count {
+            background: #0077B6;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .history-card-body {
+            padding: 14px 18px;
+            display: none;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .history-card-body.open {
+            display: block;
+        }
+
+        .history-participant {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #d4efdf;
+            color: #1e8449;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 3px;
+            font-weight: 500;
+        }
+
+        .history-card-actions {
+            display: flex;
+            justify-content: flex-end;
+            padding: 8px 18px 14px;
+            gap: 8px;
+        }
+
+        .btn-sm {
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+        }
+
+        /* Statistiques */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #f8f9fa, #e8f4f8);
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+            border: 1px solid #d6eaf8;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0077B6;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .stats-table th,
+        .stats-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stats-table th {
+            background: #f8f9fa;
+            color: #03045E;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .stats-table td {
+            font-size: 0.95rem;
+        }
+
+        .stats-table tr:hover td {
+            background: #f0f8ff;
+        }
+
+        .stats-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            min-width: 80px;
+        }
+
+        .stats-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #0077B6, #00B4D8);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        /* Message vide */
+        .empty-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+        }
+
+        .empty-message .empty-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .empty-message p {
+            font-size: 1rem;
+        }
+
+        /* Notification toast */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 14px 22px;
+            background: #03045E;
+            color: white;
+            border-radius: 12px;
+            font-weight: 500;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            max-width: 350px;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .toast.success {
+            background: #27ae60;
+        }
+
+        .toast.error {
+            background: #e74c3c;
+        }
+
+        /* Confirmation modale */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .modal h3 {
+            color: #03045E;
+            margin-bottom: 12px;
+        }
+
+        .modal p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 8px;
+            }
+
+            .header h1 {
+                font-size: 1.3rem;
+            }
+
+            .panel {
+                padding: 18px;
+            }
+
+            .tab {
+                font-size: 0.78rem;
+                padding: 12px 6px;
+            }
+
+            .add-form {
+                flex-direction: column;
+            }
+
+            .date-selector {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .history-card-header {
+                flex-direction: column;
+                gap: 6px;
+                align-items: flex-start;
+            }
+
+            .attendance-actions {
+                flex-direction: column;
+            }
+
+            .attendance-actions .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <div class="header">
+        <h1>Balneotherapie - Piscine Espalion</h1>
+        <p>Suivi des presences - Lundi &amp; Vendredi</p>
+    </div>
+
+    <div class="tabs">
+        <div class="tab active" onclick="switchTab('attendance')">Presences</div>
+        <div class="tab" onclick="switchTab('participants')">Participants</div>
+        <div class="tab" onclick="switchTab('history')">Historique</div>
+        <div class="tab" onclick="switchTab('stats')">Statistiques</div>
+    </div>
+
+    <!-- Panneau Présences -->
+    <div class="panel active" id="panel-attendance">
+        <h2 class="section-title">Enregistrer les presences</h2>
+
+        <div class="date-selector">
+            <label for="sessionDate">Date de la seance :</label>
+            <input type="date" id="sessionDate" onchange="onDateChange()">
+            <span id="dayBadge"></span>
+        </div>
+
+        <div id="attendanceContent">
+            <div class="empty-message">
+                <div class="empty-icon">📅</div>
+                <p>Selectionnez une date (lundi ou vendredi) pour enregistrer les presences.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panneau Participants -->
+    <div class="panel" id="panel-participants">
+        <h2 class="section-title">Gestion des participants</h2>
+
+        <div class="add-form">
+            <input type="text" id="newParticipantName" placeholder="Nom du participant" onkeydown="if(event.key==='Enter') addParticipant()">
+            <button class="btn btn-primary" onclick="addParticipant()">Ajouter</button>
+        </div>
+
+        <div id="participantCount" class="participant-count"></div>
+
+        <ul class="participants-list" id="participantsList"></ul>
+    </div>
+
+    <!-- Panneau Historique -->
+    <div class="panel" id="panel-history">
+        <h2 class="section-title">Historique des seances</h2>
+
+        <div class="history-filters">
+            <label>Filtrer :</label>
+            <select id="historyFilter" onchange="renderHistory()">
+                <option value="all">Toutes les seances</option>
+                <option value="lundi">Lundis uniquement</option>
+                <option value="vendredi">Vendredis uniquement</option>
+            </select>
+            <button class="btn btn-export btn-sm" onclick="exportCSV()">Exporter CSV</button>
+        </div>
+
+        <div id="historyContent"></div>
+    </div>
+
+    <!-- Panneau Statistiques -->
+    <div class="panel" id="panel-stats">
+        <h2 class="section-title">Statistiques</h2>
+        <div id="statsContent"></div>
+    </div>
+</div>
+
+<!-- Modal de confirmation -->
+<div class="modal-overlay" id="confirmModal">
+    <div class="modal">
+        <h3 id="modalTitle">Confirmer</h3>
+        <p id="modalMessage">Etes-vous sur ?</p>
+        <div class="modal-buttons">
+            <button class="btn btn-secondary" onclick="closeModal()">Annuler</button>
+            <button class="btn btn-danger" id="modalConfirmBtn" onclick="confirmAction()">Supprimer</button>
+        </div>
+    </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+    // ===============================
+    // STOCKAGE DES DONNEES (localStorage)
+    // ===============================
+    const STORAGE_KEYS = {
+        PARTICIPANTS: 'balneo_participants',
+        SESSIONS: 'balneo_sessions'
+    };
+
+    function loadData(key) {
+        const data = localStorage.getItem(key);
+        return data ? JSON.parse(data) : null;
+    }
+
+    function saveData(key, data) {
+        localStorage.setItem(key, JSON.stringify(data));
+    }
+
+    function getParticipants() {
+        return loadData(STORAGE_KEYS.PARTICIPANTS) || [];
+    }
+
+    function saveParticipants(participants) {
+        saveData(STORAGE_KEYS.PARTICIPANTS, participants);
+    }
+
+    function getSessions() {
+        return loadData(STORAGE_KEYS.SESSIONS) || [];
+    }
+
+    function saveSessions(sessions) {
+        saveData(STORAGE_KEYS.SESSIONS, sessions);
+    }
+
+    // ===============================
+    // NAVIGATION
+    // ===============================
+    function switchTab(tabName) {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+
+        event.target.classList.add('active');
+        document.getElementById('panel-' + tabName).classList.add('active');
+
+        if (tabName === 'participants') renderParticipants();
+        if (tabName === 'history') renderHistory();
+        if (tabName === 'stats') renderStats();
+    }
+
+    // ===============================
+    // TOAST NOTIFICATION
+    // ===============================
+    function showToast(message, type) {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.className = 'toast ' + (type || '');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    // ===============================
+    // MODALE
+    // ===============================
+    let pendingAction = null;
+
+    function openModal(title, message, action) {
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalMessage').textContent = message;
+        pendingAction = action;
+        document.getElementById('confirmModal').classList.add('show');
+    }
+
+    function closeModal() {
+        document.getElementById('confirmModal').classList.remove('show');
+        pendingAction = null;
+    }
+
+    function confirmAction() {
+        if (pendingAction) pendingAction();
+        closeModal();
+    }
+
+    // ===============================
+    // PARTICIPANTS
+    // ===============================
+    function addParticipant() {
+        const input = document.getElementById('newParticipantName');
+        const name = input.value.trim();
+
+        if (!name) {
+            showToast('Veuillez entrer un nom.', 'error');
+            return;
+        }
+
+        const participants = getParticipants();
+        const nameNormalized = name.toLowerCase();
+
+        if (participants.some(p => p.name.toLowerCase() === nameNormalized)) {
+            showToast('Ce participant existe deja.', 'error');
+            return;
+        }
+
+        participants.push({
+            id: Date.now().toString(),
+            name: name,
+            addedAt: new Date().toISOString()
+        });
+
+        participants.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+        saveParticipants(participants);
+        input.value = '';
+        renderParticipants();
+        showToast(name + ' a ete ajoute.', 'success');
+    }
+
+    function removeParticipant(id) {
+        const participants = getParticipants();
+        const participant = participants.find(p => p.id === id);
+        if (!participant) return;
+
+        openModal(
+            'Supprimer le participant',
+            'Voulez-vous vraiment supprimer ' + participant.name + ' ? Son historique de presence sera conserve.',
+            function() {
+                const updated = getParticipants().filter(p => p.id !== id);
+                saveParticipants(updated);
+                renderParticipants();
+                showToast(participant.name + ' a ete supprime.', 'success');
+            }
+        );
+    }
+
+    function renderParticipants() {
+        const participants = getParticipants();
+        const list = document.getElementById('participantsList');
+        const countEl = document.getElementById('participantCount');
+
+        countEl.textContent = participants.length + ' participant' + (participants.length !== 1 ? 's' : '');
+
+        if (participants.length === 0) {
+            list.innerHTML = '<div class="empty-message"><div class="empty-icon">👥</div><p>Aucun participant enregistre. Ajoutez des participants ci-dessus.</p></div>';
+            return;
+        }
+
+        list.innerHTML = participants.map(function(p) {
+            return '<li class="participant-item">' +
+                '<span class="participant-name">' + escapeHtml(p.name) + '</span>' +
+                '<button class="btn btn-danger" onclick="removeParticipant(\'' + p.id + '\')">Supprimer</button>' +
+                '</li>';
+        }).join('');
+    }
+
+    // ===============================
+    // PRESENCES
+    // ===============================
+    let currentAttendance = {};
+
+    function getDayName(dateStr) {
+        const date = new Date(dateStr + 'T00:00:00');
+        const days = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+        return days[date.getDay()];
+    }
+
+    function isValidDay(dateStr) {
+        const date = new Date(dateStr + 'T00:00:00');
+        const day = date.getDay();
+        return day === 1 || day === 5; // Lundi = 1, Vendredi = 5
+    }
+
+    function formatDateFr(dateStr) {
+        const date = new Date(dateStr + 'T00:00:00');
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('fr-FR', options);
+    }
+
+    function onDateChange() {
+        const dateInput = document.getElementById('sessionDate');
+        const dateStr = dateInput.value;
+        const badgeEl = document.getElementById('dayBadge');
+        const content = document.getElementById('attendanceContent');
+
+        if (!dateStr) {
+            badgeEl.innerHTML = '';
+            content.innerHTML = '<div class="empty-message"><div class="empty-icon">📅</div><p>Selectionnez une date pour enregistrer les presences.</p></div>';
+            return;
+        }
+
+        const dayName = getDayName(dateStr);
+        const valid = isValidDay(dateStr);
+
+        if (valid) {
+            const dayClass = dayName.toLowerCase();
+            badgeEl.innerHTML = '<span class="day-badge ' + dayClass + '">' + dayName + '</span>';
+        } else {
+            badgeEl.innerHTML = '<span class="day-badge invalid">' + dayName + ' (jour non valide)</span>';
+            content.innerHTML = '<div class="empty-message"><div class="empty-icon">⚠️</div><p>La balneotherapie a lieu uniquement le <strong>lundi</strong> et le <strong>vendredi</strong>.<br>Veuillez choisir un de ces jours.</p></div>';
+            return;
+        }
+
+        renderAttendance(dateStr);
+    }
+
+    function renderAttendance(dateStr) {
+        const participants = getParticipants();
+        const content = document.getElementById('attendanceContent');
+        const sessions = getSessions();
+        const existingSession = sessions.find(s => s.date === dateStr);
+
+        if (participants.length === 0) {
+            content.innerHTML = '<div class="empty-message"><div class="empty-icon">👥</div><p>Aucun participant enregistre.<br>Ajoutez des participants dans l\'onglet "Participants".</p></div>';
+            return;
+        }
+
+        // Charger les présences existantes
+        currentAttendance = {};
+        if (existingSession) {
+            existingSession.presentIds.forEach(function(id) {
+                currentAttendance[id] = true;
+            });
+        }
+
+        let html = '<ul class="attendance-list">';
+        participants.forEach(function(p) {
+            const isPresent = currentAttendance[p.id] ? ' present' : '';
+            html += '<li class="attendance-item' + isPresent + '" onclick="toggleAttendance(\'' + p.id + '\', \'' + dateStr + '\')">' +
+                '<div class="attendance-checkbox"></div>' +
+                '<span class="attendance-name">' + escapeHtml(p.name) + '</span>' +
+                '</li>';
+        });
+        html += '</ul>';
+
+        const presentCount = Object.keys(currentAttendance).filter(k => currentAttendance[k]).length;
+        html += '<div class="attendance-summary">Presents : ' + presentCount + ' / ' + participants.length + '</div>';
+
+        html += '<div class="attendance-actions">';
+        html += '<button class="btn btn-success" onclick="saveAttendance(\'' + dateStr + '\')">Enregistrer</button>';
+        html += '<button class="btn btn-primary" onclick="selectAll(\'' + dateStr + '\')">Tout cocher</button>';
+        html += '<button class="btn btn-secondary" onclick="deselectAll(\'' + dateStr + '\')">Tout decocher</button>';
+        html += '</div>';
+
+        if (existingSession) {
+            html += '<p style="margin-top:10px;color:#666;font-size:0.85rem;">Seance deja enregistree. Modifiez les presences et cliquez sur "Enregistrer" pour mettre a jour.</p>';
+        }
+
+        content.innerHTML = html;
+    }
+
+    function toggleAttendance(participantId, dateStr) {
+        currentAttendance[participantId] = !currentAttendance[participantId];
+        if (!currentAttendance[participantId]) delete currentAttendance[participantId];
+        renderAttendance(dateStr);
+    }
+
+    function selectAll(dateStr) {
+        const participants = getParticipants();
+        participants.forEach(function(p) {
+            currentAttendance[p.id] = true;
+        });
+        renderAttendance(dateStr);
+    }
+
+    function deselectAll(dateStr) {
+        currentAttendance = {};
+        renderAttendance(dateStr);
+    }
+
+    function saveAttendance(dateStr) {
+        const sessions = getSessions();
+        const presentIds = Object.keys(currentAttendance).filter(k => currentAttendance[k]);
+
+        const existingIndex = sessions.findIndex(s => s.date === dateStr);
+
+        const sessionData = {
+            date: dateStr,
+            day: getDayName(dateStr),
+            presentIds: presentIds,
+            presentNames: presentIds.map(function(id) {
+                const p = getParticipants().find(pp => pp.id === id);
+                return p ? p.name : 'Inconnu';
+            }),
+            savedAt: new Date().toISOString()
+        };
+
+        if (existingIndex >= 0) {
+            sessions[existingIndex] = sessionData;
+        } else {
+            sessions.push(sessionData);
+        }
+
+        sessions.sort((a, b) => b.date.localeCompare(a.date));
+        saveSessions(sessions);
+        showToast('Presences enregistrees pour le ' + formatDateFr(dateStr) + '.', 'success');
+        renderAttendance(dateStr);
+    }
+
+    // ===============================
+    // HISTORIQUE
+    // ===============================
+    function renderHistory() {
+        const sessions = getSessions();
+        const filter = document.getElementById('historyFilter').value;
+        const content = document.getElementById('historyContent');
+
+        let filtered = sessions;
+        if (filter === 'lundi') {
+            filtered = sessions.filter(s => s.day === 'Lundi');
+        } else if (filter === 'vendredi') {
+            filtered = sessions.filter(s => s.day === 'Vendredi');
+        }
+
+        if (filtered.length === 0) {
+            content.innerHTML = '<div class="empty-message"><div class="empty-icon">📋</div><p>Aucune seance enregistree.</p></div>';
+            return;
+        }
+
+        content.innerHTML = filtered.map(function(session, index) {
+            const namesList = session.presentNames.map(function(name) {
+                return '<span class="history-participant">' + escapeHtml(name) + '</span>';
+            }).join('');
+
+            return '<div class="history-card">' +
+                '<div class="history-card-header" onclick="toggleHistoryCard(this)">' +
+                    '<span class="history-date">' + formatDateFr(session.date) + '</span>' +
+                    '<span class="history-count">' + session.presentIds.length + ' present' + (session.presentIds.length !== 1 ? 's' : '') + '</span>' +
+                '</div>' +
+                '<div class="history-card-body">' +
+                    (namesList || '<em style="color:#999">Aucun participant present</em>') +
+                '</div>' +
+                '<div class="history-card-actions">' +
+                    '<button class="btn btn-primary btn-sm" onclick="editSession(\'' + session.date + '\')">Modifier</button>' +
+                    '<button class="btn btn-danger btn-sm" onclick="deleteSession(\'' + session.date + '\')">Supprimer</button>' +
+                '</div>' +
+            '</div>';
+        }).join('');
+    }
+
+    function toggleHistoryCard(headerEl) {
+        const body = headerEl.nextElementSibling;
+        body.classList.toggle('open');
+    }
+
+    function editSession(dateStr) {
+        document.getElementById('sessionDate').value = dateStr;
+        // Switch to attendance tab
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.tab')[0].classList.add('active');
+        document.getElementById('panel-attendance').classList.add('active');
+        onDateChange();
+    }
+
+    function deleteSession(dateStr) {
+        openModal(
+            'Supprimer la seance',
+            'Voulez-vous vraiment supprimer la seance du ' + formatDateFr(dateStr) + ' ?',
+            function() {
+                const sessions = getSessions().filter(s => s.date !== dateStr);
+                saveSessions(sessions);
+                renderHistory();
+                showToast('Seance supprimee.', 'success');
+            }
+        );
+    }
+
+    // ===============================
+    // STATISTIQUES
+    // ===============================
+    function renderStats() {
+        const sessions = getSessions();
+        const participants = getParticipants();
+        const content = document.getElementById('statsContent');
+
+        if (sessions.length === 0) {
+            content.innerHTML = '<div class="empty-message"><div class="empty-icon">📊</div><p>Aucune donnee disponible. Enregistrez des seances pour voir les statistiques.</p></div>';
+            return;
+        }
+
+        const totalSessions = sessions.length;
+        const lundiCount = sessions.filter(s => s.day === 'Lundi').length;
+        const vendrediCount = sessions.filter(s => s.day === 'Vendredi').length;
+        const avgPresent = Math.round(sessions.reduce((sum, s) => sum + s.presentIds.length, 0) / totalSessions * 10) / 10;
+
+        // Stats par participant
+        const participantStats = {};
+
+        // Initialiser avec les participants actuels
+        participants.forEach(function(p) {
+            participantStats[p.id] = { name: p.name, count: 0 };
+        });
+
+        // Compter les présences (inclure aussi les anciens participants)
+        sessions.forEach(function(session) {
+            session.presentIds.forEach(function(id) {
+                if (participantStats[id]) {
+                    participantStats[id].count++;
+                } else {
+                    // Participant supprime mais present dans l'historique
+                    const nameIndex = session.presentIds.indexOf(id);
+                    const name = session.presentNames && session.presentNames[nameIndex] ? session.presentNames[nameIndex] : 'Inconnu';
+                    participantStats[id] = { name: name, count: 1 };
+                }
+            });
+        });
+
+        const statsArray = Object.values(participantStats).sort((a, b) => b.count - a.count);
+
+        let html = '<div class="stats-grid">' +
+            '<div class="stat-card"><div class="stat-value">' + totalSessions + '</div><div class="stat-label">Seances enregistrees</div></div>' +
+            '<div class="stat-card"><div class="stat-value">' + lundiCount + '</div><div class="stat-label">Lundis</div></div>' +
+            '<div class="stat-card"><div class="stat-value">' + vendrediCount + '</div><div class="stat-label">Vendredis</div></div>' +
+            '<div class="stat-card"><div class="stat-value">' + avgPresent + '</div><div class="stat-label">Moyenne presents / seance</div></div>' +
+            '</div>';
+
+        if (statsArray.length > 0) {
+            html += '<h3 style="color:#03045E;margin-bottom:12px;">Presence par participant</h3>';
+            html += '<table class="stats-table">';
+            html += '<thead><tr><th>Nom</th><th>Presences</th><th>Taux</th><th></th></tr></thead>';
+            html += '<tbody>';
+            statsArray.forEach(function(s) {
+                const pct = totalSessions > 0 ? Math.round(s.count / totalSessions * 100) : 0;
+                html += '<tr>' +
+                    '<td>' + escapeHtml(s.name) + '</td>' +
+                    '<td>' + s.count + ' / ' + totalSessions + '</td>' +
+                    '<td>' + pct + '%</td>' +
+                    '<td><div class="stats-bar"><div class="stats-bar-fill" style="width:' + pct + '%"></div></div></td>' +
+                    '</tr>';
+            });
+            html += '</tbody></table>';
+        }
+
+        content.innerHTML = html;
+    }
+
+    // ===============================
+    // EXPORT CSV
+    // ===============================
+    function exportCSV() {
+        const sessions = getSessions();
+        if (sessions.length === 0) {
+            showToast('Aucune donnee a exporter.', 'error');
+            return;
+        }
+
+        let csv = 'Date,Jour,Nombre presents,Participants presents\n';
+        sessions.forEach(function(s) {
+            const names = s.presentNames ? s.presentNames.join(' | ') : '';
+            csv += '"' + s.date + '","' + s.day + '",' + s.presentIds.length + ',"' + names + '"\n';
+        });
+
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'balneotherapie_espalion_' + new Date().toISOString().slice(0, 10) + '.csv';
+        link.click();
+        URL.revokeObjectURL(url);
+        showToast('Export CSV telecharge.', 'success');
+    }
+
+    // ===============================
+    // UTILITAIRES
+    // ===============================
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    // Initialiser la date sur le prochain lundi ou vendredi
+    function initDate() {
+        const today = new Date();
+        const day = today.getDay();
+        let target = new Date(today);
+
+        if (day === 1 || day === 5) {
+            // Aujourd'hui est lundi ou vendredi
+        } else if (day < 1) {
+            // Dimanche -> lundi (demain)
+            target.setDate(target.getDate() + 1);
+        } else if (day < 5) {
+            // Mardi-Jeudi -> vendredi prochain
+            target.setDate(target.getDate() + (5 - day));
+        } else {
+            // Samedi -> lundi prochain
+            target.setDate(target.getDate() + 2);
+        }
+
+        const dateStr = target.toISOString().slice(0, 10);
+        document.getElementById('sessionDate').value = dateStr;
+        onDateChange();
+    }
+
+    // ===============================
+    // INITIALISATION
+    // ===============================
+    renderParticipants();
+    initDate();
+</script>
+</body>
+</html>
