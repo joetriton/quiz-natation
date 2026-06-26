@@ -31,22 +31,22 @@
       <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
     </SteadyState>
     <SteadyState Duration="720" Power="0.9" Cadence="90">
-      <textevent timeoffset="0" message="Sweet Spot — RPE 6-7 — tenable"/>
+      <textevent timeoffset="0" message="Sweet Spot 88-92% FTP · RPE 6-7 — tenable"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.55">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 50-58% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="720" Power="0.9" Cadence="90">
-      <textevent timeoffset="0" message="Sweet Spot — RPE 6-7 — tenable"/>
+      <textevent timeoffset="0" message="Sweet Spot 88-92% FTP · RPE 6-7 — tenable"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.55">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 50-58% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="720" Power="0.9" Cadence="90">
-      <textevent timeoffset="0" message="Sweet Spot — RPE 6-7 — tenable"/>
+      <textevent timeoffset="0" message="Sweet Spot 88-92% FTP · RPE 6-7 — tenable"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.55">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 50-58% FTP · RPE 2"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

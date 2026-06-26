@@ -41,19 +41,19 @@ MINUTES PERCENT
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	55 rpm — RPE jambes 8	150
-750	Récup — RPE 2	150
-900	55 rpm — RPE jambes 8	150
-1050	Récup — RPE 2	150
-1200	55 rpm — RPE jambes 8	150
-1350	Récup — RPE 2	150
-1500	55 rpm — RPE jambes 8	150
-1650	Récup — RPE 2	150
-1800	55 rpm — RPE jambes 8	150
-1950	Récup — RPE 2	150
-2100	55 rpm — RPE jambes 8	150
-2250	Récup — RPE 2	150
-2400	55 rpm — RPE jambes 8	150
-2550	Récup — RPE 2	150
+600	Force 90-95% FTP · 55 rpm · RPE jambes 8	150
+750	Récup · RPE 2	150
+900	Force 90-95% FTP · 55 rpm · RPE jambes 8	150
+1050	Récup · RPE 2	150
+1200	Force 90-95% FTP · 55 rpm · RPE jambes 8	150
+1350	Récup · RPE 2	150
+1500	Force 90-95% FTP · 55 rpm · RPE jambes 8	150
+1650	Récup · RPE 2	150
+1800	Force 90-95% FTP · 55 rpm · RPE jambes 8	150
+1950	Récup · RPE 2	150
+2100	Force 90-95% FTP · 55 rpm · RPE jambes 8	150
+2250	Récup · RPE 2	150
+2400	Force 90-95% FTP · 55 rpm · RPE jambes 8	150
+2550	Récup · RPE 2	150
 2700	Retour au calme — RPE 2	480
 [END COURSE TEXT]

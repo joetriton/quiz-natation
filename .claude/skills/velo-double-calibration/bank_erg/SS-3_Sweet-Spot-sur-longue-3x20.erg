@@ -29,13 +29,13 @@ MINUTES WATTS
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	Endurance — RPE 3-4	1200
-1800	Sweet Spot — RPE 6	1200
-3000	Endurance — RPE 3	600
-3600	Sweet Spot — RPE 6	1200
-4800	Endurance — RPE 3	600
-5400	Sweet Spot — RPE 6	1200
-6600	Endurance — RPE 3	600
-7200	Retour endurance — RPE 3	900
+600	Endurance 65-75% FTP · RPE 3-4	1200
+1800	Sweet Spot 88-90% FTP · RPE 6	1200
+3000	Endurance 65-72% FTP · RPE 3	600
+3600	Sweet Spot 88-90% FTP · RPE 6	1200
+4800	Endurance 65-72% FTP · RPE 3	600
+5400	Sweet Spot 88-90% FTP · RPE 6	1200
+6600	Endurance 65-72% FTP · RPE 3	600
+7200	Retour endurance 65-72% FTP · RPE 3	900
 8100	Retour au calme — RPE 2	480
 [END COURSE TEXT]

@@ -10,7 +10,7 @@
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
     <SteadyState Duration="3000" Power="0.8" Cadence="90">
-      <textevent timeoffset="0" message="Tempo continu — RPE 5 — rester régulier"/>
+      <textevent timeoffset="0" message="Tempo continu 78-83% FTP · RPE 5 — rester régulier"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

@@ -72,52 +72,52 @@ add("END-1", "Récup active",
 
 add("END-2", "Endurance fond",
     "Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie / durabilité.",
-    WU + ss(4200, 0.70, cad=88, msg="Endurance — RPE 3-4 — conversation fluide") + CD)
+    WU + ss(4200, 0.70, cad=88, msg="Endurance 65-75% FTP · RPE 3-4 — conversation fluide") + CD)
 
 add("END-3", "Endurance + cadence",
     "Endurance + vélocité. Blocs à 100-105 rpm.",
     WU + ints(3, 600, 0.70, 300, 0.60, cad=103, cad_rest=90,
-              rpe_on="RPE 4 — 100-105 rpm", rpe_off="RPE 2 — cadence libre") + CD)
+              rpe_on="68-72% FTP · RPE 4 — 100-105 rpm", rpe_off="55-65% FTP · RPE 2 — cadence libre") + CD)
 
 add("END-4", "Longue spécifique allure course",
     "Sortie longue avec blocs à l'allure de course. Durabilité / tenue d'allure.",
-    WU + ss(1800, 0.70, cad=88, msg="Endurance — RPE 3-4")
+    WU + ss(1800, 0.70, cad=88, msg="Endurance 65-75% FTP · RPE 3-4")
     + ints(3, 1200, 0.80, 600, 0.68, cad=88,
-           rpe_on="Allure course — RPE 5", rpe_off="Endurance — RPE 3")
-    + ss(1800, 0.70, msg="Retour endurance — RPE 3-4") + CD)
+           rpe_on="Allure course 78-82% FTP · RPE 5", rpe_off="Endurance 65-72% FTP · RPE 3")
+    + ss(1800, 0.70, msg="Retour endurance 65-75% FTP · RPE 3-4") + CD)
 
 # ---- B. Tempo / Sweet Spot ----
 add("TMP-1", "Tempo 3x15",
     "Tempo 3x15 min à 80-85% FTP, RPE 5-6.",
     WU + ints(3, 900, 0.83, 300, 0.55, cad=90,
-              rpe_on="Tempo — RPE 5-6 — phrases courtes", rpe_off="Récup — RPE 2") + CD)
+              rpe_on="Tempo 80-85% FTP · RPE 5-6 — phrases courtes", rpe_off="Récup 50-58% FTP · RPE 2") + CD)
 
 add("TMP-2", "Tempo continu 50'",
     "Tempo continu 50 min à 78-83% FTP, RPE 5.",
-    WU + ss(3000, 0.80, cad=90, msg="Tempo continu — RPE 5 — rester régulier") + CD)
+    WU + ss(3000, 0.80, cad=90, msg="Tempo continu 78-83% FTP · RPE 5 — rester régulier") + CD)
 
 add("SS-1", "Sweet Spot 3x12",
     "Sweet Spot 3x12 min à 88-92% FTP, RPE 6-7.",
     WU_INT + ints(3, 720, 0.90, 300, 0.55, cad=90,
-                  rpe_on="Sweet Spot — RPE 6-7 — tenable", rpe_off="Récup — RPE 2") + CD)
+                  rpe_on="Sweet Spot 88-92% FTP · RPE 6-7 — tenable", rpe_off="Récup 50-58% FTP · RPE 2") + CD)
 
 add("SS-2", "Sweet Spot 2x20",
     "Sweet Spot 2x20 min à 88-93% FTP, RPE 6-7.",
     WU_INT + ints(2, 1200, 0.91, 480, 0.55, cad=90,
-                  rpe_on="Sweet Spot — RPE 6-7", rpe_off="Récup — RPE 2") + CD)
+                  rpe_on="Sweet Spot 88-93% FTP · RPE 6-7", rpe_off="Récup 50-58% FTP · RPE 2") + CD)
 
 add("SS-3", "Sweet Spot sur longue 3x20",
     "Sur sortie longue : 3x20 min à 88-90% FTP, RPE 6.",
-    WU + ss(1200, 0.70, msg="Endurance — RPE 3-4")
+    WU + ss(1200, 0.70, msg="Endurance 65-75% FTP · RPE 3-4")
     + ints(3, 1200, 0.89, 600, 0.68, cad=88,
-           rpe_on="Sweet Spot — RPE 6", rpe_off="Endurance — RPE 3")
-    + ss(900, 0.68, msg="Retour endurance — RPE 3") + CD)
+           rpe_on="Sweet Spot 88-90% FTP · RPE 6", rpe_off="Endurance 65-72% FTP · RPE 3")
+    + ss(900, 0.68, msg="Retour endurance 65-72% FTP · RPE 3") + CD)
 
 # ---- C. Seuil ----
 add("SEU-1", "Seuil 2x15",
     "Seuil 2x15 min à 95-100% FTP, RPE 7-8.",
     WU_INT + ints(2, 900, 0.98, 480, 0.50, cad=90,
-                  rpe_on="Seuil — RPE 7-8 — mots isolés", rpe_off="Récup — RPE 2") + CD)
+                  rpe_on="Seuil 95-100% FTP · RPE 7-8 — mots isolés", rpe_off="Récup 45-55% FTP · RPE 2") + CD)
 
 seu2 = list(WU_INT)
 for i in range(3):
@@ -155,7 +155,7 @@ add("SEU-4", "Seuil 6x1 / 2x4 / 6x1",
 add("VO2-1", "VO2 5x3'",
     "VO2max 5x3 min à 110-118% FTP, RPE 8-9, récup 3 min.",
     WU_INT + ints(5, 180, 1.13, 180, 0.50, cad=95,
-                  rpe_on="VO2 — RPE 8-9 — respiration max", rpe_off="Récup — RPE 2") + CD)
+                  rpe_on="VO2 110-118% FTP · RPE 8-9 — respiration max", rpe_off="Récup 45-55% FTP · RPE 2") + CD)
 
 vo2_2 = list(WU_INT)
 for s in range(2):
@@ -181,12 +181,12 @@ add("VO2-3", "VO2 40-20 3x6",
 add("FOR-1", "Force basse cadence 6x3'",
     "Force 6x3 min à 88-95% FTP en 50-55 rpm. RPE jambes 7-8 / cardio 5-6.",
     WU + ints(6, 180, 0.92, 180, 0.55, cad=55, cad_rest=90,
-              rpe_on="50-55 rpm — RPE jambes 7-8 / cardio 5-6", rpe_off="Récup 90 rpm — RPE 2") + CD)
+              rpe_on="Force 88-95% FTP · 50-55 rpm · RPE jambes 7-8 / cardio 5-6", rpe_off="Récup 90 rpm · RPE 2") + CD)
 
 add("FOR-2", "Force 7x2'30",
     "Force 7x2'30 à 90-95% FTP en 55 rpm. RPE jambes 8.",
     WU + ints(7, 150, 0.93, 150, 0.55, cad=55, cad_rest=90,
-              rpe_on="55 rpm — RPE jambes 8", rpe_off="Récup — RPE 2") + CD)
+              rpe_on="Force 90-95% FTP · 55 rpm · RPE jambes 8", rpe_off="Récup · RPE 2") + CD)
 
 add("FOR-3", "Sprints force-vitesse 8x15s",
     "8 sprints de 15s max, RPE 10, récup 3 min.",

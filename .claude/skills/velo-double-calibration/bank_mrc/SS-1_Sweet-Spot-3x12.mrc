@@ -46,11 +46,11 @@ MINUTES PERCENT
 780	RPE 8 (activation)	30
 810	RPE 2	60
 870	Transition avant le corps — RPE 2	120
-990	Sweet Spot — RPE 6-7 — tenable	720
-1710	Récup — RPE 2	300
-2010	Sweet Spot — RPE 6-7 — tenable	720
-2730	Récup — RPE 2	300
-3030	Sweet Spot — RPE 6-7 — tenable	720
-3750	Récup — RPE 2	300
+990	Sweet Spot 88-92% FTP · RPE 6-7 — tenable	720
+1710	Récup 50-58% FTP · RPE 2	300
+2010	Sweet Spot 88-92% FTP · RPE 6-7 — tenable	720
+2730	Récup 50-58% FTP · RPE 2	300
+3030	Sweet Spot 88-92% FTP · RPE 6-7 — tenable	720
+3750	Récup 50-58% FTP · RPE 2	300
 4050	Retour au calme — RPE 2	480
 [END COURSE TEXT]

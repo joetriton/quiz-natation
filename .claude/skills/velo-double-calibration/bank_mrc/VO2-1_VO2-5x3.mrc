@@ -54,15 +54,15 @@ MINUTES PERCENT
 780	RPE 8 (activation)	30
 810	RPE 2	60
 870	Transition avant le corps — RPE 2	120
-990	VO2 — RPE 8-9 — respiration max	180
-1170	Récup — RPE 2	180
-1350	VO2 — RPE 8-9 — respiration max	180
-1530	Récup — RPE 2	180
-1710	VO2 — RPE 8-9 — respiration max	180
-1890	Récup — RPE 2	180
-2070	VO2 — RPE 8-9 — respiration max	180
-2250	Récup — RPE 2	180
-2430	VO2 — RPE 8-9 — respiration max	180
-2610	Récup — RPE 2	180
+990	VO2 110-118% FTP · RPE 8-9 — respiration max	180
+1170	Récup 45-55% FTP · RPE 2	180
+1350	VO2 110-118% FTP · RPE 8-9 — respiration max	180
+1530	Récup 45-55% FTP · RPE 2	180
+1710	VO2 110-118% FTP · RPE 8-9 — respiration max	180
+1890	Récup 45-55% FTP · RPE 2	180
+2070	VO2 110-118% FTP · RPE 8-9 — respiration max	180
+2250	Récup 45-55% FTP · RPE 2	180
+2430	VO2 110-118% FTP · RPE 8-9 — respiration max	180
+2610	Récup 45-55% FTP · RPE 2	180
 2790	Retour au calme — RPE 2	480
 [END COURSE TEXT]

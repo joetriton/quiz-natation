@@ -10,22 +10,22 @@
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
     <SteadyState Duration="900" Power="0.83" Cadence="90">
-      <textevent timeoffset="0" message="Tempo — RPE 5-6 — phrases courtes"/>
+      <textevent timeoffset="0" message="Tempo 80-85% FTP · RPE 5-6 — phrases courtes"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.55">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 50-58% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="900" Power="0.83" Cadence="90">
-      <textevent timeoffset="0" message="Tempo — RPE 5-6 — phrases courtes"/>
+      <textevent timeoffset="0" message="Tempo 80-85% FTP · RPE 5-6 — phrases courtes"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.55">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 50-58% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="900" Power="0.83" Cadence="90">
-      <textevent timeoffset="0" message="Tempo — RPE 5-6 — phrases courtes"/>
+      <textevent timeoffset="0" message="Tempo 80-85% FTP · RPE 5-6 — phrases courtes"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.55">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 50-58% FTP · RPE 2"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

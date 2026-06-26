@@ -10,22 +10,22 @@
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
     <SteadyState Duration="600" Power="0.7" Cadence="103">
-      <textevent timeoffset="0" message="RPE 4 — 100-105 rpm"/>
+      <textevent timeoffset="0" message="68-72% FTP · RPE 4 — 100-105 rpm"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.6" Cadence="90">
-      <textevent timeoffset="0" message="RPE 2 — cadence libre"/>
+      <textevent timeoffset="0" message="55-65% FTP · RPE 2 — cadence libre"/>
     </SteadyState>
     <SteadyState Duration="600" Power="0.7" Cadence="103">
-      <textevent timeoffset="0" message="RPE 4 — 100-105 rpm"/>
+      <textevent timeoffset="0" message="68-72% FTP · RPE 4 — 100-105 rpm"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.6" Cadence="90">
-      <textevent timeoffset="0" message="RPE 2 — cadence libre"/>
+      <textevent timeoffset="0" message="55-65% FTP · RPE 2 — cadence libre"/>
     </SteadyState>
     <SteadyState Duration="600" Power="0.7" Cadence="103">
-      <textevent timeoffset="0" message="RPE 4 — 100-105 rpm"/>
+      <textevent timeoffset="0" message="68-72% FTP · RPE 4 — 100-105 rpm"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.6" Cadence="90">
-      <textevent timeoffset="0" message="RPE 2 — cadence libre"/>
+      <textevent timeoffset="0" message="55-65% FTP · RPE 2 — cadence libre"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

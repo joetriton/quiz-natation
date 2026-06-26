@@ -31,16 +31,16 @@
       <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
     </SteadyState>
     <SteadyState Duration="900" Power="0.98" Cadence="90">
-      <textevent timeoffset="0" message="Seuil — RPE 7-8 — mots isolés"/>
+      <textevent timeoffset="0" message="Seuil 95-100% FTP · RPE 7-8 — mots isolés"/>
     </SteadyState>
     <SteadyState Duration="480" Power="0.5">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="900" Power="0.98" Cadence="90">
-      <textevent timeoffset="0" message="Seuil — RPE 7-8 — mots isolés"/>
+      <textevent timeoffset="0" message="Seuil 95-100% FTP · RPE 7-8 — mots isolés"/>
     </SteadyState>
     <SteadyState Duration="480" Power="0.5">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

@@ -42,9 +42,9 @@ MINUTES PERCENT
 780	RPE 8 (activation)	30
 810	RPE 2	60
 870	Transition avant le corps — RPE 2	120
-990	Seuil — RPE 7-8 — mots isolés	900
-1890	Récup — RPE 2	480
-2370	Seuil — RPE 7-8 — mots isolés	900
-3270	Récup — RPE 2	480
+990	Seuil 95-100% FTP · RPE 7-8 — mots isolés	900
+1890	Récup 45-55% FTP · RPE 2	480
+2370	Seuil 95-100% FTP · RPE 7-8 — mots isolés	900
+3270	Récup 45-55% FTP · RPE 2	480
 3750	Retour au calme — RPE 2	480
 [END COURSE TEXT]

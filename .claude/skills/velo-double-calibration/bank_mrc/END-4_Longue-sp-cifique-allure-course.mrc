@@ -29,13 +29,13 @@ MINUTES PERCENT
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	Endurance — RPE 3-4	1800
-2400	Allure course — RPE 5	1200
-3600	Endurance — RPE 3	600
-4200	Allure course — RPE 5	1200
-5400	Endurance — RPE 3	600
-6000	Allure course — RPE 5	1200
-7200	Endurance — RPE 3	600
-7800	Retour endurance — RPE 3-4	1800
+600	Endurance 65-75% FTP · RPE 3-4	1800
+2400	Allure course 78-82% FTP · RPE 5	1200
+3600	Endurance 65-72% FTP · RPE 3	600
+4200	Allure course 78-82% FTP · RPE 5	1200
+5400	Endurance 65-72% FTP · RPE 3	600
+6000	Allure course 78-82% FTP · RPE 5	1200
+7200	Endurance 65-72% FTP · RPE 3	600
+7800	Retour endurance 65-75% FTP · RPE 3-4	1800
 9600	Retour au calme — RPE 2	480
 [END COURSE TEXT]

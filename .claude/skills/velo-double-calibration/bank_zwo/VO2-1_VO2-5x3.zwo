@@ -31,34 +31,34 @@
       <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
     </SteadyState>
     <SteadyState Duration="180" Power="1.13" Cadence="95">
-      <textevent timeoffset="0" message="VO2 — RPE 8-9 — respiration max"/>
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.5">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="180" Power="1.13" Cadence="95">
-      <textevent timeoffset="0" message="VO2 — RPE 8-9 — respiration max"/>
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.5">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="180" Power="1.13" Cadence="95">
-      <textevent timeoffset="0" message="VO2 — RPE 8-9 — respiration max"/>
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.5">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="180" Power="1.13" Cadence="95">
-      <textevent timeoffset="0" message="VO2 — RPE 8-9 — respiration max"/>
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.5">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="180" Power="1.13" Cadence="95">
-      <textevent timeoffset="0" message="VO2 — RPE 8-9 — respiration max"/>
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.5">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
