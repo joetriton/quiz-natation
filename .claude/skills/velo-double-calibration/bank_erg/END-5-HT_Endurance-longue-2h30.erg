@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = HT 1h15 : endurance continue avec 2 touches de tempo. | Alternative HT de END-5. Qualités : Endurance aérobie fondamentale + Durabilité / résistance à la fatigue (tenue de puissance). (FTP 228 W)
+DESCRIPTION = Endurance continue avec touches de tempo. | Alternative HT de END-5. Qualités : Endurance aérobie fondamentale + Durabilité / résistance à la fatigue (tenue de puissance). (FTP 228 W)
 FILE NAME = END-5-HT Endurance longue 2h30 (home-trainer)
 MINUTES WATTS
 [END COURSE HEADER]
@@ -9,21 +9,21 @@ MINUTES WATTS
 0.00	114
 10.00	164
 10.00	164
-35.00	164
-35.00	178
-40.00	178
-40.00	164
-65.00	164
-65.00	178
-70.00	178
-70.00	137
-78.00	103
+63.60	164
+63.60	178
+74.32	178
+74.32	164
+127.90	164
+127.90	178
+138.62	178
+138.62	137
+146.62	103
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	Endurance 70-75% FTP · RPE 3-4	1500
-2100	Touche tempo 78% · RPE 5	300
-2400	Endurance 70-75% FTP · RPE 3-4	1500
-3900	Touche tempo 78% · RPE 5	300
-4200	Retour au calme — RPE 2	480
+600	Endurance 70-75% FTP · RPE 3-4	3216
+3816	Touche tempo 78% · RPE 5	643
+4459	Endurance 70-75% FTP · RPE 3-4	3215
+7674	Touche tempo 78% · RPE 5	643
+8317	Retour au calme — RPE 2	480
 [END COURSE TEXT]

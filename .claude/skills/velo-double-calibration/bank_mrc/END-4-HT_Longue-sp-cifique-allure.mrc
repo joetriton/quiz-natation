@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = HT compressé : endurance + 3x10' à l'allure de course. | Alternative HT de END-4. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition).
+DESCRIPTION = Endurance + blocs à l'allure de course (densifié indoor). | Alternative HT de END-4. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition).
 FILE NAME = END-4-HT Longue spécifique allure (home-trainer)
 MINUTES PERCENT
 [END COURSE HEADER]
@@ -9,30 +9,30 @@ MINUTES PERCENT
 0.00	50.0
 10.00	72.0
 10.00	72.0
-25.00	72.0
-25.00	80.0
-35.00	80.0
-35.00	68.0
-40.00	68.0
-40.00	80.0
-50.00	80.0
-50.00	68.0
-55.00	68.0
-55.00	80.0
-65.00	80.0
-65.00	68.0
-70.00	68.0
-70.00	60.0
-78.00	45.0
+46.10	72.0
+46.10	80.0
+70.18	80.0
+70.18	68.0
+82.23	68.0
+82.23	80.0
+106.32	80.0
+106.32	68.0
+118.37	68.0
+118.37	80.0
+142.45	80.0
+142.45	68.0
+154.50	68.0
+154.50	60.0
+162.50	45.0
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	Endurance 70% FTP · RPE 3-4	900
-1500	Allure course 78-82% FTP · RPE 5	600
-2100	Endurance 68% FTP · RPE 3	300
-2400	Allure course 78-82% FTP · RPE 5	600
-3000	Endurance 68% FTP · RPE 3	300
-3300	Allure course 78-82% FTP · RPE 5	600
-3900	Endurance 68% FTP · RPE 3	300
-4200	Retour au calme — RPE 2	480
+600	Endurance 70% FTP · RPE 3-4	2166
+2766	Allure course 78-82% FTP · RPE 5	1445
+4211	Endurance 68% FTP · RPE 3	723
+4934	Allure course 78-82% FTP · RPE 5	1445
+6379	Endurance 68% FTP · RPE 3	723
+7102	Allure course 78-82% FTP · RPE 5	1445
+8547	Endurance 68% FTP · RPE 3	723
+9270	Retour au calme — RPE 2	480
 [END COURSE TEXT]

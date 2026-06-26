@@ -139,12 +139,19 @@ Le **RPE** apparaît à l'écran : `<textevent>` (.zwo) et `[COURSE TEXT]` (.mrc
 > `.erg` que si un athlète a besoin de watts fixes ; il faut alors le régénérer à
 > sa FTP.
 
-**Alternative home-trainer :** chaque séance a une durée et un équivalent HT
-dans `references/alternatives-ht.md`. Les séances structurées sont déjà optimales
-en HT (jouées telles quelles) ; les séances longues/route ont une **alternative
-HT compressée** dédiée (fichiers `<CODE>-HT_*` dans les dossiers de banque). Si
-l'athlète n'a qu'un home-trainer, proposer la version `-HT` pour les séances
-« Route ».
+**Charge en UA :** chaque séance porte une charge estimée en UA (type TSS),
+`UA = 100 × Σ(durée_h × IF²)` (IF = %FTP du bloc ; rampe intégrée). Affichée dans
+le catalogue, l'INDEX et `alternatives-ht.md`.
+
+**Alternative home-trainer (à charge égale) :** chaque séance a une durée + UA et
+un équivalent HT dans `references/alternatives-ht.md`. Les séances structurées
+sont déjà optimales en HT (jouées telles quelles, UA identique) ; les séances
+longues/route ont une **alternative HT calée pour avoir exactement la même UA**
+que la séance route (intensité plus haute indoor → même charge en moins de temps ;
+fichiers `<CODE>-HT_*`). Ainsi, remplacer une séance route par sa version HT **ne
+change pas la charge planifiée**. Le calage UA est automatique dans le générateur
+(`scale_ht_to_load`) : pour modifier une alternative, éditer son entrée dans
+`HT_ALTS` (intensités/structure) et relancer — la durée se recale sur l'UA cible.
 
 **(Re)générer / étendre la banque :**
 ```

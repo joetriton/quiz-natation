@@ -2,17 +2,17 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>END-9-HT Endurance negative split (home-trainer)</name>
-  <description>HT 1h05 : negative split 68% puis 76% FTP. | Alternative HT de END-9. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale.</description>
+  <description>Negative split 68% puis 76% FTP. | Alternative HT de END-9. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
     <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
-    <SteadyState Duration="1500" Power="0.68" Cadence="88">
+    <SteadyState Duration="2269" Power="0.68" Cadence="88">
       <textevent timeoffset="0" message="66-70% FTP · RPE 3"/>
     </SteadyState>
-    <SteadyState Duration="1500" Power="0.76" Cadence="90">
+    <SteadyState Duration="2269" Power="0.76" Cadence="90">
       <textevent timeoffset="0" message="74-78% FTP · RPE 4-5 — finir fort"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">

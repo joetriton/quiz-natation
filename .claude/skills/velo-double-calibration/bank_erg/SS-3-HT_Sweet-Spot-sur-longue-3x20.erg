@@ -1,56 +1,35 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = HT 1h20 : sweet spot 3x15' (sans le volume endurance de la route). | Alternative HT de SS-3. Qualités : Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance). (FTP 228 W)
+DESCRIPTION = Sweet spot indoor (sans le volume endurance de la route). | Alternative HT de SS-3. Qualités : Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance). (FTP 228 W)
 FILE NAME = SS-3-HT Sweet Spot sur longue 3x20 (home-trainer)
 MINUTES WATTS
 [END COURSE HEADER]
 [COURSE DATA]
 0.00	114
 10.00	164
-10.00	239
-10.50	239
-10.50	114
-11.50	114
-11.50	239
-12.00	239
-12.00	114
-13.00	114
-13.00	239
-13.50	239
-13.50	114
-14.50	114
-14.50	125
-16.50	125
-16.50	205
-31.50	205
-31.50	125
-35.50	125
-35.50	205
-50.50	205
-50.50	125
-54.50	125
-54.50	205
-69.50	205
-69.50	125
-73.50	125
-73.50	137
-81.50	103
+10.00	205
+39.22	205
+39.22	125
+47.02	125
+47.02	205
+76.27	205
+76.27	125
+84.07	125
+84.07	205
+113.32	205
+113.32	125
+121.12	125
+121.12	137
+129.12	103
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	RPE 8 (activation)	30
-630	RPE 2	60
-690	RPE 8 (activation)	30
-720	RPE 2	60
-780	RPE 8 (activation)	30
-810	RPE 2	60
-870	Transition avant le corps — RPE 2	120
-990	Sweet Spot 88-92% FTP · RPE 6-7	900
-1890	récup · RPE 2	240
-2130	Sweet Spot 88-92% FTP · RPE 6-7	900
-3030	récup · RPE 2	240
-3270	Sweet Spot 88-92% FTP · RPE 6-7	900
-4170	récup · RPE 2	240
-4410	Retour au calme — RPE 2	480
+600	Sweet Spot 88-92% FTP · RPE 6-7	1753
+2353	récup · RPE 2	468
+2821	Sweet Spot 88-92% FTP · RPE 6-7	1755
+4576	récup · RPE 2	468
+5044	Sweet Spot 88-92% FTP · RPE 6-7	1755
+6799	récup · RPE 2	468
+7267	Retour au calme — RPE 2	480
 [END COURSE TEXT]

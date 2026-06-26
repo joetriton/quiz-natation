@@ -2,14 +2,14 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>END-7-HT Fat-max 90' (home-trainer)</name>
-  <description>HT 1h10 : fat-max continu 60-65% FTP, respiration nasale. | Alternative HT de END-7. Qualités : Métabolisme lipidique (fat-max, oxydation des graisses) + Endurance aérobie fondamentale.</description>
+  <description>Fat-max continu 60-65% FTP, respiration nasale. | Alternative HT de END-7. Qualités : Métabolisme lipidique (fat-max, oxydation des graisses) + Endurance aérobie fondamentale.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
     <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
-    <SteadyState Duration="3000" Power="0.63" Cadence="85">
+    <SteadyState Duration="5230" Power="0.63" Cadence="85">
       <textevent timeoffset="0" message="Fat-max 60-65% FTP · RPE 3 — respiration nasale"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">

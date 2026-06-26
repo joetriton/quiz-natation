@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = HT ~2h10 : endurance + 3x25' tempo (équivalent indoor). | Alternative HT de END-11. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition). (FTP 228 W)
+DESCRIPTION = Endurance + tempo (équivalent indoor). | Alternative HT de END-11. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition). (FTP 228 W)
 FILE NAME = END-11-HT Longue IM + 3x30' tempo (home-trainer)
 MINUTES WATTS
 [END COURSE HEADER]
@@ -9,30 +9,30 @@ MINUTES WATTS
 0.00	114
 10.00	164
 10.00	160
-30.00	160
-30.00	187
-55.00	187
-55.00	137
-61.00	137
-61.00	187
-86.00	187
-86.00	137
-92.00	137
-92.00	187
-117.00	187
-117.00	137
-123.00	137
-123.00	137
-131.00	103
+47.27	160
+47.27	187
+93.85	187
+93.85	137
+105.03	137
+105.03	187
+151.60	187
+151.60	137
+162.78	137
+162.78	187
+209.35	187
+209.35	137
+220.53	137
+220.53	137
+228.53	103
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	Endurance 68-72% FTP · RPE 3	1200
-1800	Tempo 80-84% FTP · RPE 5	1500
-3300	Endurance 58-62% FTP · RPE 3	360
-3660	Tempo 80-84% FTP · RPE 5	1500
-5160	Endurance 58-62% FTP · RPE 3	360
-5520	Tempo 80-84% FTP · RPE 5	1500
-7020	Endurance 58-62% FTP · RPE 3	360
-7380	Retour au calme — RPE 2	480
+600	Endurance 68-72% FTP · RPE 3	2236
+2836	Tempo 80-84% FTP · RPE 5	2795
+5631	Endurance 58-62% FTP · RPE 3	671
+6302	Tempo 80-84% FTP · RPE 5	2794
+9096	Endurance 58-62% FTP · RPE 3	671
+9767	Tempo 80-84% FTP · RPE 5	2794
+12561	Endurance 58-62% FTP · RPE 3	671
+13232	Retour au calme — RPE 2	480
 [END COURSE TEXT]

@@ -2,29 +2,29 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>TMP-6-HT Tempo sur longue 3x30' (home-trainer)</name>
-  <description>HT ~1h30 : tempo 3x20' (compressé). | Alternative HT de TMP-6. Qualités : Endurance soutenue sous-seuil (capacité aérobie / tempo) + Durabilité / résistance à la fatigue (tenue de puissance).</description>
+  <description>Tempo indoor (compressé). | Alternative HT de TMP-6. Qualités : Endurance soutenue sous-seuil (capacité aérobie / tempo) + Durabilité / résistance à la fatigue (tenue de puissance).</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
     <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
-    <SteadyState Duration="1200" Power="0.82" Cadence="87">
+    <SteadyState Duration="1842" Power="0.82" Cadence="87">
       <textevent timeoffset="0" message="Tempo 80-84% FTP · RPE 5"/>
     </SteadyState>
-    <SteadyState Duration="300" Power="0.6">
+    <SteadyState Duration="461" Power="0.6">
       <textevent timeoffset="0" message="récup · RPE 3"/>
     </SteadyState>
-    <SteadyState Duration="1200" Power="0.82" Cadence="87">
+    <SteadyState Duration="1844" Power="0.82" Cadence="87">
       <textevent timeoffset="0" message="Tempo 80-84% FTP · RPE 5"/>
     </SteadyState>
-    <SteadyState Duration="300" Power="0.6">
+    <SteadyState Duration="461" Power="0.6">
       <textevent timeoffset="0" message="récup · RPE 3"/>
     </SteadyState>
-    <SteadyState Duration="1200" Power="0.82" Cadence="87">
+    <SteadyState Duration="1844" Power="0.82" Cadence="87">
       <textevent timeoffset="0" message="Tempo 80-84% FTP · RPE 5"/>
     </SteadyState>
-    <SteadyState Duration="300" Power="0.6">
+    <SteadyState Duration="461" Power="0.6">
       <textevent timeoffset="0" message="récup · RPE 3"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">

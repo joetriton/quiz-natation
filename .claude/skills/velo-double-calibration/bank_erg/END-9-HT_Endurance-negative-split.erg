@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = HT 1h05 : negative split 68% puis 76% FTP. | Alternative HT de END-9. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale. (FTP 228 W)
+DESCRIPTION = Negative split 68% puis 76% FTP. | Alternative HT de END-9. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale. (FTP 228 W)
 FILE NAME = END-9-HT Endurance negative split (home-trainer)
 MINUTES WATTS
 [END COURSE HEADER]
@@ -9,15 +9,15 @@ MINUTES WATTS
 0.00	114
 10.00	164
 10.00	155
-35.00	155
-35.00	173
-60.00	173
-60.00	137
-68.00	103
+47.82	155
+47.82	173
+85.63	173
+85.63	137
+93.63	103
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600
-600	66-70% FTP · RPE 3	1500
-2100	74-78% FTP · RPE 4-5 — finir fort	1500
-3600	Retour au calme — RPE 2	480
+600	66-70% FTP · RPE 3	2269
+2869	74-78% FTP · RPE 4-5 — finir fort	2269
+5138	Retour au calme — RPE 2	480
 [END COURSE TEXT]

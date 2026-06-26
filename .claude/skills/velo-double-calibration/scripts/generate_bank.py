@@ -429,46 +429,81 @@ add("RACE-LD-5H", "Allure course IM ~5h (IF 0.68)", "Spécifique course", "SPEC"
 # Clé = code ; valeur = (description, segments de l'alternative HT).
 # --------------------------------------------------------------------------
 HT_ALTS = {
-    "END-2": ("Endurance continue HT 40 min à 70-75% FTP (sans roue libre).",
+    "END-2": ("Endurance continue indoor 70-75% FTP (sans roue libre).",
               WU + ss(2400, 0.72, cad=90, msg="Endurance 70-75% FTP · RPE 3-4 (HT continu)") + CD),
-    "END-4": ("HT compressé : endurance + 3x10' à l'allure de course.",
+    "END-4": ("Endurance + blocs à l'allure de course (densifié indoor).",
               WU + ss(900, 0.72, cad=88, msg="Endurance 70% FTP · RPE 3-4")
               + ints(3, 600, 0.80, 300, 0.68, cad=88, rpe_on="Allure course 78-82% FTP · RPE 5", rpe_off="Endurance 68% FTP · RPE 3") + CD),
-    "END-5": ("HT 1h15 : endurance continue avec 2 touches de tempo.",
+    "END-5": ("Endurance continue avec touches de tempo.",
               WU + ss(1500, 0.72, cad=88, msg="Endurance 70-75% FTP · RPE 3-4") + ss(300, 0.78, msg="Touche tempo 78% · RPE 5")
               + ss(1500, 0.72, cad=88, msg="Endurance 70-75% FTP · RPE 3-4") + ss(300, 0.78, msg="Touche tempo 78% · RPE 5") + CD),
-    "END-6": ("HT 1h : endurance progressive 68->80% FTP.",
+    "END-6": ("Endurance progressive 68->80% FTP.",
               WU + ss(900, 0.68, cad=88, msg="68% FTP · RPE 3") + ss(900, 0.74, cad=88, msg="74% FTP · RPE 4")
               + ss(600, 0.80, cad=90, msg="80% FTP · RPE 5") + CD),
-    "END-7": ("HT 1h10 : fat-max continu 60-65% FTP, respiration nasale.",
+    "END-7": ("Fat-max continu 60-65% FTP, respiration nasale.",
               WU + ss(3000, 0.63, cad=85, msg="Fat-max 60-65% FTP · RPE 3 — respiration nasale") + CD),
-    "END-9": ("HT 1h05 : negative split 68% puis 76% FTP.",
+    "END-9": ("Negative split 68% puis 76% FTP.",
               WU + ss(1500, 0.68, cad=88, msg="66-70% FTP · RPE 3") + ss(1500, 0.76, cad=90, msg="74-78% FTP · RPE 4-5 — finir fort") + CD),
-    "SS-3": ("HT 1h20 : sweet spot 3x15' (sans le volume endurance de la route).",
-             WU_INT + ints(3, 900, 0.90, 240, 0.55, cad=90, rpe_on="Sweet Spot 88-92% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD),
-    "RACE-LD": ("HT 1h18 : allure course longue distance continue (IF ~0.72).",
+    "SS-3": ("Sweet spot indoor (sans le volume endurance de la route).",
+             WU + ints(3, 900, 0.90, 240, 0.55, cad=90, rpe_on="Sweet Spot 88-92% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD),
+    "RACE-LD": ("Allure course longue distance continue.",
                 WU + ss(3600, 0.73, cad=88, msg="Allure course LD 70-74% FTP · RPE 4 (HT continu) — nutrition") + CD),
-    "END-10": ("HT ~1h50 : endurance + 2x25' tempo (densifié indoor).",
+    "END-10": ("Endurance + tempo (densifié indoor).",
                WU + ss(1800, 0.70, cad=86, msg="Endurance 68-72% FTP · RPE 3-4")
                + ints(2, 1500, 0.84, 420, 0.60, cad=86, rpe_on="Tempo 82-85% FTP · RPE 5-6", rpe_off="Endurance 58-62% FTP · RPE 3") + CD),
-    "END-11": ("HT ~2h10 : endurance + 3x25' tempo (équivalent indoor).",
+    "END-11": ("Endurance + tempo (équivalent indoor).",
                WU + ss(1200, 0.70, cad=86, msg="Endurance 68-72% FTP · RPE 3")
                + ints(3, 1500, 0.82, 360, 0.60, cad=86, rpe_on="Tempo 80-84% FTP · RPE 5", rpe_off="Endurance 58-62% FTP · RPE 3") + CD),
-    "END-12": ("HT ~2h : 3x30' tempo bas (compresse la très longue).",
+    "END-12": ("Tempo bas répété (compresse la très longue).",
                WU + ints(3, 1800, 0.78, 300, 0.62, cad=85, rpe_on="Tempo bas 76-80% FTP · RPE 5", rpe_off="Endurance 60-64% FTP · RPE 3") + CD),
-    "SS-6": ("HT ~1h40 : sweet spot 3x20' (sans le volume route).",
-             WU_INT + ints(3, 1200, 0.90, 360, 0.55, cad=88, rpe_on="Sweet Spot 88-92% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD),
-    "TMP-6": ("HT ~1h30 : tempo 3x20' (compressé).",
+    "SS-6": ("Sweet spot indoor à charge égale (sans le volume route).",
+             WU + ints(3, 1200, 0.90, 360, 0.55, cad=88, rpe_on="Sweet Spot 88-92% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD),
+    "TMP-6": ("Tempo indoor (compressé).",
               WU + ints(3, 1200, 0.82, 300, 0.60, cad=87, rpe_on="Tempo 80-84% FTP · RPE 5", rpe_off="récup · RPE 3") + CD),
-    "RACE-LD-4H": ("HT ~1h48 : allure IM continue 70-74% FTP.",
+    "RACE-LD-4H": ("Allure IM continue 70-74% FTP.",
                    WU + ss(5400, 0.72, cad=87, msg="Allure IM 70-74% FTP · RPE 4 (HT continu) — nutrition") + CD),
-    "RACE-LD-5H": ("HT ~2h08 : allure IM continue 70-73% FTP.",
+    "RACE-LD-5H": ("Allure IM continue 70-73% FTP.",
                    WU + ss(6600, 0.72, cad=86, msg="Allure IM 70-73% FTP · RPE 4 (HT continu) — nutrition / pacing") + CD),
 }
+def ua(segs):
+    """Charge estimée en UA (type TSS) : 100 x somme(durée_h x IF²).
+    Pour une rampe, IF² intégré = (p0²+p0·p1+p1²)/3."""
+    tot = 0.0
+    for s in segs:
+        if2 = (s["p0"]**2 + s["p0"]*s["p1"] + s["p1"]**2) / 3.0
+        tot += (s["dur"] / 3600.0) * if2
+    return tot * 100.0
+
+def scale_ht_to_load(ht, target):
+    """Cale l'alternative HT pour que son UA == target, en ajustant la durée des
+    blocs centraux (échauffement = 1er seg et retour au calme = dernier, fixes ;
+    intensités conservées)."""
+    if len(ht) < 3:
+        return ht
+    first, mid, last = ht[0], [dict(s) for s in ht[1:-1]], ht[-1]
+    mid_target = target - ua([first]) - ua([last])
+    cur = ua(mid)
+    if cur <= 0 or mid_target <= 0:
+        return ht
+    k = mid_target / cur
+    for s in mid:
+        s["dur"] = max(5, int(round(s["dur"] * k)))
+    # correction fine sur le bloc steady le plus long
+    resid = mid_target - ua(mid)
+    steady = [i for i, s in enumerate(mid) if s["p0"] == s["p1"] and s["p0"] > 0]
+    if steady:
+        i = max(steady, key=lambda i: mid[i]["dur"])
+        per = (mid[i]["p0"]**2) / 3600.0 * 100.0
+        if per > 0:
+            mid[i]["dur"] = max(5, mid[i]["dur"] + int(round(resid / per)))
+    return [first] + mid + [last]
+
 for _w in BANK:
     if _w["code"] in HT_ALTS:
         _w["support"] = "Route"
-        _w["ht_desc"], _w["ht"] = HT_ALTS[_w["code"]]
+        _desc, _raw = HT_ALTS[_w["code"]]
+        _w["ht_desc"] = _desc
+        _w["ht"] = scale_ht_to_load(_raw, ua(_w["segs"]))  # UA(HT) == UA(route)
     else:
         _w["support"], _w["ht_desc"], _w["ht"] = "HT", "", None
 
@@ -564,9 +599,9 @@ def main():
     idx = ["# Banque générée — importable dans Nolio (.zwo / .mrc / .erg)\n",
            ".zwo et .mrc = puissance relative (%FTP) -> **athlète-indépendants**.",
            f".erg = watts absolus pour **FTP = {a.ftp} W** (régénérer avec --ftp).\n",
-           f"**{len(BANK)} séances.**\n",
-           "| Code | Séance | Durée | Qualités développées | .zwo | .mrc | .erg |",
-           "|------|--------|-------|----------------------|------|------|------|"]
+           f"**{len(BANK)} séances.** UA = charge estimée (type TSS).\n",
+           "| Code | Séance | Durée | UA | Qualités développées | .zwo | .mrc | .erg |",
+           "|------|--------|-------|----|----------------------|------|------|------|"]
     def write_all(base, name, desc, segs):
         open(os.path.join(dirs["zwo"], base + ".zwo"), "w", encoding="utf-8").write(render_zwo(name, desc, segs))
         open(os.path.join(dirs["mrc"], base + ".mrc"), "w", encoding="utf-8").write(render_mrc(name, desc, segs))
@@ -577,7 +612,7 @@ def main():
         full_desc = f'{w["desc"]} | Qualités : {quality_str(w)}. Double calibration %FTP + RPE.'
         base = f'{w["code"]}_{slug(w["name"])}'
         write_all(base, full, full_desc, w["segs"])
-        idx.append(f'| {w["code"]} | {w["name"]} | {dur_str(total_dur(w["segs"]))} | {quality_str(w)} | `{base}.zwo` | `{base}.mrc` | `{base}.erg` |')
+        idx.append(f'| {w["code"]} | {w["name"]} | {dur_str(total_dur(w["segs"]))} | {round(ua(w["segs"]))} | {quality_str(w)} | `{base}.zwo` | `{base}.mrc` | `{base}.erg` |')
         if w["ht"]:
             ht_name = f'{w["code"]}-HT {w["name"]} (home-trainer)'
             ht_desc = f'{w["ht_desc"]} | Alternative HT de {w["code"]}. Qualités : {quality_str(w)}.'
@@ -588,20 +623,22 @@ def main():
     # Document des alternatives home-trainer
     nb_ht = sum(1 for w in BANK if w["ht"])
     alt = [f"# Alternatives home-trainer ({len(BANK)} séances)\n",
-           "Durée de chaque séance + son équivalent **home-trainer**.\n",
-           "- **Support HT** : séance déjà structurée → à jouer telle quelle sur HT (durée identique).",
-           "- **Support Route** : séance longue/extérieure → une **alternative HT compressée** est",
-           "  fournie (puissance continue indoor = même stimulus en moins de temps). Fichiers",
+           "Durée et **charge estimée en UA** (type TSS) de chaque séance + son",
+           "équivalent **home-trainer**, calé à **charge égale**.\n",
+           "- **Support HT** : séance déjà structurée → jouée telle quelle (durée et UA identiques).",
+           "- **Support Route** : séance longue/extérieure → **alternative HT calée à UA égale**",
+           "  (intensité plus haute indoor → même charge en moins de temps). Fichiers",
            "  jouables `<CODE>-HT_*` dans `bank_zwo/` `bank_mrc/` `bank_erg/`.\n",
-           f"> {nb_ht} alternatives HT dédiées générées. Le reste est déjà optimisé HT.\n",
-           "| Code | Séance | Durée | Support | Alternative home-trainer | Durée HT |",
-           "|------|--------|-------|---------|--------------------------|----------|"]
+           f"> {nb_ht} alternatives HT générées, chacune à la **même UA** que sa séance route.\n",
+           "| Code | Séance | Durée route | UA route | Alternative home-trainer | Durée HT | UA HT |",
+           "|------|--------|-------------|----------|--------------------------|----------|-------|"]
     for w in BANK:
         d = dur_str(total_dur(w["segs"]))
+        u = round(ua(w["segs"]))
         if w["ht"]:
-            alt.append(f'| {w["code"]} | {w["name"]} | {d} | Route | {w["ht_desc"]} (`{w["code"]}-HT_*`) | {dur_str(total_dur(w["ht"]))} |')
+            alt.append(f'| {w["code"]} | {w["name"]} | {d} | {u} | {w["ht_desc"]} (`{w["code"]}-HT_*`) | {dur_str(total_dur(w["ht"]))} | {round(ua(w["ht"]))} |')
         else:
-            alt.append(f'| {w["code"]} | {w["name"]} | {d} | HT | Identique — déjà conçue pour HT, jouer telle quelle | {d} |')
+            alt.append(f'| {w["code"]} | {w["name"]} | {d} | {u} | Identique — déjà conçue pour HT | {d} | {u} |')
     open(os.path.join(refs, "alternatives-ht.md"), "w", encoding="utf-8").write("\n".join(alt) + "\n")
 
     # Catalogue lisible groupé par filière
@@ -615,11 +652,11 @@ def main():
         if not ws:
             continue
         cat += [f"\n## {fil}\n",
-                "| Code | Séance | Durée | Qualité principale | Qualité secondaire | Contenu |",
-                "|------|--------|-------|--------------------|--------------------|---------|"]
+                "| Code | Séance | Durée | UA | Qualité principale | Qualité secondaire | Contenu |",
+                "|------|--------|-------|----|--------------------|--------------------|---------|"]
         for w in ws:
             q2 = QUALITIES[w["q2"]] if w["q2"] else "—"
-            cat.append(f'| {w["code"]} | {w["name"]} | {dur_str(total_dur(w["segs"]))} | {QUALITIES[w["q1"]]} | {q2} | {w["desc"]} |')
+            cat.append(f'| {w["code"]} | {w["name"]} | {dur_str(total_dur(w["segs"]))} | {round(ua(w["segs"]))} | {QUALITIES[w["q1"]]} | {q2} | {w["desc"]} |')
     open(os.path.join(refs, "catalogue-seances.md"), "w", encoding="utf-8").write("\n".join(cat) + "\n")
 
     # Taxonomie des qualités

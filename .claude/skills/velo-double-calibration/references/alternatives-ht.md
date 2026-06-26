@@ -1,73 +1,74 @@
 # Alternatives home-trainer (60 séances)
 
-Durée de chaque séance + son équivalent **home-trainer**.
+Durée et **charge estimée en UA** (type TSS) de chaque séance + son
+équivalent **home-trainer**, calé à **charge égale**.
 
-- **Support HT** : séance déjà structurée → à jouer telle quelle sur HT (durée identique).
-- **Support Route** : séance longue/extérieure → une **alternative HT compressée** est
-  fournie (puissance continue indoor = même stimulus en moins de temps). Fichiers
+- **Support HT** : séance déjà structurée → jouée telle quelle (durée et UA identiques).
+- **Support Route** : séance longue/extérieure → **alternative HT calée à UA égale**
+  (intensité plus haute indoor → même charge en moins de temps). Fichiers
   jouables `<CODE>-HT_*` dans `bank_zwo/` `bank_mrc/` `bank_erg/`.
 
-> 15 alternatives HT dédiées générées. Le reste est déjà optimisé HT.
+> 15 alternatives HT générées, chacune à la **même UA** que sa séance route.
 
-| Code | Séance | Durée | Support | Alternative home-trainer | Durée HT |
-|------|--------|-------|---------|--------------------------|----------|
-| REC-1 | Spin facile 30' | 35 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 35 min |
-| END-1 | Récup active | 45 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 45 min |
-| END-2 | Endurance fond 70' | 1h28 | Route | Endurance continue HT 40 min à 70-75% FTP (sans roue libre). (`END-2-HT_*`) | 58 min |
-| END-3 | Endurance + cadence | 1h03 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h03 |
-| END-4 | Longue spécifique allure | 2h48 | Route | HT compressé : endurance + 3x10' à l'allure de course. (`END-4-HT_*`) | 1h18 |
-| END-5 | Endurance longue 2h30 | 2h38 | Route | HT 1h15 : endurance continue avec 2 touches de tempo. (`END-5-HT_*`) | 1h18 |
-| END-6 | Endurance progressive | 1h33 | Route | HT 1h : endurance progressive 68->80% FTP. (`END-6-HT_*`) | 58 min |
-| END-7 | Fat-max 90' | 1h48 | Route | HT 1h10 : fat-max continu 60-65% FTP, respiration nasale. (`END-7-HT_*`) | 1h08 |
-| END-8 | Endurance + micro-bursts | 42 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 42 min |
-| END-9 | Endurance negative split | 1h38 | Route | HT 1h05 : negative split 68% puis 76% FTP. (`END-9-HT_*`) | 1h08 |
-| END-10 | Sortie longue 3h30 | 3h28 | Route | HT ~1h50 : endurance + 2x25' tempo (densifié indoor). (`END-10-HT_*`) | 1h52 |
-| END-11 | Longue IM + 3x30' tempo | 4h18 | Route | HT ~2h10 : endurance + 3x25' tempo (équivalent indoor). (`END-11-HT_*`) | 2h11 |
-| END-12 | Très longue endurance 5h | 4h58 | Route | HT ~2h : 3x30' tempo bas (compresse la très longue). (`END-12-HT_*`) | 2h03 |
-| VEL-1 | Vélocité 6x3' | 42 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 42 min |
-| VEL-2 | Jambe seule (single-leg) | 34 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 34 min |
-| VEL-3 | Spin-ups 10x30" | 38 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 38 min |
-| VEL-4 | Pyramide de cadence | 36 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 36 min |
-| TMP-1 | Tempo 3x15 | 1h18 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h18 |
-| TMP-2 | Tempo continu 50' | 1h08 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h08 |
-| TMP-3 | Tempo 2x25 | 1h22 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h22 |
-| TMP-4 | Tempo vallonné (cadence variée) | 42 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 42 min |
-| TMP-5 | Tempo progressif 3x12 | 1h04 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h04 |
-| TMP-6 | Tempo sur longue 3x30' | 2h18 | Route | HT ~1h30 : tempo 3x20' (compressé). (`TMP-6-HT_*`) | 1h33 |
-| SS-1 | Sweet Spot 3x12 | 1h15 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h15 |
-| SS-2 | Sweet Spot 2x20 | 1h20 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h20 |
-| SS-3 | Sweet Spot sur longue 3x20 | 2h23 | Route | HT 1h20 : sweet spot 3x15' (sans le volume endurance de la route). (`SS-3-HT_*`) | 1h21 |
-| SS-4 | Sweet Spot 4x10 | 1h20 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h20 |
-| SS-5 | Sweet Spot 2x30 | 1h44 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h44 |
-| SS-6 | Sweet Spot sur longue 4x25' | 2h32 | Route | HT ~1h40 : sweet spot 3x20' (sans le volume route). (`SS-6-HT_*`) | 1h42 |
-| SEU-1 | Seuil 2x15 | 1h10 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h10 |
-| SEU-2 | Seuil progressif 3x(8-4-2) | 1h14 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h14 |
-| SEU-3 | Seuil over-under 2x(4x2-2) | 1h01 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h01 |
-| SEU-4 | Seuil 6x1 / 2x4 / 6x1 | 1h12 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h12 |
-| SEU-5 | Seuil 3x10 | 1h09 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h09 |
-| SEU-6 | Seuil 2x20 | 1h20 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h20 |
-| SEU-7 | Seuil over-under 3x9 | 57 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 57 min |
-| VO2-1 | VO2 5x3' | 54 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 54 min |
-| VO2-2 | VO2 30-30 2x8 | 45 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 45 min |
-| VO2-3 | VO2 40-20 3x6 | 50 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 50 min |
-| VO2-4 | VO2 5x4' | 59 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 59 min |
-| VO2-5 | VO2 6x2' | 48 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 48 min |
-| VO2-6 | VO2 15-15 3x10 | 47 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 47 min |
-| VO2-7 | VO2 4x5' | 1h04 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h04 |
-| ANA-1 | Anaérobie 5x1' | 49 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 49 min |
-| ANA-2 | Lactique 6x40" | 48 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 48 min |
-| ANA-3 | Attaques 4x(4x15") | 49 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 49 min |
-| FOR-1 | Force basse cadence 6x3' | 54 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 54 min |
-| FOR-2 | Force 7x2'30 | 53 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 53 min |
-| FOR-3 | Sprints force-vitesse 8x15" | 50 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 50 min |
-| FOR-4 | Force-endurance 4x8' | 1h02 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h02 |
-| FOR-5 | Force max 10x30" | 48 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 48 min |
-| SPR-1 | Sprints départ arrêté 10x10" | 54 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 54 min |
-| SPR-2 | Sprints lancés 8x12" | 56 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 56 min |
-| SPR-3 | Tabata 2x8x(20-10) | 37 min | HT | Identique — déjà conçue pour HT, jouer telle quelle | 37 min |
-| SPE-1 | Simulation parcours vallonné | 1h14 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h14 |
-| SPE-2 | Allure course + finish surge | 1h33 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h33 |
-| RACE-LD | Allure course longue distance (IF 0.70) | 2h18 | Route | HT 1h18 : allure course longue distance continue (IF ~0.72). (`RACE-LD-HT_*`) | 1h18 |
-| RACE-HD | Allure course demi-distance (IF 0.78) | 1h18 | HT | Identique — déjà conçue pour HT, jouer telle quelle | 1h18 |
-| RACE-LD-4H | Allure course IM ~4h (IF 0.68) | 3h48 | Route | HT ~1h48 : allure IM continue 70-74% FTP. (`RACE-LD-4H-HT_*`) | 1h48 |
-| RACE-LD-5H | Allure course IM ~5h (IF 0.68) | 4h38 | Route | HT ~2h08 : allure IM continue 70-73% FTP. (`RACE-LD-5H-HT_*`) | 2h08 |
+| Code | Séance | Durée route | UA route | Alternative home-trainer | Durée HT | UA HT |
+|------|--------|-------------|----------|--------------------------|----------|-------|
+| REC-1 | Spin facile 30' | 35 min | 14 | Identique — déjà conçue pour HT | 35 min | 14 |
+| END-1 | Récup active | 45 min | 22 | Identique — déjà conçue pour HT | 45 min | 22 |
+| END-2 | Endurance fond 70' | 1h28 | 67 | Endurance continue indoor 70-75% FTP (sans roue libre). (`END-2-HT_*`) | 1h24 | 67 |
+| END-3 | Endurance + cadence | 1h03 | 43 | Identique — déjà conçue pour HT | 1h03 | 43 |
+| END-4 | Longue spécifique allure | 2h48 | 146 | Endurance + blocs à l'allure de course (densifié indoor). (`END-4-HT_*`) | 2h42 | 146 |
+| END-5 | Endurance longue 2h30 | 2h38 | 124 | Endurance continue avec touches de tempo. (`END-5-HT_*`) | 2h26 | 124 |
+| END-6 | Endurance progressive | 1h33 | 74 | Endurance progressive 68->80% FTP. (`END-6-HT_*`) | 1h29 | 74 |
+| END-7 | Fat-max 90' | 1h48 | 68 | Fat-max continu 60-65% FTP, respiration nasale. (`END-7-HT_*`) | 1h45 | 68 |
+| END-8 | Endurance + micro-bursts | 42 min | 32 | Identique — déjà conçue pour HT | 42 min | 32 |
+| END-9 | Endurance negative split | 1h38 | 76 | Negative split 68% puis 76% FTP. (`END-9-HT_*`) | 1h33 | 76 |
+| END-10 | Sortie longue 3h30 | 3h28 | 156 | Endurance + tempo (densifié indoor). (`END-10-HT_*`) | 2h48 | 156 |
+| END-11 | Longue IM + 3x30' tempo | 4h18 | 217 | Endurance + tempo (équivalent indoor). (`END-11-HT_*`) | 3h48 | 217 |
+| END-12 | Très longue endurance 5h | 4h58 | 213 | Tempo bas répété (compresse la très longue). (`END-12-HT_*`) | 3h49 | 213 |
+| VEL-1 | Vélocité 6x3' | 42 min | 28 | Identique — déjà conçue pour HT | 42 min | 28 |
+| VEL-2 | Jambe seule (single-leg) | 34 min | 20 | Identique — déjà conçue pour HT | 34 min | 20 |
+| VEL-3 | Spin-ups 10x30" | 38 min | 19 | Identique — déjà conçue pour HT | 38 min | 19 |
+| VEL-4 | Pyramide de cadence | 36 min | 22 | Identique — déjà conçue pour HT | 36 min | 22 |
+| TMP-1 | Tempo 3x15 | 1h18 | 69 | Identique — déjà conçue pour HT | 1h18 | 69 |
+| TMP-2 | Tempo continu 50' | 1h08 | 63 | Identique — déjà conçue pour HT | 1h08 | 63 |
+| TMP-3 | Tempo 2x25 | 1h22 | 73 | Identique — déjà conçue pour HT | 1h22 | 73 |
+| TMP-4 | Tempo vallonné (cadence variée) | 42 min | 37 | Identique — déjà conçue pour HT | 42 min | 37 |
+| TMP-5 | Tempo progressif 3x12 | 1h04 | 57 | Identique — déjà conçue pour HT | 1h04 | 57 |
+| TMP-6 | Tempo sur longue 3x30' | 2h18 | 127 | Tempo indoor (compressé). (`TMP-6-HT_*`) | 2h13 | 127 |
+| SS-1 | Sweet Spot 3x12 | 1h15 | 71 | Identique — déjà conçue pour HT | 1h15 | 71 |
+| SS-2 | Sweet Spot 2x20 | 1h20 | 78 | Identique — déjà conçue pour HT | 1h20 | 78 |
+| SS-3 | Sweet Spot sur longue 3x20 | 2h23 | 140 | Sweet spot indoor (sans le volume endurance de la route). (`SS-3-HT_*`) | 2h09 | 140 |
+| SS-4 | Sweet Spot 4x10 | 1h20 | 77 | Identique — déjà conçue pour HT | 1h20 | 77 |
+| SS-5 | Sweet Spot 2x30 | 1h44 | 104 | Identique — déjà conçue pour HT | 1h44 | 104 |
+| SS-6 | Sweet Spot sur longue 4x25' | 2h32 | 164 | Sweet spot indoor à charge égale (sans le volume route). (`SS-6-HT_*`) | 2h31 | 164 |
+| SEU-1 | Seuil 2x15 | 1h10 | 70 | Identique — déjà conçue pour HT | 1h10 | 70 |
+| SEU-2 | Seuil progressif 3x(8-4-2) | 1h14 | 82 | Identique — déjà conçue pour HT | 1h14 | 82 |
+| SEU-3 | Seuil over-under 2x(4x2-2) | 1h01 | 68 | Identique — déjà conçue pour HT | 1h01 | 68 |
+| SEU-4 | Seuil 6x1 / 2x4 / 6x1 | 1h12 | 61 | Identique — déjà conçue pour HT | 1h12 | 61 |
+| SEU-5 | Seuil 3x10 | 1h09 | 69 | Identique — déjà conçue pour HT | 1h09 | 69 |
+| SEU-6 | Seuil 2x20 | 1h20 | 82 | Identique — déjà conçue pour HT | 1h20 | 82 |
+| SEU-7 | Seuil over-under 3x9 | 57 min | 59 | Identique — déjà conçue pour HT | 57 min | 59 |
+| VO2-1 | VO2 5x3' | 54 min | 53 | Identique — déjà conçue pour HT | 54 min | 53 |
+| VO2-2 | VO2 30-30 2x8 | 45 min | 38 | Identique — déjà conçue pour HT | 45 min | 38 |
+| VO2-3 | VO2 40-20 3x6 | 50 min | 47 | Identique — déjà conçue pour HT | 50 min | 47 |
+| VO2-4 | VO2 5x4' | 59 min | 62 | Identique — déjà conçue pour HT | 59 min | 62 |
+| VO2-5 | VO2 6x2' | 48 min | 46 | Identique — déjà conçue pour HT | 48 min | 46 |
+| VO2-6 | VO2 15-15 3x10 | 47 min | 39 | Identique — déjà conçue pour HT | 47 min | 39 |
+| VO2-7 | VO2 4x5' | 1h04 | 62 | Identique — déjà conçue pour HT | 1h04 | 62 |
+| ANA-1 | Anaérobie 5x1' | 49 min | 35 | Identique — déjà conçue pour HT | 49 min | 35 |
+| ANA-2 | Lactique 6x40" | 48 min | 35 | Identique — déjà conçue pour HT | 48 min | 35 |
+| ANA-3 | Attaques 4x(4x15") | 49 min | 39 | Identique — déjà conçue pour HT | 49 min | 39 |
+| FOR-1 | Force basse cadence 6x3' | 54 min | 44 | Identique — déjà conçue pour HT | 54 min | 44 |
+| FOR-2 | Force 7x2'30 | 53 min | 44 | Identique — déjà conçue pour HT | 53 min | 44 |
+| FOR-3 | Sprints force-vitesse 8x15" | 50 min | 32 | Identique — déjà conçue pour HT | 50 min | 32 |
+| FOR-4 | Force-endurance 4x8' | 1h02 | 50 | Identique — déjà conçue pour HT | 1h02 | 50 |
+| FOR-5 | Force max 10x30" | 48 min | 29 | Identique — déjà conçue pour HT | 48 min | 29 |
+| SPR-1 | Sprints départ arrêté 10x10" | 54 min | 32 | Identique — déjà conçue pour HT | 54 min | 32 |
+| SPR-2 | Sprints lancés 8x12" | 56 min | 33 | Identique — déjà conçue pour HT | 56 min | 33 |
+| SPR-3 | Tabata 2x8x(20-10) | 37 min | 35 | Identique — déjà conçue pour HT | 37 min | 35 |
+| SPE-1 | Simulation parcours vallonné | 1h14 | 79 | Identique — déjà conçue pour HT | 1h14 | 79 |
+| SPE-2 | Allure course + finish surge | 1h33 | 80 | Identique — déjà conçue pour HT | 1h33 | 80 |
+| RACE-LD | Allure course longue distance (IF 0.70) | 2h18 | 108 | Allure course longue distance continue. (`RACE-LD-HT_*`) | 2h08 | 108 |
+| RACE-HD | Allure course demi-distance (IF 0.78) | 1h18 | 72 | Identique — déjà conçue pour HT | 1h18 | 72 |
+| RACE-LD-4H | Allure course IM ~4h (IF 0.68) | 3h48 | 177 | Allure IM continue 70-74% FTP. (`RACE-LD-4H-HT_*`) | 3h30 | 177 |
+| RACE-LD-5H | Allure course IM ~5h (IF 0.68) | 4h38 | 210 | Allure IM continue 70-73% FTP. (`RACE-LD-5H-HT_*`) | 4h09 | 210 |
