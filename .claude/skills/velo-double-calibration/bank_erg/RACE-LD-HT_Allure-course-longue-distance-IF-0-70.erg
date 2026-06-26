@@ -1,0 +1,20 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = HT 1h18 : allure course longue distance continue (IF ~0.72). | Alternative HT de RACE-LD. Qualités : Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance). (FTP 228 W)
+FILE NAME = RACE-LD-HT Allure course longue distance (IF 0.70) (home-trainer)
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	166
+70.00	166
+70.00	137
+78.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Allure course LD 70-74% FTP · RPE 4 (HT continu) — nutrition	3600
+4200	Retour au calme — RPE 2	480
+[END COURSE TEXT]

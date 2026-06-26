@@ -139,6 +139,13 @@ Le **RPE** apparaît à l'écran : `<textevent>` (.zwo) et `[COURSE TEXT]` (.mrc
 > `.erg` que si un athlète a besoin de watts fixes ; il faut alors le régénérer à
 > sa FTP.
 
+**Alternative home-trainer :** chaque séance a une durée et un équivalent HT
+dans `references/alternatives-ht.md`. Les séances structurées sont déjà optimales
+en HT (jouées telles quelles) ; les séances longues/route ont une **alternative
+HT compressée** dédiée (fichiers `<CODE>-HT_*` dans les dossiers de banque). Si
+l'athlète n'a qu'un home-trainer, proposer la version `-HT` pour les séances
+« Route ».
+
 **(Re)générer / étendre la banque :**
 ```
 python3 scripts/generate_bank.py                 # .erg calculé pour FTP 228 W

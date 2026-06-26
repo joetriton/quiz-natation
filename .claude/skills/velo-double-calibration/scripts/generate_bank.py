@@ -392,6 +392,41 @@ add("RACE-HD", "Allure course demi-distance (IF 0.78)", "Spécifique course", "S
     WU + ss(3600, 0.79, cad=90, msg="Allure course HD 78-80% FTP · RPE 5-6 · IF 0.78") + CD)
 
 # --------------------------------------------------------------------------
+# Alternatives HOME-TRAINER (versions compressées des séances longues / route).
+# Principe : indoor = puissance continue (pas de roue libre) -> même stimulus en
+# ~55-70% du temps. Les séances déjà structurées (intervalles) sont optimales en
+# HT telles quelles : pas d'alternative dédiée (on joue la séance elle-même).
+# Clé = code ; valeur = (description, segments de l'alternative HT).
+# --------------------------------------------------------------------------
+HT_ALTS = {
+    "END-2": ("Endurance continue HT 40 min à 70-75% FTP (sans roue libre).",
+              WU + ss(2400, 0.72, cad=90, msg="Endurance 70-75% FTP · RPE 3-4 (HT continu)") + CD),
+    "END-4": ("HT compressé : endurance + 3x10' à l'allure de course.",
+              WU + ss(900, 0.72, cad=88, msg="Endurance 70% FTP · RPE 3-4")
+              + ints(3, 600, 0.80, 300, 0.68, cad=88, rpe_on="Allure course 78-82% FTP · RPE 5", rpe_off="Endurance 68% FTP · RPE 3") + CD),
+    "END-5": ("HT 1h15 : endurance continue avec 2 touches de tempo.",
+              WU + ss(1500, 0.72, cad=88, msg="Endurance 70-75% FTP · RPE 3-4") + ss(300, 0.78, msg="Touche tempo 78% · RPE 5")
+              + ss(1500, 0.72, cad=88, msg="Endurance 70-75% FTP · RPE 3-4") + ss(300, 0.78, msg="Touche tempo 78% · RPE 5") + CD),
+    "END-6": ("HT 1h : endurance progressive 68->80% FTP.",
+              WU + ss(900, 0.68, cad=88, msg="68% FTP · RPE 3") + ss(900, 0.74, cad=88, msg="74% FTP · RPE 4")
+              + ss(600, 0.80, cad=90, msg="80% FTP · RPE 5") + CD),
+    "END-7": ("HT 1h10 : fat-max continu 60-65% FTP, respiration nasale.",
+              WU + ss(3000, 0.63, cad=85, msg="Fat-max 60-65% FTP · RPE 3 — respiration nasale") + CD),
+    "END-9": ("HT 1h05 : negative split 68% puis 76% FTP.",
+              WU + ss(1500, 0.68, cad=88, msg="66-70% FTP · RPE 3") + ss(1500, 0.76, cad=90, msg="74-78% FTP · RPE 4-5 — finir fort") + CD),
+    "SS-3": ("HT 1h20 : sweet spot 3x15' (sans le volume endurance de la route).",
+             WU_INT + ints(3, 900, 0.90, 240, 0.55, cad=90, rpe_on="Sweet Spot 88-92% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD),
+    "RACE-LD": ("HT 1h18 : allure course longue distance continue (IF ~0.72).",
+                WU + ss(3600, 0.73, cad=88, msg="Allure course LD 70-74% FTP · RPE 4 (HT continu) — nutrition") + CD),
+}
+for _w in BANK:
+    if _w["code"] in HT_ALTS:
+        _w["support"] = "Route"
+        _w["ht_desc"], _w["ht"] = HT_ALTS[_w["code"]]
+    else:
+        _w["support"], _w["ht_desc"], _w["ht"] = "HT", "", None
+
+# --------------------------------------------------------------------------
 # Renderers
 # --------------------------------------------------------------------------
 def _attr(s):
@@ -486,15 +521,42 @@ def main():
            f"**{len(BANK)} séances.**\n",
            "| Code | Séance | Durée | Qualités développées | .zwo | .mrc | .erg |",
            "|------|--------|-------|----------------------|------|------|------|"]
+    def write_all(base, name, desc, segs):
+        open(os.path.join(dirs["zwo"], base + ".zwo"), "w", encoding="utf-8").write(render_zwo(name, desc, segs))
+        open(os.path.join(dirs["mrc"], base + ".mrc"), "w", encoding="utf-8").write(render_mrc(name, desc, segs))
+        open(os.path.join(dirs["erg"], base + ".erg"), "w", encoding="utf-8").write(render_erg(name, desc, segs, a.ftp))
+
     for w in BANK:
         full = f'{w["code"]} {w["name"]}'
         full_desc = f'{w["desc"]} | Qualités : {quality_str(w)}. Double calibration %FTP + RPE.'
         base = f'{w["code"]}_{slug(w["name"])}'
-        open(os.path.join(dirs["zwo"], base + ".zwo"), "w", encoding="utf-8").write(render_zwo(full, full_desc, w["segs"]))
-        open(os.path.join(dirs["mrc"], base + ".mrc"), "w", encoding="utf-8").write(render_mrc(full, full_desc, w["segs"]))
-        open(os.path.join(dirs["erg"], base + ".erg"), "w", encoding="utf-8").write(render_erg(full, full_desc, w["segs"], a.ftp))
+        write_all(base, full, full_desc, w["segs"])
         idx.append(f'| {w["code"]} | {w["name"]} | {dur_str(total_dur(w["segs"]))} | {quality_str(w)} | `{base}.zwo` | `{base}.mrc` | `{base}.erg` |')
+        if w["ht"]:
+            ht_name = f'{w["code"]}-HT {w["name"]} (home-trainer)'
+            ht_desc = f'{w["ht_desc"]} | Alternative HT de {w["code"]}. Qualités : {quality_str(w)}.'
+            ht_base = f'{w["code"]}-HT_{slug(w["name"])}'
+            write_all(ht_base, ht_name, ht_desc, w["ht"])
     open(os.path.join(dirs["zwo"], "INDEX.md"), "w", encoding="utf-8").write("\n".join(idx) + "\n")
+
+    # Document des alternatives home-trainer
+    nb_ht = sum(1 for w in BANK if w["ht"])
+    alt = [f"# Alternatives home-trainer ({len(BANK)} séances)\n",
+           "Durée de chaque séance + son équivalent **home-trainer**.\n",
+           "- **Support HT** : séance déjà structurée → à jouer telle quelle sur HT (durée identique).",
+           "- **Support Route** : séance longue/extérieure → une **alternative HT compressée** est",
+           "  fournie (puissance continue indoor = même stimulus en moins de temps). Fichiers",
+           "  jouables `<CODE>-HT_*` dans `bank_zwo/` `bank_mrc/` `bank_erg/`.\n",
+           f"> {nb_ht} alternatives HT dédiées générées. Le reste est déjà optimisé HT.\n",
+           "| Code | Séance | Durée | Support | Alternative home-trainer | Durée HT |",
+           "|------|--------|-------|---------|--------------------------|----------|"]
+    for w in BANK:
+        d = dur_str(total_dur(w["segs"]))
+        if w["ht"]:
+            alt.append(f'| {w["code"]} | {w["name"]} | {d} | Route | {w["ht_desc"]} (`{w["code"]}-HT_*`) | {dur_str(total_dur(w["ht"]))} |')
+        else:
+            alt.append(f'| {w["code"]} | {w["name"]} | {d} | HT | Identique — déjà conçue pour HT, jouer telle quelle | {d} |')
+    open(os.path.join(refs, "alternatives-ht.md"), "w", encoding="utf-8").write("\n".join(alt) + "\n")
 
     # Catalogue lisible groupé par filière
     cat = [f"# Catalogue des séances vélo ({len(BANK)} séances)\n",
