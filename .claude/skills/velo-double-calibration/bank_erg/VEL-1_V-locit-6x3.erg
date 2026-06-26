@@ -1,0 +1,53 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 6x3 min à 108-112 rpm, 70% FTP. Fluidité du coup de pédale. | Qualités : Vélocité & coordination neuromusculaire (cadence, fluidité) + Endurance aérobie fondamentale. Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = VEL-1 Vélocité 6x3'
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	160
+13.00	160
+13.00	125
+14.00	125
+14.00	160
+17.00	160
+17.00	125
+18.00	125
+18.00	160
+21.00	160
+21.00	125
+22.00	125
+22.00	160
+25.00	160
+25.00	125
+26.00	125
+26.00	160
+29.00	160
+29.00	125
+30.00	125
+30.00	160
+33.00	160
+33.00	125
+34.00	125
+34.00	137
+42.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	70% FTP · 108-112 rpm · RPE 4 — rond	180
+780	récup · RPE 2	60
+840	70% FTP · 108-112 rpm · RPE 4 — rond	180
+1020	récup · RPE 2	60
+1080	70% FTP · 108-112 rpm · RPE 4 — rond	180
+1260	récup · RPE 2	60
+1320	70% FTP · 108-112 rpm · RPE 4 — rond	180
+1500	récup · RPE 2	60
+1560	70% FTP · 108-112 rpm · RPE 4 — rond	180
+1740	récup · RPE 2	60
+1800	70% FTP · 108-112 rpm · RPE 4 — rond	180
+1980	récup · RPE 2	60
+2040	Retour au calme — RPE 2	480
+[END COURSE TEXT]

@@ -1,0 +1,89 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 8x(30s jambe droite / 30s gauche / 1' deux jambes). Coordination & déséquilibres. | Qualités : Vélocité & coordination neuromusculaire (cadence, fluidité) + Force spécifique / recrutement musculaire. Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = VEL-2 Jambe seule (single-leg)
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	125
+10.50	125
+10.50	125
+11.00	125
+11.00	148
+12.00	148
+12.00	125
+12.50	125
+12.50	125
+13.00	125
+13.00	148
+14.00	148
+14.00	125
+14.50	125
+14.50	125
+15.00	125
+15.00	148
+16.00	148
+16.00	125
+16.50	125
+16.50	125
+17.00	125
+17.00	148
+18.00	148
+18.00	125
+18.50	125
+18.50	125
+19.00	125
+19.00	148
+20.00	148
+20.00	125
+20.50	125
+20.50	125
+21.00	125
+21.00	148
+22.00	148
+22.00	125
+22.50	125
+22.50	125
+23.00	125
+23.00	148
+24.00	148
+24.00	125
+24.50	125
+24.50	125
+25.00	125
+25.00	148
+26.00	148
+26.00	137
+34.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Jambe DROITE seule · RPE 3 — gainage	30
+630	Jambe GAUCHE seule · RPE 3	30
+660	2 jambes · RPE 3	60
+720	Jambe DROITE seule · RPE 3 — gainage	30
+750	Jambe GAUCHE seule · RPE 3	30
+780	2 jambes · RPE 3	60
+840	Jambe DROITE seule · RPE 3 — gainage	30
+870	Jambe GAUCHE seule · RPE 3	30
+900	2 jambes · RPE 3	60
+960	Jambe DROITE seule · RPE 3 — gainage	30
+990	Jambe GAUCHE seule · RPE 3	30
+1020	2 jambes · RPE 3	60
+1080	Jambe DROITE seule · RPE 3 — gainage	30
+1110	Jambe GAUCHE seule · RPE 3	30
+1140	2 jambes · RPE 3	60
+1200	Jambe DROITE seule · RPE 3 — gainage	30
+1230	Jambe GAUCHE seule · RPE 3	30
+1260	2 jambes · RPE 3	60
+1320	Jambe DROITE seule · RPE 3 — gainage	30
+1350	Jambe GAUCHE seule · RPE 3	30
+1380	2 jambes · RPE 3	60
+1440	Jambe DROITE seule · RPE 3 — gainage	30
+1470	Jambe GAUCHE seule · RPE 3	30
+1500	2 jambes · RPE 3	60
+1560	Retour au calme — RPE 2	480
+[END COURSE TEXT]

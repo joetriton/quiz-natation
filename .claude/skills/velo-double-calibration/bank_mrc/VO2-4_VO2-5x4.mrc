@@ -1,0 +1,68 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = VO2max 5x4 min à 108-112% FTP, récup 3 min. Format long, soutenable. | Qualités : Consommation maximale d'oxygène (PMA / VO2max) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE.
+FILE NAME = VO2-4 VO2 5x4'
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	110.0
+20.50	110.0
+20.50	50.0
+23.50	50.0
+23.50	110.0
+27.50	110.0
+27.50	50.0
+30.50	50.0
+30.50	110.0
+34.50	110.0
+34.50	50.0
+37.50	50.0
+37.50	110.0
+41.50	110.0
+41.50	50.0
+44.50	50.0
+44.50	110.0
+48.50	110.0
+48.50	50.0
+51.50	50.0
+51.50	60.0
+59.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	VO2 108-112% FTP · RPE 8-9	240
+1230	récup · RPE 2	180
+1410	VO2 108-112% FTP · RPE 8-9	240
+1650	récup · RPE 2	180
+1830	VO2 108-112% FTP · RPE 8-9	240
+2070	récup · RPE 2	180
+2250	VO2 108-112% FTP · RPE 8-9	240
+2490	récup · RPE 2	180
+2670	VO2 108-112% FTP · RPE 8-9	240
+2910	récup · RPE 2	180
+3090	Retour au calme — RPE 2	480
+[END COURSE TEXT]

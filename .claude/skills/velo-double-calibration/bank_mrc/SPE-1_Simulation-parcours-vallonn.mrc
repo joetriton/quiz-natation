@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Profil 'accordéon' : 5x(côte 4'@97% + relance 1'@105% + retour allure 75%). Double calibration %FTP + RPE.
+DESCRIPTION = Profil accordéon : 5x(côte 4'@97% + relance 1'@105% + retour 75% FTP). | Qualités : Spécifique course (allure cible, gestion d'effort, nutrition) + Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.
 FILE NAME = SPE-1 Simulation parcours vallonné
 MINUTES PERCENT
 [END COURSE HEADER]
@@ -64,20 +64,20 @@ MINUTES PERCENT
 780	RPE 8 (activation)	30
 810	RPE 2	60
 870	Transition avant le corps — RPE 2	120
-990	Côte 1 — 4' @ 97% — RPE 7-8	240
-1230	Relance sommet 1 — 1' @ 105% — RPE 8	60
-1290	Retour allure course — RPE 5	300
-1590	Côte 2 — 4' @ 97% — RPE 7-8	240
-1830	Relance sommet 2 — 1' @ 105% — RPE 8	60
-1890	Retour allure course — RPE 5	300
-2190	Côte 3 — 4' @ 97% — RPE 7-8	240
-2430	Relance sommet 3 — 1' @ 105% — RPE 8	60
-2490	Retour allure course — RPE 5	300
-2790	Côte 4 — 4' @ 97% — RPE 7-8	240
-3030	Relance sommet 4 — 1' @ 105% — RPE 8	60
-3090	Retour allure course — RPE 5	300
-3390	Côte 5 — 4' @ 97% — RPE 7-8	240
-3630	Relance sommet 5 — 1' @ 105% — RPE 8	60
-3690	Retour allure course — RPE 5	300
+990	Côte 1 — 4' @ 97% FTP · RPE 7-8	240
+1230	Relance sommet 1 — 1' @ 105% FTP · RPE 8	60
+1290	Retour allure course 75% FTP · RPE 5	300
+1590	Côte 2 — 4' @ 97% FTP · RPE 7-8	240
+1830	Relance sommet 2 — 1' @ 105% FTP · RPE 8	60
+1890	Retour allure course 75% FTP · RPE 5	300
+2190	Côte 3 — 4' @ 97% FTP · RPE 7-8	240
+2430	Relance sommet 3 — 1' @ 105% FTP · RPE 8	60
+2490	Retour allure course 75% FTP · RPE 5	300
+2790	Côte 4 — 4' @ 97% FTP · RPE 7-8	240
+3030	Relance sommet 4 — 1' @ 105% FTP · RPE 8	60
+3090	Retour allure course 75% FTP · RPE 5	300
+3390	Côte 5 — 4' @ 97% FTP · RPE 7-8	240
+3630	Relance sommet 5 — 1' @ 105% FTP · RPE 8	60
+3690	Retour allure course 75% FTP · RPE 5	300
 3990	Retour au calme — RPE 2	480
 [END COURSE TEXT]

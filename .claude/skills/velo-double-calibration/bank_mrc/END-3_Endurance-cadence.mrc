@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Endurance + vélocité. Blocs à 100-105 rpm. Double calibration %FTP + RPE.
+DESCRIPTION = Endurance + vélocité. Blocs à 100-105 rpm. | Qualités : Endurance aérobie fondamentale + Vélocité & coordination neuromusculaire (cadence, fluidité). Double calibration %FTP + RPE.
 FILE NAME = END-3 Endurance + cadence
 MINUTES PERCENT
 [END COURSE HEADER]

@@ -1,0 +1,50 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Sweet Spot 2x30 min à 88-90% FTP. Gros volume sous-seuil. | Qualités : Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = SS-5 Sweet Spot 2x30
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	203
+46.50	203
+46.50	125
+56.50	125
+56.50	203
+86.50	203
+86.50	125
+96.50	125
+96.50	137
+104.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Sweet Spot 88-90% FTP · RPE 6-7	1800
+2790	récup · RPE 2	600
+3390	Sweet Spot 88-90% FTP · RPE 6-7	1800
+5190	récup · RPE 2	600
+5790	Retour au calme — RPE 2	480
+[END COURSE TEXT]

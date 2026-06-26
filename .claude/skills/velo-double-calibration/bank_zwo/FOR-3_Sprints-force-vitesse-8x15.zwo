@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workout_file>
   <author>Skill velo-double-calibration</author>
-  <name>FOR-3 Sprints force-vitesse 8x15s</name>
-  <description>8 sprints de 15s max, RPE 10, récup 3 min. Double calibration %FTP + RPE.</description>
+  <name>FOR-3 Sprints force-vitesse 8x15"</name>
+  <description>8 sprints de 15s max, récup 3 min. Force-vitesse. | Qualités : Puissance neuromusculaire / explosivité (sprint) + Force maximale (couple, basse cadence forte résistance). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
@@ -31,52 +31,52 @@
       <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="15" Power="1.6" Cadence="100">
-      <textevent timeoffset="0" message="SPRINT MAX — RPE 10"/>
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
     </SteadyState>
     <SteadyState Duration="180" Power="0.45">
-      <textevent timeoffset="0" message="Récup complète — RPE 2"/>
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

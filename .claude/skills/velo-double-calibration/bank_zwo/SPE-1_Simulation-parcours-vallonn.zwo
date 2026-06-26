@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>SPE-1 Simulation parcours vallonné</name>
-  <description>Profil 'accordéon' : 5x(côte 4'@97% + relance 1'@105% + retour allure 75%). Double calibration %FTP + RPE.</description>
+  <description>Profil accordéon : 5x(côte 4'@97% + relance 1'@105% + retour 75% FTP). | Qualités : Spécifique course (allure cible, gestion d'effort, nutrition) + Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
@@ -31,49 +31,49 @@
       <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="70">
-      <textevent timeoffset="0" message="Côte 1 — 4&apos; @ 97% — RPE 7-8"/>
+      <textevent timeoffset="0" message="Côte 1 — 4&apos; @ 97% FTP · RPE 7-8"/>
     </SteadyState>
     <SteadyState Duration="60" Power="1.05" Cadence="85">
-      <textevent timeoffset="0" message="Relance sommet 1 — 1&apos; @ 105% — RPE 8"/>
+      <textevent timeoffset="0" message="Relance sommet 1 — 1&apos; @ 105% FTP · RPE 8"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.75" Cadence="90">
-      <textevent timeoffset="0" message="Retour allure course — RPE 5"/>
+      <textevent timeoffset="0" message="Retour allure course 75% FTP · RPE 5"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="70">
-      <textevent timeoffset="0" message="Côte 2 — 4&apos; @ 97% — RPE 7-8"/>
+      <textevent timeoffset="0" message="Côte 2 — 4&apos; @ 97% FTP · RPE 7-8"/>
     </SteadyState>
     <SteadyState Duration="60" Power="1.05" Cadence="85">
-      <textevent timeoffset="0" message="Relance sommet 2 — 1&apos; @ 105% — RPE 8"/>
+      <textevent timeoffset="0" message="Relance sommet 2 — 1&apos; @ 105% FTP · RPE 8"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.75" Cadence="90">
-      <textevent timeoffset="0" message="Retour allure course — RPE 5"/>
+      <textevent timeoffset="0" message="Retour allure course 75% FTP · RPE 5"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="70">
-      <textevent timeoffset="0" message="Côte 3 — 4&apos; @ 97% — RPE 7-8"/>
+      <textevent timeoffset="0" message="Côte 3 — 4&apos; @ 97% FTP · RPE 7-8"/>
     </SteadyState>
     <SteadyState Duration="60" Power="1.05" Cadence="85">
-      <textevent timeoffset="0" message="Relance sommet 3 — 1&apos; @ 105% — RPE 8"/>
+      <textevent timeoffset="0" message="Relance sommet 3 — 1&apos; @ 105% FTP · RPE 8"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.75" Cadence="90">
-      <textevent timeoffset="0" message="Retour allure course — RPE 5"/>
+      <textevent timeoffset="0" message="Retour allure course 75% FTP · RPE 5"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="70">
-      <textevent timeoffset="0" message="Côte 4 — 4&apos; @ 97% — RPE 7-8"/>
+      <textevent timeoffset="0" message="Côte 4 — 4&apos; @ 97% FTP · RPE 7-8"/>
     </SteadyState>
     <SteadyState Duration="60" Power="1.05" Cadence="85">
-      <textevent timeoffset="0" message="Relance sommet 4 — 1&apos; @ 105% — RPE 8"/>
+      <textevent timeoffset="0" message="Relance sommet 4 — 1&apos; @ 105% FTP · RPE 8"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.75" Cadence="90">
-      <textevent timeoffset="0" message="Retour allure course — RPE 5"/>
+      <textevent timeoffset="0" message="Retour allure course 75% FTP · RPE 5"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="70">
-      <textevent timeoffset="0" message="Côte 5 — 4&apos; @ 97% — RPE 7-8"/>
+      <textevent timeoffset="0" message="Côte 5 — 4&apos; @ 97% FTP · RPE 7-8"/>
     </SteadyState>
     <SteadyState Duration="60" Power="1.05" Cadence="85">
-      <textevent timeoffset="0" message="Relance sommet 5 — 1&apos; @ 105% — RPE 8"/>
+      <textevent timeoffset="0" message="Relance sommet 5 — 1&apos; @ 105% FTP · RPE 8"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.75" Cadence="90">
-      <textevent timeoffset="0" message="Retour allure course — RPE 5"/>
+      <textevent timeoffset="0" message="Retour allure course 75% FTP · RPE 5"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

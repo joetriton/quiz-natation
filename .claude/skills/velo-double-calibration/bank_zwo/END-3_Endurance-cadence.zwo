@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>END-3 Endurance + cadence</name>
-  <description>Endurance + vélocité. Blocs à 100-105 rpm. Double calibration %FTP + RPE.</description>
+  <description>Endurance + vélocité. Blocs à 100-105 rpm. | Qualités : Endurance aérobie fondamentale + Vélocité &amp; coordination neuromusculaire (cadence, fluidité). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>

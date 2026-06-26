@@ -1,0 +1,74 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 6x40s à ~130% FTP, récup 3 min. Production/tolérance lactique. | Qualités : Capacité anaérobie (production lactique) + Tolérance lactique / capacité à répéter l'effort. Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = ANA-2 Lactique 6x40"
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	296
+17.17	296
+17.17	114
+20.50	114
+20.50	296
+21.17	296
+21.17	114
+24.50	114
+24.50	296
+25.17	296
+25.17	114
+28.50	114
+28.50	296
+29.17	296
+29.17	114
+32.50	114
+32.50	296
+33.17	296
+33.17	114
+36.50	114
+36.50	296
+37.17	296
+37.17	114
+40.50	114
+40.50	137
+48.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Lactique ~130% FTP · RPE 9-10	40
+1030	récup · RPE 2	200
+1230	Lactique ~130% FTP · RPE 9-10	40
+1270	récup · RPE 2	200
+1470	Lactique ~130% FTP · RPE 9-10	40
+1510	récup · RPE 2	200
+1710	Lactique ~130% FTP · RPE 9-10	40
+1750	récup · RPE 2	200
+1950	Lactique ~130% FTP · RPE 9-10	40
+1990	récup · RPE 2	200
+2190	Lactique ~130% FTP · RPE 9-10	40
+2230	récup · RPE 2	200
+2430	Retour au calme — RPE 2	480
+[END COURSE TEXT]

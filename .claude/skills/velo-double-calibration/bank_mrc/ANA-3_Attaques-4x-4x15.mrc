@@ -1,0 +1,143 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 4 séries de 4x15s à ~150% FTP. Répétition d'attaques. | Qualités : Capacité anaérobie (production lactique) + Puissance neuromusculaire / explosivité (sprint). Double calibration %FTP + RPE.
+FILE NAME = ANA-3 Attaques 4x(4x15")
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	150.0
+16.75	150.0
+16.75	50.0
+17.50	50.0
+17.50	150.0
+17.75	150.0
+17.75	50.0
+18.50	50.0
+18.50	150.0
+18.75	150.0
+18.75	50.0
+19.50	50.0
+19.50	150.0
+19.75	150.0
+19.75	50.0
+20.50	50.0
+20.50	50.0
+23.50	50.0
+23.50	150.0
+23.75	150.0
+23.75	50.0
+24.50	50.0
+24.50	150.0
+24.75	150.0
+24.75	50.0
+25.50	50.0
+25.50	150.0
+25.75	150.0
+25.75	50.0
+26.50	50.0
+26.50	150.0
+26.75	150.0
+26.75	50.0
+27.50	50.0
+27.50	50.0
+30.50	50.0
+30.50	150.0
+30.75	150.0
+30.75	50.0
+31.50	50.0
+31.50	150.0
+31.75	150.0
+31.75	50.0
+32.50	50.0
+32.50	150.0
+32.75	150.0
+32.75	50.0
+33.50	50.0
+33.50	150.0
+33.75	150.0
+33.75	50.0
+34.50	50.0
+34.50	50.0
+37.50	50.0
+37.50	150.0
+37.75	150.0
+37.75	50.0
+38.50	50.0
+38.50	150.0
+38.75	150.0
+38.75	50.0
+39.50	50.0
+39.50	150.0
+39.75	150.0
+39.75	50.0
+40.50	50.0
+40.50	150.0
+40.75	150.0
+40.75	50.0
+41.50	50.0
+41.50	60.0
+49.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Attaque 15s ~150% FTP · RPE 10	15
+1005	récup 45s · RPE 2	45
+1050	Attaque 15s ~150% FTP · RPE 10	15
+1065	récup 45s · RPE 2	45
+1110	Attaque 15s ~150% FTP · RPE 10	15
+1125	récup 45s · RPE 2	45
+1170	Attaque 15s ~150% FTP · RPE 10	15
+1185	récup 45s · RPE 2	45
+1230	récup série · RPE 2	180
+1410	Attaque 15s ~150% FTP · RPE 10	15
+1425	récup 45s · RPE 2	45
+1470	Attaque 15s ~150% FTP · RPE 10	15
+1485	récup 45s · RPE 2	45
+1530	Attaque 15s ~150% FTP · RPE 10	15
+1545	récup 45s · RPE 2	45
+1590	Attaque 15s ~150% FTP · RPE 10	15
+1605	récup 45s · RPE 2	45
+1650	récup série · RPE 2	180
+1830	Attaque 15s ~150% FTP · RPE 10	15
+1845	récup 45s · RPE 2	45
+1890	Attaque 15s ~150% FTP · RPE 10	15
+1905	récup 45s · RPE 2	45
+1950	Attaque 15s ~150% FTP · RPE 10	15
+1965	récup 45s · RPE 2	45
+2010	Attaque 15s ~150% FTP · RPE 10	15
+2025	récup 45s · RPE 2	45
+2070	récup série · RPE 2	180
+2250	Attaque 15s ~150% FTP · RPE 10	15
+2265	récup 45s · RPE 2	45
+2310	Attaque 15s ~150% FTP · RPE 10	15
+2325	récup 45s · RPE 2	45
+2370	Attaque 15s ~150% FTP · RPE 10	15
+2385	récup 45s · RPE 2	45
+2430	Attaque 15s ~150% FTP · RPE 10	15
+2445	récup 45s · RPE 2	45
+2490	Retour au calme — RPE 2	480
+[END COURSE TEXT]

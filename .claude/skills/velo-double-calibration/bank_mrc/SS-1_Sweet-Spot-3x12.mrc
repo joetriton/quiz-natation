@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Sweet Spot 3x12 min à 88-92% FTP, RPE 6-7. Double calibration %FTP + RPE.
+DESCRIPTION = Sweet Spot 3x12 min à 88-92% FTP, RPE 6-7. | Qualités : Charge aérobie optimisée (sweet spot). Double calibration %FTP + RPE.
 FILE NAME = SS-1 Sweet Spot 3x12
 MINUTES PERCENT
 [END COURSE HEADER]

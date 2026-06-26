@@ -1,8 +1,8 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie / durabilité. Double calibration %FTP + RPE.
-FILE NAME = END-2 Endurance fond
+DESCRIPTION = Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie. | Qualités : Endurance aérobie fondamentale + Métabolisme lipidique (fat-max, oxydation des graisses). Double calibration %FTP + RPE.
+FILE NAME = END-2 Endurance fond 70'
 MINUTES PERCENT
 [END COURSE HEADER]
 [COURSE DATA]

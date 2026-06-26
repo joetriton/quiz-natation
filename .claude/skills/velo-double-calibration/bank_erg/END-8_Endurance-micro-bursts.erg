@@ -1,0 +1,65 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Endurance avec micro-sprints de 6s toutes les 3 min. Recrutement sans fatigue. | Qualités : Endurance aérobie fondamentale + Puissance neuromusculaire / explosivité (sprint). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = END-8 Endurance + micro-bursts
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	160
+12.90	160
+12.90	342
+13.00	342
+13.00	160
+15.90	160
+15.90	342
+16.00	342
+16.00	160
+18.90	160
+18.90	342
+19.00	342
+19.00	160
+21.90	160
+21.90	342
+22.00	342
+22.00	160
+24.90	160
+24.90	342
+25.00	342
+25.00	160
+27.90	160
+27.90	342
+28.00	342
+28.00	160
+30.90	160
+30.90	342
+31.00	342
+31.00	160
+33.90	160
+33.90	342
+34.00	342
+34.00	137
+42.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Endurance 70% FTP · RPE 3-4	174
+774	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+780	Endurance 70% FTP · RPE 3-4	174
+954	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+960	Endurance 70% FTP · RPE 3-4	174
+1134	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+1140	Endurance 70% FTP · RPE 3-4	174
+1314	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+1320	Endurance 70% FTP · RPE 3-4	174
+1494	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+1500	Endurance 70% FTP · RPE 3-4	174
+1674	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+1680	Endurance 70% FTP · RPE 3-4	174
+1854	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+1860	Endurance 70% FTP · RPE 3-4	174
+2034	Micro-burst 6s ~150% FTP · RPE 9 — rester assis	6
+2040	Retour au calme — RPE 2	480
+[END COURSE TEXT]

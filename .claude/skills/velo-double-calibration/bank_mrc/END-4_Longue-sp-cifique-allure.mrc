@@ -1,31 +1,31 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Sortie longue avec blocs à l'allure de course. Durabilité / tenue d'allure. Double calibration %FTP + RPE. (FTP 228 W)
-FILE NAME = END-4 Longue spécifique allure course
-MINUTES WATTS
+DESCRIPTION = Sortie longue avec blocs à l'allure de course. Durabilité. | Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition). Double calibration %FTP + RPE.
+FILE NAME = END-4 Longue spécifique allure
+MINUTES PERCENT
 [END COURSE HEADER]
 [COURSE DATA]
-0.00	114
-10.00	164
-10.00	160
-40.00	160
-40.00	182
-60.00	182
-60.00	155
-70.00	155
-70.00	182
-90.00	182
-90.00	155
-100.00	155
-100.00	182
-120.00	182
-120.00	155
-130.00	155
-130.00	160
-160.00	160
-160.00	137
-168.00	103
+0.00	50.0
+10.00	72.0
+10.00	70.0
+40.00	70.0
+40.00	80.0
+60.00	80.0
+60.00	68.0
+70.00	68.0
+70.00	80.0
+90.00	80.0
+90.00	68.0
+100.00	68.0
+100.00	80.0
+120.00	80.0
+120.00	68.0
+130.00	68.0
+130.00	70.0
+160.00	70.0
+160.00	60.0
+168.00	45.0
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	600

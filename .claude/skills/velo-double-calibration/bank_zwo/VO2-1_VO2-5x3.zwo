@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>VO2-1 VO2 5x3'</name>
-  <description>VO2max 5x3 min à 110-118% FTP, RPE 8-9, récup 3 min. Double calibration %FTP + RPE.</description>
+  <description>VO2max 5x3 min à 110-118% FTP, RPE 8-9, récup 3 min. | Qualités : Consommation maximale d'oxygène (PMA / VO2max). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>

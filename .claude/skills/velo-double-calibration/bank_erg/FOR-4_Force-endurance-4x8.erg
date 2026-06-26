@@ -1,0 +1,41 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 4x8 min à 78-82% FTP en 55 rpm. Force tenue dans la durée. | Qualités : Force-endurance (force tenue dans la durée) + Endurance soutenue sous-seuil (capacité aérobie / tempo). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = FOR-4 Force-endurance 4x8'
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	182
+18.00	182
+18.00	125
+21.00	125
+21.00	182
+29.00	182
+29.00	125
+32.00	125
+32.00	182
+40.00	182
+40.00	125
+43.00	125
+43.00	182
+51.00	182
+51.00	125
+54.00	125
+54.00	137
+62.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7	480
+1080	Récup 90 rpm · RPE 2	180
+1260	Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7	480
+1740	Récup 90 rpm · RPE 2	180
+1920	Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7	480
+2400	Récup 90 rpm · RPE 2	180
+2580	Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7	480
+3060	Récup 90 rpm · RPE 2	180
+3240	Retour au calme — RPE 2	480
+[END COURSE TEXT]

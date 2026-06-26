@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>SEU-1 Seuil 2x15</name>
-  <description>Seuil 2x15 min à 95-100% FTP, RPE 7-8. Double calibration %FTP + RPE.</description>
+  <description>Seuil 2x15 min à 95-100% FTP, RPE 7-8. | Qualités : Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>

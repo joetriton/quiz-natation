@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>RACE-LD Allure course longue distance (IF 0.70)</name>
-  <description>Tenue d'allure longue distance : 2h continu à 68-72% FTP, RPE 3-4. Partie vélo d'un brick. Double calibration %FTP + RPE.</description>
+  <description>2h continu à 68-72% FTP, RPE 3-4. Partie vélo d'un brick longue distance. | Qualités : Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
@@ -10,7 +10,7 @@
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
     <SteadyState Duration="7200" Power="0.7" Cadence="88">
-      <textevent timeoffset="0" message="Allure course LD — RPE 3-4 — IF 0.70 — boire/manger"/>
+      <textevent timeoffset="0" message="Allure course LD 68-72% FTP · RPE 3-4 · IF 0.70 — boire/manger"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

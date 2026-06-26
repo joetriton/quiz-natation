@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Récupération active. 50-60% FTP, RPE 2. Double calibration %FTP + RPE. (FTP 228 W)
+DESCRIPTION = Récupération active. 50-60% FTP, RPE 2. | Qualités : Récupération / régénération + Endurance aérobie fondamentale. Double calibration %FTP + RPE. (FTP 228 W)
 FILE NAME = END-1 Récup active
 MINUTES WATTS
 [END COURSE HEADER]
@@ -15,6 +15,6 @@ MINUTES WATTS
 [END COURSE DATA]
 [COURSE TEXT]
 0	Échauffement progressif — RPE 2->4	300
-300	Récup active — RPE 2 — je peux chanter	2100
+300	Récup active 50-60% FTP · RPE 2 — je peux chanter	2100
 2400	Retour au calme — RPE 2	300
 [END COURSE TEXT]

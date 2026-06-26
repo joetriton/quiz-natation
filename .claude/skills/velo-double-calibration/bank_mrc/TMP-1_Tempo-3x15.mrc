@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Tempo 3x15 min à 80-85% FTP, RPE 5-6. Double calibration %FTP + RPE.
+DESCRIPTION = Tempo 3x15 min à 80-85% FTP, RPE 5-6. | Qualités : Endurance soutenue sous-seuil (capacité aérobie / tempo). Double calibration %FTP + RPE.
 FILE NAME = TMP-1 Tempo 3x15
 MINUTES PERCENT
 [END COURSE HEADER]

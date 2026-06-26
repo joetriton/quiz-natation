@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = VO2max 5x3 min à 110-118% FTP, RPE 8-9, récup 3 min. Double calibration %FTP + RPE.
+DESCRIPTION = VO2max 5x3 min à 110-118% FTP, RPE 8-9, récup 3 min. | Qualités : Consommation maximale d'oxygène (PMA / VO2max). Double calibration %FTP + RPE.
 FILE NAME = VO2-1 VO2 5x3'
 MINUTES PERCENT
 [END COURSE HEADER]

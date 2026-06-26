@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>REC-1 Spin facile 30'</name>
+  <description>Récupération pure 30 min, &lt; 50% FTP, cadence souple. | Qualités : Récupération / régénération + Vélocité &amp; coordination neuromusculaire (cadence, fluidité). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="300" PowerLow="0.4" PowerHigh="0.5">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="1500" Power="0.5" Cadence="95">
+      <textevent timeoffset="0" message="Spin facile &lt;50% FTP · RPE 1-2"/>
+    </SteadyState>
+    <Cooldown Duration="300" PowerLow="0.5" PowerHigh="0.4">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

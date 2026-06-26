@@ -1,0 +1,98 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 3 blocs de 9 min en 2'under/1'over (90%/105% FTP). Relances au seuil. | Qualités : Puissance au seuil (FTP / seuil lactique) + Tolérance lactique / capacité à répéter l'effort. Double calibration %FTP + RPE.
+FILE NAME = SEU-7 Seuil over-under 3x9
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	90.0
+18.50	90.0
+18.50	105.0
+19.50	105.0
+19.50	90.0
+21.50	90.0
+21.50	105.0
+22.50	105.0
+22.50	90.0
+24.50	90.0
+24.50	105.0
+25.50	105.0
+25.50	52.0
+28.50	52.0
+28.50	90.0
+30.50	90.0
+30.50	105.0
+31.50	105.0
+31.50	90.0
+33.50	90.0
+33.50	105.0
+34.50	105.0
+34.50	90.0
+36.50	90.0
+36.50	105.0
+37.50	105.0
+37.50	52.0
+40.50	52.0
+40.50	90.0
+42.50	90.0
+42.50	105.0
+43.50	105.0
+43.50	90.0
+45.50	90.0
+45.50	105.0
+46.50	105.0
+46.50	90.0
+48.50	90.0
+48.50	105.0
+49.50	105.0
+49.50	60.0
+57.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	under 90% FTP · RPE 6	120
+1110	over 105% FTP · RPE 8	60
+1170	under 90% FTP · RPE 6	120
+1290	over 105% FTP · RPE 8	60
+1350	under 90% FTP · RPE 6	120
+1470	over 105% FTP · RPE 8	60
+1530	récup · RPE 2	180
+1710	under 90% FTP · RPE 6	120
+1830	over 105% FTP · RPE 8	60
+1890	under 90% FTP · RPE 6	120
+2010	over 105% FTP · RPE 8	60
+2070	under 90% FTP · RPE 6	120
+2190	over 105% FTP · RPE 8	60
+2250	récup · RPE 2	180
+2430	under 90% FTP · RPE 6	120
+2550	over 105% FTP · RPE 8	60
+2610	under 90% FTP · RPE 6	120
+2730	over 105% FTP · RPE 8	60
+2790	under 90% FTP · RPE 6	120
+2910	over 105% FTP · RPE 8	60
+2970	Retour au calme — RPE 2	480
+[END COURSE TEXT]

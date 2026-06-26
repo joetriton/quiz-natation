@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Seuil 2x15 min à 95-100% FTP, RPE 7-8. Double calibration %FTP + RPE. (FTP 228 W)
+DESCRIPTION = Seuil 2x15 min à 95-100% FTP, RPE 7-8. | Qualités : Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE. (FTP 228 W)
 FILE NAME = SEU-1 Seuil 2x15
 MINUTES WATTS
 [END COURSE HEADER]

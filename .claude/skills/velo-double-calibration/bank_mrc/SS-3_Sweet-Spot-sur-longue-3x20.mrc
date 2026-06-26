@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Sur sortie longue : 3x20 min à 88-90% FTP, RPE 6. Double calibration %FTP + RPE.
+DESCRIPTION = Sur sortie longue : 3x20 min à 88-90% FTP, RPE 6. | Qualités : Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE.
 FILE NAME = SS-3 Sweet Spot sur longue 3x20
 MINUTES PERCENT
 [END COURSE HEADER]

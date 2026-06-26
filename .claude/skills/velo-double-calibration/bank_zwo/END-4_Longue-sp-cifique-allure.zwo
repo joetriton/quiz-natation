@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workout_file>
   <author>Skill velo-double-calibration</author>
-  <name>END-4 Longue spécifique allure course</name>
-  <description>Sortie longue avec blocs à l'allure de course. Durabilité / tenue d'allure. Double calibration %FTP + RPE.</description>
+  <name>END-4 Longue spécifique allure</name>
+  <description>Sortie longue avec blocs à l'allure de course. Durabilité. | Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>

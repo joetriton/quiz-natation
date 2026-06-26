@@ -1,0 +1,62 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = VO2max 4x5 min à 106-110% FTP, récup 5 min. Tenue longue à PMA. | Qualités : Consommation maximale d'oxygène (PMA / VO2max) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = VO2-7 VO2 4x5'
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	246
+21.50	246
+21.50	114
+26.50	114
+26.50	246
+31.50	246
+31.50	114
+36.50	114
+36.50	246
+41.50	246
+41.50	114
+46.50	114
+46.50	246
+51.50	246
+51.50	114
+56.50	114
+56.50	137
+64.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	VO2 106-110% FTP · RPE 8-9	300
+1290	récup · RPE 2	300
+1590	VO2 106-110% FTP · RPE 8-9	300
+1890	récup · RPE 2	300
+2190	VO2 106-110% FTP · RPE 8-9	300
+2490	récup · RPE 2	300
+2790	VO2 106-110% FTP · RPE 8-9	300
+3090	récup · RPE 2	300
+3390	Retour au calme — RPE 2	480
+[END COURSE TEXT]

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>VEL-2 Jambe seule (single-leg)</name>
+  <description>8x(30s jambe droite / 30s gauche / 1' deux jambes). Coordination &amp; déséquilibres. | Qualités : Vélocité &amp; coordination neuromusculaire (cadence, fluidité) + Force spécifique / recrutement musculaire. Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe DROITE seule · RPE 3 — gainage"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="0.55" Cadence="80">
+      <textevent timeoffset="0" message="Jambe GAUCHE seule · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.65" Cadence="95">
+      <textevent timeoffset="0" message="2 jambes · RPE 3"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

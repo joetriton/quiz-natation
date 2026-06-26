@@ -86,8 +86,11 @@ cadence par défaut 85–95 rpm (force 50–60, vélocité 100+). Nom court faç
 Quand on demande une « banque », un « catalogue » ou « des séances pour la prépa » :
 
 1. Charger le profil athlète (FTP, course, points faibles).
-2. Partir de `references/banque-seances.md` (catalogue maître en %FTP + RPE,
-   classé par filière). **Personnaliser** : convertir en watts pour l'athlète,
+2. Partir de `references/catalogue-seances.md` (**53 séances** classées par
+   filière, chacune avec sa/ses **qualité(s) développée(s)** et sa durée ;
+   taxonomie dans `references/qualites.md`, guide dans `references/banque-seances.md`).
+   Sélectionner selon les **qualités à travailler** (points faibles de l'athlète
+   + phase + spécificité course). **Personnaliser** : convertir en watts,
    ajuster les volumes au niveau et au temps dispo, prioriser les filières selon
    les points faibles et la spécificité de la course (voir `references/bayman.md`
    pour le Bayman : **distance complète vallonnée** → accent endurance longue +

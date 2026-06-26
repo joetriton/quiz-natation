@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>SEU-2 Seuil progressif 3x(8-4-2)</name>
-  <description>Seuil progressif : 3 blocs 8'@92% / 4'@97% / 2'@103%, RPE 7-&gt;8, récup 4 min. Double calibration %FTP + RPE.</description>
+  <description>3 blocs 8'@92% / 4'@97% / 2'@103% FTP, RPE 7-&gt;8, récup 4 min. | Qualités : Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
@@ -31,37 +31,37 @@
       <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
     </SteadyState>
     <SteadyState Duration="480" Power="0.92" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 1 — 8&apos; @ 92% — RPE 7"/>
+      <textevent timeoffset="0" message="Bloc 1 — 8&apos; @ 92% FTP · RPE 7"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 1 — 4&apos; @ 97% — RPE 7,5"/>
+      <textevent timeoffset="0" message="Bloc 1 — 4&apos; @ 97% FTP · RPE 7,5"/>
     </SteadyState>
     <SteadyState Duration="120" Power="1.03" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 1 — 2&apos; @ 103% — RPE 8"/>
+      <textevent timeoffset="0" message="Bloc 1 — 2&apos; @ 103% FTP · RPE 8"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.52">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="480" Power="0.92" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 2 — 8&apos; @ 92% — RPE 7"/>
+      <textevent timeoffset="0" message="Bloc 2 — 8&apos; @ 92% FTP · RPE 7"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 2 — 4&apos; @ 97% — RPE 7,5"/>
+      <textevent timeoffset="0" message="Bloc 2 — 4&apos; @ 97% FTP · RPE 7,5"/>
     </SteadyState>
     <SteadyState Duration="120" Power="1.03" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 2 — 2&apos; @ 103% — RPE 8"/>
+      <textevent timeoffset="0" message="Bloc 2 — 2&apos; @ 103% FTP · RPE 8"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.52">
-      <textevent timeoffset="0" message="Récup — RPE 2"/>
+      <textevent timeoffset="0" message="Récup · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="480" Power="0.92" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 3 — 8&apos; @ 92% — RPE 7"/>
+      <textevent timeoffset="0" message="Bloc 3 — 8&apos; @ 92% FTP · RPE 7"/>
     </SteadyState>
     <SteadyState Duration="240" Power="0.97" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 3 — 4&apos; @ 97% — RPE 7,5"/>
+      <textevent timeoffset="0" message="Bloc 3 — 4&apos; @ 97% FTP · RPE 7,5"/>
     </SteadyState>
     <SteadyState Duration="120" Power="1.03" Cadence="90">
-      <textevent timeoffset="0" message="Bloc 3 — 2&apos; @ 103% — RPE 8"/>
+      <textevent timeoffset="0" message="Bloc 3 — 2&apos; @ 103% FTP · RPE 8"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

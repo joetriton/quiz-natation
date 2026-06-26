@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Seuil mixte court-long-court, RPE 7-8. Double calibration %FTP + RPE.
+DESCRIPTION = Format mixte court-long-court à 97-100% FTP, RPE 7-8. | Qualités : Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.
 FILE NAME = SEU-4 Seuil 6x1 / 2x4 / 6x1
 MINUTES PERCENT
 [END COURSE HEADER]
@@ -94,35 +94,35 @@ MINUTES PERCENT
 780	RPE 8 (activation)	30
 810	RPE 2	60
 870	Transition avant le corps — RPE 2	120
-990	1' @ 100% — RPE 7-8	60
+990	1' @ 100% FTP · RPE 7-8	60
 1050	RPE 2	60
-1110	1' @ 100% — RPE 7-8	60
+1110	1' @ 100% FTP · RPE 7-8	60
 1170	RPE 2	60
-1230	1' @ 100% — RPE 7-8	60
+1230	1' @ 100% FTP · RPE 7-8	60
 1290	RPE 2	60
-1350	1' @ 100% — RPE 7-8	60
+1350	1' @ 100% FTP · RPE 7-8	60
 1410	RPE 2	60
-1470	1' @ 100% — RPE 7-8	60
+1470	1' @ 100% FTP · RPE 7-8	60
 1530	RPE 2	60
-1590	1' @ 100% — RPE 7-8	60
+1590	1' @ 100% FTP · RPE 7-8	60
 1650	RPE 2	60
-1710	Récup bloc — RPE 2	300
-2010	4' @ 97% — RPE 7-8	240
+1710	Récup bloc · RPE 2	300
+2010	4' @ 97% FTP · RPE 7-8	240
 2250	RPE 2	180
-2430	4' @ 97% — RPE 7-8	240
+2430	4' @ 97% FTP · RPE 7-8	240
 2670	RPE 2	180
-2850	Récup bloc — RPE 2	300
-3150	1' @ 100% — RPE 7-8	60
+2850	Récup bloc · RPE 2	300
+3150	1' @ 100% FTP · RPE 7-8	60
 3210	RPE 2	60
-3270	1' @ 100% — RPE 7-8	60
+3270	1' @ 100% FTP · RPE 7-8	60
 3330	RPE 2	60
-3390	1' @ 100% — RPE 7-8	60
+3390	1' @ 100% FTP · RPE 7-8	60
 3450	RPE 2	60
-3510	1' @ 100% — RPE 7-8	60
+3510	1' @ 100% FTP · RPE 7-8	60
 3570	RPE 2	60
-3630	1' @ 100% — RPE 7-8	60
+3630	1' @ 100% FTP · RPE 7-8	60
 3690	RPE 2	60
-3750	1' @ 100% — RPE 7-8	60
+3750	1' @ 100% FTP · RPE 7-8	60
 3810	RPE 2	60
 3870	Retour au calme — RPE 2	480
 [END COURSE TEXT]

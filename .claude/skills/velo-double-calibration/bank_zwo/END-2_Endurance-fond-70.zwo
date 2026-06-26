@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workout_file>
   <author>Skill velo-double-calibration</author>
-  <name>END-2 Endurance fond</name>
-  <description>Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie / durabilité. Double calibration %FTP + RPE.</description>
+  <name>END-2 Endurance fond 70'</name>
+  <description>Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie. | Qualités : Endurance aérobie fondamentale + Métabolisme lipidique (fat-max, oxydation des graisses). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>

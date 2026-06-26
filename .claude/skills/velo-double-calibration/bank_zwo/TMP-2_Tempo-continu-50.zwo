@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>TMP-2 Tempo continu 50'</name>
-  <description>Tempo continu 50 min à 78-83% FTP, RPE 5. Double calibration %FTP + RPE.</description>
+  <description>Tempo continu 50 min à 78-83% FTP, RPE 5. | Qualités : Endurance soutenue sous-seuil (capacité aérobie / tempo) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
@@ -10,7 +10,7 @@
       <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
     <SteadyState Duration="3000" Power="0.8" Cadence="90">
-      <textevent timeoffset="0" message="Tempo continu 78-83% FTP · RPE 5 — rester régulier"/>
+      <textevent timeoffset="0" message="Tempo continu 78-83% FTP · RPE 5 — régulier"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>

@@ -1,7 +1,7 @@
 [COURSE HEADER]
 VERSION = 2
 UNITS = ENGLISH
-DESCRIPTION = Force 7x2'30 à 90-95% FTP en 55 rpm. RPE jambes 8. Double calibration %FTP + RPE.
+DESCRIPTION = 7x2'30 à 90-95% FTP en 55 rpm. Recrutement musculaire. | Qualités : Force spécifique / recrutement musculaire. Double calibration %FTP + RPE.
 FILE NAME = FOR-2 Force 7x2'30
 MINUTES PERCENT
 [END COURSE HEADER]

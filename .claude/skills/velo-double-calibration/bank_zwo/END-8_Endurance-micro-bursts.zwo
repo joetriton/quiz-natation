@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-8 Endurance + micro-bursts</name>
+  <description>Endurance avec micro-sprints de 6s toutes les 3 min. Recrutement sans fatigue. | Qualités : Endurance aérobie fondamentale + Puissance neuromusculaire / explosivité (sprint). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <SteadyState Duration="174" Power="0.7" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="6" Power="1.5" Cadence="100">
+      <textevent timeoffset="0" message="Micro-burst 6s ~150% FTP · RPE 9 — rester assis"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

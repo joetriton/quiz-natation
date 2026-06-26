@@ -2,7 +2,7 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>VO2-2 VO2 30-30 2x8</name>
-  <description>30/30 : 2 séries de 8x(30s@115% / 30s@50%), RPE 9/2. Double calibration %FTP + RPE.</description>
+  <description>30/30 : 2 séries de 8x(30s@115% / 30s@50% FTP), RPE 9/2. | Qualités : Consommation maximale d'oxygène (PMA / VO2max) + Tolérance lactique / capacité à répéter l'effort. Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
@@ -31,103 +31,103 @@
       <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="300" Power="0.5">
-      <textevent timeoffset="0" message="Récup série — RPE 2"/>
+      <textevent timeoffset="0" message="Récup série · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <SteadyState Duration="30" Power="1.15" Cadence="100">
-      <textevent timeoffset="0" message="30s @ 115% — RPE 9"/>
+      <textevent timeoffset="0" message="30s @ 115% FTP · RPE 9"/>
     </SteadyState>
     <SteadyState Duration="30" Power="0.5">
-      <textevent timeoffset="0" message="30s — RPE 2"/>
+      <textevent timeoffset="0" message="30s · RPE 2"/>
     </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
