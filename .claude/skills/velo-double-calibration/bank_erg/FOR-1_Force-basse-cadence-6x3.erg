@@ -1,0 +1,53 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Force 6x3 min à 88-95% FTP en 50-55 rpm. RPE jambes 7-8 / cardio 5-6. Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = FOR-1 Force basse cadence 6x3'
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	210
+13.00	210
+13.00	125
+16.00	125
+16.00	210
+19.00	210
+19.00	125
+22.00	125
+22.00	210
+25.00	210
+25.00	125
+28.00	125
+28.00	210
+31.00	210
+31.00	125
+34.00	125
+34.00	210
+37.00	210
+37.00	125
+40.00	125
+40.00	210
+43.00	210
+43.00	125
+46.00	125
+46.00	137
+54.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	50-55 rpm — RPE jambes 7-8 / cardio 5-6	180
+780	Récup 90 rpm — RPE 2	180
+960	50-55 rpm — RPE jambes 7-8 / cardio 5-6	180
+1140	Récup 90 rpm — RPE 2	180
+1320	50-55 rpm — RPE jambes 7-8 / cardio 5-6	180
+1500	Récup 90 rpm — RPE 2	180
+1680	50-55 rpm — RPE jambes 7-8 / cardio 5-6	180
+1860	Récup 90 rpm — RPE 2	180
+2040	50-55 rpm — RPE jambes 7-8 / cardio 5-6	180
+2220	Récup 90 rpm — RPE 2	180
+2400	50-55 rpm — RPE jambes 7-8 / cardio 5-6	180
+2580	Récup 90 rpm — RPE 2	180
+2760	Retour au calme — RPE 2	480
+[END COURSE TEXT]

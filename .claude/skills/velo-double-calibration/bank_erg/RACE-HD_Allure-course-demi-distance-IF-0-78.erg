@@ -1,0 +1,20 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Tenue d'allure demi-distance : 1h continu à 78-80% FTP, RPE 5-6. Partie vélo d'un brick. Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = RACE-HD Allure course demi-distance (IF 0.78)
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	180
+70.00	180
+70.00	137
+78.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Allure course HD — RPE 5-6 — IF 0.78	3600
+4200	Retour au calme — RPE 2	480
+[END COURSE TEXT]

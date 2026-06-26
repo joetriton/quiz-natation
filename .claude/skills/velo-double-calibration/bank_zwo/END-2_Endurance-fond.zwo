@@ -2,13 +2,12 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>END-2 Endurance fond</name>
-  <description>Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie / durabilité.
-Double calibration %FTP + RPE.</description>
+  <description>Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie / durabilité. Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
     <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
-      <textevent timeoffset="0" message="Échauffement progressif — RPE 2→4"/>
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
     <SteadyState Duration="4200" Power="0.7" Cadence="88">
       <textevent timeoffset="0" message="Endurance — RPE 3-4 — conversation fluide"/>

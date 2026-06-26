@@ -118,32 +118,40 @@ Exemple de ligne :
 🟥 3 × 12 min @ 88–92 % FTP ([watts] W) · RPE 6–7 · 90 rpm — récup 5 min @ 55 % · RPE 2
 ```
 
-## 6 bis. Sortie Nolio (.zwo) — séances importables et JOUABLES
+## 6 bis. Sortie Nolio (.zwo / .mrc / .erg) — séances importables et JOUABLES
 
 Nolio importe `.zwo`, `.erg`, `.mrc`, `.json` (intervals.icu) et `.fit` pour créer
-des séances structurées jouables (envoyées home-trainer/montre). Format retenu :
-**`.zwo`**, car :
-- la puissance y est en **fraction de FTP** → **athlète-indépendant** : Nolio
-  applique la FTP de chaque athlète. Une seule banque sert tous les coachés.
-- le **RPE** s'affiche pendant la séance via `<textevent>` (double calibration).
+des séances structurées jouables (envoyées home-trainer/montre). La banque est
+générée dans **3 formats** (source unique = segments neutres, donc identiques) :
 
-**Banque .zwo déjà générée** : dossier `bank_zwo/` (22 séances, voir
-`bank_zwo/INDEX.md`). Pour (re)générer ou étendre :
+| Format | Dossier | Intensité | Athlète-indépendant ? |
+|--------|---------|-----------|-----------------------|
+| `.zwo` | `bank_zwo/` | fraction de FTP | **Oui** (Nolio applique la FTP) |
+| `.mrc` | `bank_mrc/` | % de FTP | **Oui** |
+| `.erg` | `bank_erg/` | **watts absolus** | Non — calculés pour une FTP donnée |
+
+Le **RPE** apparaît à l'écran : `<textevent>` (.zwo) et `[COURSE TEXT]` (.mrc/.erg).
+
+> Recommandation : privilégier **`.zwo` ou `.mrc`** (universels). N'utiliser
+> `.erg` que si un athlète a besoin de watts fixes ; il faut alors le régénérer à
+> sa FTP.
+
+**(Re)générer / étendre la banque :**
 ```
-python3 scripts/generate_bank.py
+python3 scripts/generate_bank.py                 # .erg calculé pour FTP 228 W
+python3 scripts/generate_bank.py --ftp 250       # .erg pour un athlète à 250 W
 ```
-Le script définit la banque comme données (puissances en %FTP, RPE en textevents)
-et écrit les `.zwo` + un INDEX. Pour ajouter/modifier une séance : éditer la liste
-`BANK` dans le script puis relancer.
+La banque est définie comme données dans la liste `BANK` du script (puissances en
+%FTP, RPE en messages). Pour ajouter/modifier une séance : éditer `BANK` et
+relancer. Index dans `bank_zwo/INDEX.md`.
 
 **Import dans Nolio** (à transmettre au coach) : Calendrier → menu « … » →
-« Importer un fichier de séance » → glisser le/les `.zwo` (ou un `.zip`). La
-séance devient structurée (graphe en bas) et peut être planifiée puis envoyée au
+« Importer un fichier de séance » → glisser le/les fichiers (ou un `.zip`). La
+séance devient structurée (graphe en bas), planifiable et envoyable au
 home-trainer / à la montre.
 
-Si l'utilisateur veut une **séance ponctuelle** au format Nolio (hors banque) :
-générer un `.zwo` à la volée depuis `templates/seance.zwo` (`Power` = fraction de
-FTP ; RPE + cadence dans `Cadence` et `<textevent>`).
+Pour une **séance ponctuelle** hors banque : ajouter une entrée temporaire dans
+`BANK` et régénérer, ou produire un `.zwo` à la volée depuis `templates/seance.zwo`.
 
 ## 7. Garde-fous
 

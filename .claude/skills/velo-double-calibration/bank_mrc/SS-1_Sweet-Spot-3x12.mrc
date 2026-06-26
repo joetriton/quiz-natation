@@ -1,0 +1,56 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Sweet Spot 3x12 min à 88-92% FTP, RPE 6-7. Double calibration %FTP + RPE.
+FILE NAME = SS-1 Sweet Spot 3x12
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	90.0
+28.50	90.0
+28.50	55.0
+33.50	55.0
+33.50	90.0
+45.50	90.0
+45.50	55.0
+50.50	55.0
+50.50	90.0
+62.50	90.0
+62.50	55.0
+67.50	55.0
+67.50	60.0
+75.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Sweet Spot — RPE 6-7 — tenable	720
+1710	Récup — RPE 2	300
+2010	Sweet Spot — RPE 6-7 — tenable	720
+2730	Récup — RPE 2	300
+3030	Sweet Spot — RPE 6-7 — tenable	720
+3750	Récup — RPE 2	300
+4050	Retour au calme — RPE 2	480
+[END COURSE TEXT]

@@ -1,0 +1,83 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Profil 'accordéon' : 5x(côte 4'@97% + relance 1'@105% + retour allure 75%). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = SPE-1 Simulation parcours vallonné
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	221
+20.50	221
+20.50	239
+21.50	239
+21.50	171
+26.50	171
+26.50	221
+30.50	221
+30.50	239
+31.50	239
+31.50	171
+36.50	171
+36.50	221
+40.50	221
+40.50	239
+41.50	239
+41.50	171
+46.50	171
+46.50	221
+50.50	221
+50.50	239
+51.50	239
+51.50	171
+56.50	171
+56.50	221
+60.50	221
+60.50	239
+61.50	239
+61.50	171
+66.50	171
+66.50	137
+74.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Côte 1 — 4' @ 97% — RPE 7-8	240
+1230	Relance sommet 1 — 1' @ 105% — RPE 8	60
+1290	Retour allure course — RPE 5	300
+1590	Côte 2 — 4' @ 97% — RPE 7-8	240
+1830	Relance sommet 2 — 1' @ 105% — RPE 8	60
+1890	Retour allure course — RPE 5	300
+2190	Côte 3 — 4' @ 97% — RPE 7-8	240
+2430	Relance sommet 3 — 1' @ 105% — RPE 8	60
+2490	Retour allure course — RPE 5	300
+2790	Côte 4 — 4' @ 97% — RPE 7-8	240
+3030	Relance sommet 4 — 1' @ 105% — RPE 8	60
+3090	Retour allure course — RPE 5	300
+3390	Côte 5 — 4' @ 97% — RPE 7-8	240
+3630	Relance sommet 5 — 1' @ 105% — RPE 8	60
+3690	Retour allure course — RPE 5	300
+3990	Retour au calme — RPE 2	480
+[END COURSE TEXT]

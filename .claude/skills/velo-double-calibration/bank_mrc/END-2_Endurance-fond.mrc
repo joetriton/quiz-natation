@@ -1,0 +1,20 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Endurance fondamentale. 65-75% FTP, RPE 3-4. Base aérobie / durabilité. Double calibration %FTP + RPE.
+FILE NAME = END-2 Endurance fond
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	70.0
+80.00	70.0
+80.00	60.0
+88.00	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Endurance — RPE 3-4 — conversation fluide	4200
+4800	Retour au calme — RPE 2	480
+[END COURSE TEXT]

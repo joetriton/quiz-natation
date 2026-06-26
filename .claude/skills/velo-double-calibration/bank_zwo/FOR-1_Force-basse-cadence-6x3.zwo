@@ -2,18 +2,49 @@
 <workout_file>
   <author>Skill velo-double-calibration</author>
   <name>FOR-1 Force basse cadence 6x3'</name>
-  <description>Force 6x3 min à 88-95% FTP en 50-55 rpm. RPE jambes 7-8 / cardio 5-6. Efficience en côte.
-Double calibration %FTP + RPE.</description>
+  <description>Force 6x3 min à 88-95% FTP en 50-55 rpm. RPE jambes 7-8 / cardio 5-6. Double calibration %FTP + RPE.</description>
   <sportType>bike</sportType>
   <tags><tag name="DoubleCalibration"/></tags>
   <workout>
     <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
-      <textevent timeoffset="0" message="Échauffement progressif — RPE 2→4"/>
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
     </Warmup>
-    <IntervalsT Repeat="6" OnDuration="180" OnPower="0.92" OffDuration="180" OffPower="0.55" Cadence="55" CadenceResting="90">
-      <textevent timeoffset="0" message="EFFORT — 50-55 rpm — RPE jambes 7-8 / cardio 5-6"/>
-      <textevent timeoffset="180" message="RÉCUP — Récup 90 rpm — RPE 2"/>
-    </IntervalsT>
+    <SteadyState Duration="180" Power="0.92" Cadence="55">
+      <textevent timeoffset="0" message="50-55 rpm — RPE jambes 7-8 / cardio 5-6"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.92" Cadence="55">
+      <textevent timeoffset="0" message="50-55 rpm — RPE jambes 7-8 / cardio 5-6"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.92" Cadence="55">
+      <textevent timeoffset="0" message="50-55 rpm — RPE jambes 7-8 / cardio 5-6"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.92" Cadence="55">
+      <textevent timeoffset="0" message="50-55 rpm — RPE jambes 7-8 / cardio 5-6"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.92" Cadence="55">
+      <textevent timeoffset="0" message="50-55 rpm — RPE jambes 7-8 / cardio 5-6"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.92" Cadence="55">
+      <textevent timeoffset="0" message="50-55 rpm — RPE jambes 7-8 / cardio 5-6"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm — RPE 2"/>
+    </SteadyState>
     <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
       <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
     </Cooldown>
