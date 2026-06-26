@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-1 Récup active</name>
+  <description>Récupération active. 50-60% FTP, RPE 2, cadence souple.
+Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="300" PowerLow="0.45" PowerHigh="0.55">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2→4"/>
+    </Warmup>
+    <SteadyState Duration="2100" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup active — RPE 2 — je peux chanter"/>
+    </SteadyState>
+    <Cooldown Duration="300" PowerLow="0.55" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

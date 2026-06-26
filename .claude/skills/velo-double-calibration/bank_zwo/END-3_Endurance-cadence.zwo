@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-3 Endurance + cadence</name>
+  <description>Endurance avec travail de vélocité. Blocs à 100-105 rpm.
+Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2→4"/>
+    </Warmup>
+    <IntervalsT Repeat="3" OnDuration="600" OnPower="0.7" OffDuration="300" OffPower="0.6" Cadence="103" CadenceResting="90">
+      <textevent timeoffset="0" message="EFFORT — RPE 4 — 100-105 rpm — gainage"/>
+      <textevent timeoffset="600" message="RÉCUP — RPE 2 — cadence libre"/>
+    </IntervalsT>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

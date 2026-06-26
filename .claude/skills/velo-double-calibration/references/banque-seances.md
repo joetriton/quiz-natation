@@ -6,8 +6,15 @@ Pour un athlète : `watts = round(%FTP/100 × FTP_athlète)`.
 (5–10 min Z1) implicites sauf mention. Récup = active Z1 sauf indication.
 
 Légende phase : **B** = Base · **U** = Build · **S** = Spécifique/affûtage.
-Priorité Bayman (**distance complète vallonnée**) notée ⭐ (voir `bayman.md`).
-Allure vélo de course full distance : **IF ≈ 0,68–0,72 (68–72 % FTP, RPE 3–4)**.
+⭐ = pilier des prépas longue distance / triathlon (endurance, tempo/SS, force).
+
+**Banque UNIVERSELLE** : valable pour tout athlète et toute course. Les fichiers
+`.zwo` correspondants (dans `bank_zwo/`) sont en %FTP → importables tels quels
+dans Nolio pour n'importe quel athlète. Spécificités par épreuve = surcouche :
+- Demi-distance (half) : allure vélo de course **IF ≈ 0,78** (RPE 5–6) → RACE-HD.
+- Distance complète (L / Ironman, ex. Bayman) : allure **IF ≈ 0,70** (RPE 3–4) →
+  RACE-LD ; voir `bayman.md`.
+- Distances courtes (S/M) : tolérer un IF plus haut, plus de seuil/VO2.
 
 ---
 
@@ -54,23 +61,25 @@ Allure vélo de course full distance : **IF ≈ 0,68–0,72 (68–72 % FTP, RPE 
 | FOR-1 | Force basse cadence | 6×3 min @ 88–95 % à **50–55 rpm** · RPE jambes 7–8 / cardio 5–6, récup 3 min | 1 h | B/U | efficience en côte |
 | FOR-2 | Force 7×2'30 | 7×2'30 @ 90–95 % à 55 rpm · RPE jambes 8, récup 2'30 (Johan) | 1 h | B/U | recrutement |
 | FOR-3 | Sprints côte | 8×15" max @ 150 %+ · RPE 10, récup 3 min | 50 min | U | force-vitesse |
-| SPE-1 | Simulation Bayman ⭐ | sur 2 h : 5×(côte 4 min @ 95–100 % RPE 7-8 + relance 1 min @ 105 % RPE 8 + retour allure 75 % RPE 5) | 2 h | S | profil accordéon |
+| SPE-1 | Simulation parcours vallonné ⭐ | 5×(côte 4 min @ 95–100 % RPE 7-8 + relance 1 min @ 105 % RPE 8 + retour allure 75 % RPE 5) | ~1 h45 | S | profil accordéon |
 
-## F. Brick & spécifique course ⭐
+## F. Spécifique course (partie vélo des bricks) ⭐
 
 | Code | Nom | Contenu | Durée | Phase | Note |
 |------|-----|---------|-------|-------|------|
-| BRK-1 | Brick allure course ⭐ | 2 h–3 h vélo @ 68–72 % (IF ~0,70) · RPE 3–4 + 30–45 min CAP allure marathon | ~3 h+ | S | transition vélo→CAP full |
-| BRK-2 | Brick côtes + CAP ⭐ | 3 h+ vélo profil Bayman (SPE-1) + 30 min CAP | ~3 h30+ | S | spécifique max |
-| RACE-1 | Test allure cible ⭐ | 2 h continu @ 68–72 % · RPE 3–4, valider RPE/watts/nutrition | 2 h | S | répétition générale + nutrition |
+| RACE-LD | Allure course longue distance | 2 h continu @ 68–72 % (IF ~0,70) · RPE 3–4 — + CAP enchaînée hors .zwo | 2 h | S | full / Ironman, ex. Bayman |
+| RACE-HD | Allure course demi-distance | 1 h continu @ 78–80 % (IF ~0,78) · RPE 5–6 — + CAP enchaînée hors .zwo | 1 h | S | half / 70.3 |
+
+> Brick complet (vélo + CAP) : jouer la partie vélo RACE-LD/HD dans Nolio puis
+> enchaîner la CAP planifiée séparément (le .zwo ne couvre que le vélo).
 
 ---
 
-## Comment piocher selon la phase (prépa Bayman)
+## Comment piocher selon la phase (toute prépa endurance)
 
 - **Base (semaines lointaines)** : END-2, END-3, SS-1, FOR-1/FOR-2. Volume ↑↑ (durabilité), intensité modérée.
 - **Build** : SS-2/SS-3, SEU-1/2 (entretien), SEU-3, VO2-1 (1×/sem max, build précoce), FOR-1, END-4. Endurance longue prioritaire.
-- **Spécifique** : END-4, SS-3, SPE-1, BRK-1/2, RACE-1. Tout devient "couleur course" full distance (IF ~0,70, longues sorties 5–6 h).
+- **Spécifique** : END-4, SS-3, SPE-1, RACE-LD/HD (selon distance), bricks. Tout devient "couleur course" (longue distance → IF ~0,70, longues sorties 5–6 h ; demi → IF ~0,78).
 - **Taper (7–10 j)** : volume −40 à −50 %, garder 1–2 piqûres d'intensité courtes
   (ex. 3×3 min seuil), fraîcheur prioritaire.
 

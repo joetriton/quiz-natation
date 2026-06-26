@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>SEU-3 Seuil over-under 2x(4x2-2)</name>
+  <description>Over-under : 2 séries de 4x(2'@90% + 2'@105%), RPE 6↔8, récup 5 min. Relances.
+Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2→4"/>
+    </Warmup>
+    <IntervalsT Repeat="3" OnDuration="30" OnPower="1.05" OffDuration="60" OffPower="0.5">
+      <textevent timeoffset="0" message="EFFORT — RPE 8 (activation)"/>
+      <textevent timeoffset="30" message="RÉCUP — RPE 2"/>
+    </IntervalsT>
+    <SteadyState Duration="120" Power="0.55">
+      <textevent timeoffset="0" message="Transition avant le corps de séance — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <SteadyState Duration="300" Power="0.52">
+      <textevent timeoffset="0" message="Récup série — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.9" Cadence="90">
+      <textevent timeoffset="0" message="UNDER 90% — RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="1.05" Cadence="90">
+      <textevent timeoffset="0" message="OVER 105% — RPE 8"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>
