@@ -136,6 +136,20 @@ add("END-9", "Endurance negative split", "Récupération / Endurance", "DURAB", 
     "1ère moitié à 66%, 2e à 74% FTP. Finir plus fort (durabilité).",
     WU + ss(2400, 0.66, cad=88, msg="1ère moitié 66% FTP · RPE 3") + ss(2400, 0.74, cad=90, msg="2e moitié 74% FTP · RPE 4-5 — finir fort") + CD)
 
+add("END-10", "Sortie longue 3h30", "Récupération / Endurance", "DURAB", "ENDUR",
+    "Sortie longue Z2 ~3h30. Socle de volume longue distance.",
+    WU + ss(11400, 0.68, cad=86, msg="Endurance 65-72% FTP · RPE 3-4 — boire/manger régulièrement") + CD)
+
+add("END-11", "Longue IM + 3x30' tempo", "Récupération / Endurance", "DURAB", "SPEC",
+    "Sortie longue ~4h15 avec 3x30' tempo. Volume + tenue d'allure full distance.",
+    WU + ss(3000, 0.68, cad=86, msg="Endurance 65-70% FTP · RPE 3")
+    + ints(3, 1800, 0.80, 600, 0.66, cad=86, rpe_on="Tempo 78-82% FTP · RPE 5", rpe_off="Endurance 64-68% FTP · RPE 3")
+    + ss(4200, 0.66, cad=86, msg="Endurance retour 64-68% FTP · RPE 3 — nutrition") + CD)
+
+add("END-12", "Très longue endurance 5h", "Récupération / Endurance", "ENDUR", "DURAB",
+    "Très longue sortie Z2 ~5h. Durabilité maximale, simulation de durée IM.",
+    WU + ss(16800, 0.66, cad=85, msg="Endurance 63-70% FTP · RPE 3 — nutrition +++ / gestion") + CD)
+
 # ===== B. Vélocité / Technique =====
 add("VEL-1", "Vélocité 6x3'", "Vélocité / Technique", "VELO", "ENDUR",
     "6x3 min à 108-112 rpm, 70% FTP. Fluidité du coup de pédale.",
@@ -188,6 +202,10 @@ add("TMP-5", "Tempo progressif 3x12", "Tempo", "TEMPO", "SS",
     + ss(720, 0.84, cad=90, msg="12' @ 84% FTP · RPE 6") + ss(300, 0.55, msg="récup · RPE 2")
     + ss(720, 0.88, cad=90, msg="12' @ 88% FTP · RPE 6-7") + CD)
 
+add("TMP-6", "Tempo sur longue 3x30'", "Tempo", "TEMPO", "DURAB",
+    "Sur sortie ~2h15 : 3x30 min à 78-82% FTP. Gros volume tempo full distance.",
+    WU + ints(3, 1800, 0.80, 600, 0.65, cad=87, rpe_on="Tempo 78-82% FTP · RPE 5", rpe_off="Endurance 62-68% FTP · RPE 3") + CD)
+
 # ===== D. Sweet Spot =====
 add("SS-1", "Sweet Spot 3x12", "Sweet Spot", "SS", None,
     "Sweet Spot 3x12 min à 88-92% FTP, RPE 6-7.",
@@ -210,6 +228,10 @@ add("SS-4", "Sweet Spot 4x10", "Sweet Spot", "SS", None,
 add("SS-5", "Sweet Spot 2x30", "Sweet Spot", "SS", "DURAB",
     "Sweet Spot 2x30 min à 88-90% FTP. Gros volume sous-seuil.",
     WU_INT + ints(2, 1800, 0.89, 600, 0.55, cad=90, rpe_on="Sweet Spot 88-90% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD)
+
+add("SS-6", "Sweet Spot sur longue 4x25'", "Sweet Spot", "SS", "DURAB",
+    "Sur sortie ~2h30 : 4x25 min à 88-90% FTP. Gros volume sous-seuil full distance.",
+    WU_INT + ints(4, 1500, 0.89, 420, 0.60, cad=88, rpe_on="Sweet Spot 88-90% FTP · RPE 6-7", rpe_off="Endurance 58-62% FTP · RPE 3") + CD)
 
 # ===== E. Seuil =====
 add("SEU-1", "Seuil 2x15", "Seuil", "SEUIL", None,
@@ -391,6 +413,14 @@ add("RACE-HD", "Allure course demi-distance (IF 0.78)", "Spécifique course", "S
     "1h continu à 78-80% FTP, RPE 5-6. Partie vélo d'un brick demi-distance.",
     WU + ss(3600, 0.79, cad=90, msg="Allure course HD 78-80% FTP · RPE 5-6 · IF 0.78") + CD)
 
+add("RACE-LD-4H", "Allure course IM ~4h (IF 0.68)", "Spécifique course", "SPEC", "DURAB",
+    "~3h50 continu à 67-71% FTP. Allure et nutrition de course full distance.",
+    WU + ss(12600, 0.69, cad=87, msg="Allure IM 67-71% FTP · RPE 3-4 · IF 0.68 — nutrition course") + CD)
+
+add("RACE-LD-5H", "Allure course IM ~5h (IF 0.68)", "Spécifique course", "SPEC", "DURAB",
+    "~4h40 continu à 66-70% FTP. Simulation longue de la partie vélo IM.",
+    WU + ss(15600, 0.68, cad=86, msg="Allure IM 66-70% FTP · RPE 3-4 · IF 0.68 — nutrition / pacing") + CD)
+
 # --------------------------------------------------------------------------
 # Alternatives HOME-TRAINER (versions compressées des séances longues / route).
 # Principe : indoor = puissance continue (pas de roue libre) -> même stimulus en
@@ -418,6 +448,22 @@ HT_ALTS = {
              WU_INT + ints(3, 900, 0.90, 240, 0.55, cad=90, rpe_on="Sweet Spot 88-92% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD),
     "RACE-LD": ("HT 1h18 : allure course longue distance continue (IF ~0.72).",
                 WU + ss(3600, 0.73, cad=88, msg="Allure course LD 70-74% FTP · RPE 4 (HT continu) — nutrition") + CD),
+    "END-10": ("HT ~1h50 : endurance + 2x25' tempo (densifié indoor).",
+               WU + ss(1800, 0.70, cad=86, msg="Endurance 68-72% FTP · RPE 3-4")
+               + ints(2, 1500, 0.84, 420, 0.60, cad=86, rpe_on="Tempo 82-85% FTP · RPE 5-6", rpe_off="Endurance 58-62% FTP · RPE 3") + CD),
+    "END-11": ("HT ~2h10 : endurance + 3x25' tempo (équivalent indoor).",
+               WU + ss(1200, 0.70, cad=86, msg="Endurance 68-72% FTP · RPE 3")
+               + ints(3, 1500, 0.82, 360, 0.60, cad=86, rpe_on="Tempo 80-84% FTP · RPE 5", rpe_off="Endurance 58-62% FTP · RPE 3") + CD),
+    "END-12": ("HT ~2h : 3x30' tempo bas (compresse la très longue).",
+               WU + ints(3, 1800, 0.78, 300, 0.62, cad=85, rpe_on="Tempo bas 76-80% FTP · RPE 5", rpe_off="Endurance 60-64% FTP · RPE 3") + CD),
+    "SS-6": ("HT ~1h40 : sweet spot 3x20' (sans le volume route).",
+             WU_INT + ints(3, 1200, 0.90, 360, 0.55, cad=88, rpe_on="Sweet Spot 88-92% FTP · RPE 6-7", rpe_off="récup · RPE 2") + CD),
+    "TMP-6": ("HT ~1h30 : tempo 3x20' (compressé).",
+              WU + ints(3, 1200, 0.82, 300, 0.60, cad=87, rpe_on="Tempo 80-84% FTP · RPE 5", rpe_off="récup · RPE 3") + CD),
+    "RACE-LD-4H": ("HT ~1h48 : allure IM continue 70-74% FTP.",
+                   WU + ss(5400, 0.72, cad=87, msg="Allure IM 70-74% FTP · RPE 4 (HT continu) — nutrition") + CD),
+    "RACE-LD-5H": ("HT ~2h08 : allure IM continue 70-73% FTP.",
+                   WU + ss(6600, 0.72, cad=86, msg="Allure IM 70-73% FTP · RPE 4 (HT continu) — nutrition / pacing") + CD),
 }
 for _w in BANK:
     if _w["code"] in HT_ALTS:

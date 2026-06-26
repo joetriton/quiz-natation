@@ -1,0 +1,41 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Sortie longue ~4h15 avec 3x30' tempo. Volume + tenue d'allure full distance. | Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = END-11 Longue IM + 3x30' tempo
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	155
+60.00	155
+60.00	182
+90.00	182
+90.00	150
+100.00	150
+100.00	182
+130.00	182
+130.00	150
+140.00	150
+140.00	182
+170.00	182
+170.00	150
+180.00	150
+180.00	150
+250.00	150
+250.00	137
+258.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Endurance 65-70% FTP · RPE 3	3000
+3600	Tempo 78-82% FTP · RPE 5	1800
+5400	Endurance 64-68% FTP · RPE 3	600
+6000	Tempo 78-82% FTP · RPE 5	1800
+7800	Endurance 64-68% FTP · RPE 3	600
+8400	Tempo 78-82% FTP · RPE 5	1800
+10200	Endurance 64-68% FTP · RPE 3	600
+10800	Endurance retour 64-68% FTP · RPE 3 — nutrition	4200
+15000	Retour au calme — RPE 2	480
+[END COURSE TEXT]

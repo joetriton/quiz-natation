@@ -1,4 +1,4 @@
-# Catalogue des séances vélo (53 séances)
+# Catalogue des séances vélo (60 séances)
 
 Banque universelle, double calibration **%FTP + RPE**. Chaque séance
 indique la/les **qualité(s) développée(s)**. Fichiers jouables dans
@@ -21,6 +21,9 @@ indique la/les **qualité(s) développée(s)**. Fichiers jouables dans
 | END-7 | Fat-max 90' | 1h48 | Métabolisme lipidique (fat-max, oxydation des graisses) | Endurance aérobie fondamentale | Endurance basse 60-65% FTP, respiration nasale. Oxydation des graisses. |
 | END-8 | Endurance + micro-bursts | 42 min | Endurance aérobie fondamentale | Puissance neuromusculaire / explosivité (sprint) | Endurance avec micro-sprints de 6s toutes les 3 min. Recrutement sans fatigue. |
 | END-9 | Endurance negative split | 1h38 | Durabilité / résistance à la fatigue (tenue de puissance) | Endurance aérobie fondamentale | 1ère moitié à 66%, 2e à 74% FTP. Finir plus fort (durabilité). |
+| END-10 | Sortie longue 3h30 | 3h28 | Durabilité / résistance à la fatigue (tenue de puissance) | Endurance aérobie fondamentale | Sortie longue Z2 ~3h30. Socle de volume longue distance. |
+| END-11 | Longue IM + 3x30' tempo | 4h18 | Durabilité / résistance à la fatigue (tenue de puissance) | Spécifique course (allure cible, gestion d'effort, nutrition) | Sortie longue ~4h15 avec 3x30' tempo. Volume + tenue d'allure full distance. |
+| END-12 | Très longue endurance 5h | 4h58 | Endurance aérobie fondamentale | Durabilité / résistance à la fatigue (tenue de puissance) | Très longue sortie Z2 ~5h. Durabilité maximale, simulation de durée IM. |
 
 ## Vélocité / Technique
 
@@ -40,6 +43,7 @@ indique la/les **qualité(s) développée(s)**. Fichiers jouables dans
 | TMP-3 | Tempo 2x25 | 1h22 | Endurance soutenue sous-seuil (capacité aérobie / tempo) | Durabilité / résistance à la fatigue (tenue de puissance) | Tempo 2x25 min à 80-84% FTP. Tenue mentale longue. |
 | TMP-4 | Tempo vallonné (cadence variée) | 42 min | Endurance soutenue sous-seuil (capacité aérobie / tempo) | Force spécifique / recrutement musculaire | Alternance 60 rpm (côte) / 95 rpm (plat) à tempo. Spécifique terrain. |
 | TMP-5 | Tempo progressif 3x12 | 1h04 | Endurance soutenue sous-seuil (capacité aérobie / tempo) | Charge aérobie optimisée (sweet spot) | 3x12 min montant 80->84->88% FTP. Transition tempo vers sweet spot. |
+| TMP-6 | Tempo sur longue 3x30' | 2h18 | Endurance soutenue sous-seuil (capacité aérobie / tempo) | Durabilité / résistance à la fatigue (tenue de puissance) | Sur sortie ~2h15 : 3x30 min à 78-82% FTP. Gros volume tempo full distance. |
 
 ## Sweet Spot
 
@@ -50,6 +54,7 @@ indique la/les **qualité(s) développée(s)**. Fichiers jouables dans
 | SS-3 | Sweet Spot sur longue 3x20 | 2h23 | Charge aérobie optimisée (sweet spot) | Durabilité / résistance à la fatigue (tenue de puissance) | Sur sortie longue : 3x20 min à 88-90% FTP, RPE 6. |
 | SS-4 | Sweet Spot 4x10 | 1h20 | Charge aérobie optimisée (sweet spot) | — | Sweet Spot 4x10 min à 88-92% FTP, récup 4 min. |
 | SS-5 | Sweet Spot 2x30 | 1h44 | Charge aérobie optimisée (sweet spot) | Durabilité / résistance à la fatigue (tenue de puissance) | Sweet Spot 2x30 min à 88-90% FTP. Gros volume sous-seuil. |
+| SS-6 | Sweet Spot sur longue 4x25' | 2h32 | Charge aérobie optimisée (sweet spot) | Durabilité / résistance à la fatigue (tenue de puissance) | Sur sortie ~2h30 : 4x25 min à 88-90% FTP. Gros volume sous-seuil full distance. |
 
 ## Seuil
 
@@ -109,3 +114,5 @@ indique la/les **qualité(s) développée(s)**. Fichiers jouables dans
 | SPE-2 | Allure course + finish surge | 1h33 | Spécifique course (allure cible, gestion d'effort, nutrition) | Durabilité / résistance à la fatigue (tenue de puissance) | 1h à 70-74% FTP puis 15 min à 85% (finir fort). Gestion d'effort. |
 | RACE-LD | Allure course longue distance (IF 0.70) | 2h18 | Spécifique course (allure cible, gestion d'effort, nutrition) | Durabilité / résistance à la fatigue (tenue de puissance) | 2h continu à 68-72% FTP, RPE 3-4. Partie vélo d'un brick longue distance. |
 | RACE-HD | Allure course demi-distance (IF 0.78) | 1h18 | Spécifique course (allure cible, gestion d'effort, nutrition) | — | 1h continu à 78-80% FTP, RPE 5-6. Partie vélo d'un brick demi-distance. |
+| RACE-LD-4H | Allure course IM ~4h (IF 0.68) | 3h48 | Spécifique course (allure cible, gestion d'effort, nutrition) | Durabilité / résistance à la fatigue (tenue de puissance) | ~3h50 continu à 67-71% FTP. Allure et nutrition de course full distance. |
+| RACE-LD-5H | Allure course IM ~5h (IF 0.68) | 4h38 | Spécifique course (allure cible, gestion d'effort, nutrition) | Durabilité / résistance à la fatigue (tenue de puissance) | ~4h40 continu à 66-70% FTP. Simulation longue de la partie vélo IM. |

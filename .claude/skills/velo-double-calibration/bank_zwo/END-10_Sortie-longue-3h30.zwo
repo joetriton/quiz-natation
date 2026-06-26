@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-10 Sortie longue 3h30</name>
+  <description>Sortie longue Z2 ~3h30. Socle de volume longue distance. | Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale. Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="11400" Power="0.68" Cadence="86">
+      <textevent timeoffset="0" message="Endurance 65-72% FTP · RPE 3-4 — boire/manger régulièrement"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

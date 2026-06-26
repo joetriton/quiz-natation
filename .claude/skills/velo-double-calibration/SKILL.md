@@ -86,7 +86,7 @@ cadence par défaut 85–95 rpm (force 50–60, vélocité 100+). Nom court faç
 Quand on demande une « banque », un « catalogue » ou « des séances pour la prépa » :
 
 1. Charger le profil athlète (FTP, course, points faibles).
-2. Partir de `references/catalogue-seances.md` (**53 séances** classées par
+2. Partir de `references/catalogue-seances.md` (**60 séances** classées par
    filière, chacune avec sa/ses **qualité(s) développée(s)** et sa durée ;
    taxonomie dans `references/qualites.md`, guide dans `references/banque-seances.md`).
    Sélectionner selon les **qualités à travailler** (points faibles de l'athlète

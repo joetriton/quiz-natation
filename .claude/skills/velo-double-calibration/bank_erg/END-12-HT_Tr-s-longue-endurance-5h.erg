@@ -1,0 +1,35 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = HT ~2h : 3x30' tempo bas (compresse la très longue). | Alternative HT de END-12. Qualités : Endurance aérobie fondamentale + Durabilité / résistance à la fatigue (tenue de puissance). (FTP 228 W)
+FILE NAME = END-12-HT Très longue endurance 5h (home-trainer)
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	178
+40.00	178
+40.00	141
+45.00	141
+45.00	178
+75.00	178
+75.00	141
+80.00	141
+80.00	178
+110.00	178
+110.00	141
+115.00	141
+115.00	137
+123.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Tempo bas 76-80% FTP · RPE 5	1800
+2400	Endurance 60-64% FTP · RPE 3	300
+2700	Tempo bas 76-80% FTP · RPE 5	1800
+4500	Endurance 60-64% FTP · RPE 3	300
+4800	Tempo bas 76-80% FTP · RPE 5	1800
+6600	Endurance 60-64% FTP · RPE 3	300
+6900	Retour au calme — RPE 2	480
+[END COURSE TEXT]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-12-HT Très longue endurance 5h (home-trainer)</name>
+  <description>HT ~2h : 3x30' tempo bas (compresse la très longue). | Alternative HT de END-12. Qualités : Endurance aérobie fondamentale + Durabilité / résistance à la fatigue (tenue de puissance).</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="1800" Power="0.78" Cadence="85">
+      <textevent timeoffset="0" message="Tempo bas 76-80% FTP · RPE 5"/>
+    </SteadyState>
+    <SteadyState Duration="300" Power="0.62">
+      <textevent timeoffset="0" message="Endurance 60-64% FTP · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="1800" Power="0.78" Cadence="85">
+      <textevent timeoffset="0" message="Tempo bas 76-80% FTP · RPE 5"/>
+    </SteadyState>
+    <SteadyState Duration="300" Power="0.62">
+      <textevent timeoffset="0" message="Endurance 60-64% FTP · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="1800" Power="0.78" Cadence="85">
+      <textevent timeoffset="0" message="Tempo bas 76-80% FTP · RPE 5"/>
+    </SteadyState>
+    <SteadyState Duration="300" Power="0.62">
+      <textevent timeoffset="0" message="Endurance 60-64% FTP · RPE 3"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

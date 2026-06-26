@@ -3,7 +3,7 @@
 .zwo et .mrc = puissance relative (%FTP) -> **athlète-indépendants**.
 .erg = watts absolus pour **FTP = 228 W** (régénérer avec --ftp).
 
-**53 séances.**
+**60 séances.**
 
 | Code | Séance | Durée | Qualités développées | .zwo | .mrc | .erg |
 |------|--------|-------|----------------------|------|------|------|
@@ -17,6 +17,9 @@
 | END-7 | Fat-max 90' | 1h48 | Métabolisme lipidique (fat-max, oxydation des graisses) + Endurance aérobie fondamentale | `END-7_Fat-max-90.zwo` | `END-7_Fat-max-90.mrc` | `END-7_Fat-max-90.erg` |
 | END-8 | Endurance + micro-bursts | 42 min | Endurance aérobie fondamentale + Puissance neuromusculaire / explosivité (sprint) | `END-8_Endurance-micro-bursts.zwo` | `END-8_Endurance-micro-bursts.mrc` | `END-8_Endurance-micro-bursts.erg` |
 | END-9 | Endurance negative split | 1h38 | Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale | `END-9_Endurance-negative-split.zwo` | `END-9_Endurance-negative-split.mrc` | `END-9_Endurance-negative-split.erg` |
+| END-10 | Sortie longue 3h30 | 3h28 | Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale | `END-10_Sortie-longue-3h30.zwo` | `END-10_Sortie-longue-3h30.mrc` | `END-10_Sortie-longue-3h30.erg` |
+| END-11 | Longue IM + 3x30' tempo | 4h18 | Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition) | `END-11_Longue-IM-3x30-tempo.zwo` | `END-11_Longue-IM-3x30-tempo.mrc` | `END-11_Longue-IM-3x30-tempo.erg` |
+| END-12 | Très longue endurance 5h | 4h58 | Endurance aérobie fondamentale + Durabilité / résistance à la fatigue (tenue de puissance) | `END-12_Tr-s-longue-endurance-5h.zwo` | `END-12_Tr-s-longue-endurance-5h.mrc` | `END-12_Tr-s-longue-endurance-5h.erg` |
 | VEL-1 | Vélocité 6x3' | 42 min | Vélocité & coordination neuromusculaire (cadence, fluidité) + Endurance aérobie fondamentale | `VEL-1_V-locit-6x3.zwo` | `VEL-1_V-locit-6x3.mrc` | `VEL-1_V-locit-6x3.erg` |
 | VEL-2 | Jambe seule (single-leg) | 34 min | Vélocité & coordination neuromusculaire (cadence, fluidité) + Force spécifique / recrutement musculaire | `VEL-2_Jambe-seule-single-leg.zwo` | `VEL-2_Jambe-seule-single-leg.mrc` | `VEL-2_Jambe-seule-single-leg.erg` |
 | VEL-3 | Spin-ups 10x30" | 38 min | Vélocité & coordination neuromusculaire (cadence, fluidité) + Puissance neuromusculaire / explosivité (sprint) | `VEL-3_Spin-ups-10x30.zwo` | `VEL-3_Spin-ups-10x30.mrc` | `VEL-3_Spin-ups-10x30.erg` |
@@ -26,11 +29,13 @@
 | TMP-3 | Tempo 2x25 | 1h22 | Endurance soutenue sous-seuil (capacité aérobie / tempo) + Durabilité / résistance à la fatigue (tenue de puissance) | `TMP-3_Tempo-2x25.zwo` | `TMP-3_Tempo-2x25.mrc` | `TMP-3_Tempo-2x25.erg` |
 | TMP-4 | Tempo vallonné (cadence variée) | 42 min | Endurance soutenue sous-seuil (capacité aérobie / tempo) + Force spécifique / recrutement musculaire | `TMP-4_Tempo-vallonn-cadence-vari-e.zwo` | `TMP-4_Tempo-vallonn-cadence-vari-e.mrc` | `TMP-4_Tempo-vallonn-cadence-vari-e.erg` |
 | TMP-5 | Tempo progressif 3x12 | 1h04 | Endurance soutenue sous-seuil (capacité aérobie / tempo) + Charge aérobie optimisée (sweet spot) | `TMP-5_Tempo-progressif-3x12.zwo` | `TMP-5_Tempo-progressif-3x12.mrc` | `TMP-5_Tempo-progressif-3x12.erg` |
+| TMP-6 | Tempo sur longue 3x30' | 2h18 | Endurance soutenue sous-seuil (capacité aérobie / tempo) + Durabilité / résistance à la fatigue (tenue de puissance) | `TMP-6_Tempo-sur-longue-3x30.zwo` | `TMP-6_Tempo-sur-longue-3x30.mrc` | `TMP-6_Tempo-sur-longue-3x30.erg` |
 | SS-1 | Sweet Spot 3x12 | 1h15 | Charge aérobie optimisée (sweet spot) | `SS-1_Sweet-Spot-3x12.zwo` | `SS-1_Sweet-Spot-3x12.mrc` | `SS-1_Sweet-Spot-3x12.erg` |
 | SS-2 | Sweet Spot 2x20 | 1h20 | Charge aérobie optimisée (sweet spot) + Puissance au seuil (FTP / seuil lactique) | `SS-2_Sweet-Spot-2x20.zwo` | `SS-2_Sweet-Spot-2x20.mrc` | `SS-2_Sweet-Spot-2x20.erg` |
 | SS-3 | Sweet Spot sur longue 3x20 | 2h23 | Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance) | `SS-3_Sweet-Spot-sur-longue-3x20.zwo` | `SS-3_Sweet-Spot-sur-longue-3x20.mrc` | `SS-3_Sweet-Spot-sur-longue-3x20.erg` |
 | SS-4 | Sweet Spot 4x10 | 1h20 | Charge aérobie optimisée (sweet spot) | `SS-4_Sweet-Spot-4x10.zwo` | `SS-4_Sweet-Spot-4x10.mrc` | `SS-4_Sweet-Spot-4x10.erg` |
 | SS-5 | Sweet Spot 2x30 | 1h44 | Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance) | `SS-5_Sweet-Spot-2x30.zwo` | `SS-5_Sweet-Spot-2x30.mrc` | `SS-5_Sweet-Spot-2x30.erg` |
+| SS-6 | Sweet Spot sur longue 4x25' | 2h32 | Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance) | `SS-6_Sweet-Spot-sur-longue-4x25.zwo` | `SS-6_Sweet-Spot-sur-longue-4x25.mrc` | `SS-6_Sweet-Spot-sur-longue-4x25.erg` |
 | SEU-1 | Seuil 2x15 | 1h10 | Puissance au seuil (FTP / seuil lactique) | `SEU-1_Seuil-2x15.zwo` | `SEU-1_Seuil-2x15.mrc` | `SEU-1_Seuil-2x15.erg` |
 | SEU-2 | Seuil progressif 3x(8-4-2) | 1h14 | Puissance au seuil (FTP / seuil lactique) | `SEU-2_Seuil-progressif-3x-8-4-2.zwo` | `SEU-2_Seuil-progressif-3x-8-4-2.mrc` | `SEU-2_Seuil-progressif-3x-8-4-2.erg` |
 | SEU-3 | Seuil over-under 2x(4x2-2) | 1h01 | Puissance au seuil (FTP / seuil lactique) + Tolérance lactique / capacité à répéter l'effort | `SEU-3_Seuil-over-under-2x-4x2-2.zwo` | `SEU-3_Seuil-over-under-2x-4x2-2.mrc` | `SEU-3_Seuil-over-under-2x-4x2-2.erg` |
@@ -60,3 +65,5 @@
 | SPE-2 | Allure course + finish surge | 1h33 | Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance) | `SPE-2_Allure-course-finish-surge.zwo` | `SPE-2_Allure-course-finish-surge.mrc` | `SPE-2_Allure-course-finish-surge.erg` |
 | RACE-LD | Allure course longue distance (IF 0.70) | 2h18 | Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance) | `RACE-LD_Allure-course-longue-distance-IF-0-70.zwo` | `RACE-LD_Allure-course-longue-distance-IF-0-70.mrc` | `RACE-LD_Allure-course-longue-distance-IF-0-70.erg` |
 | RACE-HD | Allure course demi-distance (IF 0.78) | 1h18 | Spécifique course (allure cible, gestion d'effort, nutrition) | `RACE-HD_Allure-course-demi-distance-IF-0-78.zwo` | `RACE-HD_Allure-course-demi-distance-IF-0-78.mrc` | `RACE-HD_Allure-course-demi-distance-IF-0-78.erg` |
+| RACE-LD-4H | Allure course IM ~4h (IF 0.68) | 3h48 | Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance) | `RACE-LD-4H_Allure-course-IM-4h-IF-0-68.zwo` | `RACE-LD-4H_Allure-course-IM-4h-IF-0-68.mrc` | `RACE-LD-4H_Allure-course-IM-4h-IF-0-68.erg` |
+| RACE-LD-5H | Allure course IM ~5h (IF 0.68) | 4h38 | Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance) | `RACE-LD-5H_Allure-course-IM-5h-IF-0-68.zwo` | `RACE-LD-5H_Allure-course-IM-5h-IF-0-68.mrc` | `RACE-LD-5H_Allure-course-IM-5h-IF-0-68.erg` |

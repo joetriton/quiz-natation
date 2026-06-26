@@ -1,6 +1,6 @@
 # Banque de séances — guide d'utilisation (double calibration)
 
-> 📁 **Le catalogue complet (53 séances) est généré dans
+> 📁 **Le catalogue complet (60 séances) est généré dans
 > `references/catalogue-seances.md`** (groupé par filière, avec la/les
 > qualité(s) développée(s) et la durée). Les fichiers jouables sont dans
 > `bank_zwo/`, `bank_mrc/`, `bank_erg/` — index : `bank_zwo/INDEX.md`.
@@ -44,6 +44,17 @@ Pour un athlète : `watts = round(%FTP/100 × FTP_athlète)`.
   ou pour travailler relances/explosivité ; secondaire en longue distance.
 
 Cycle par défaut **3:1** (3 semaines de charge, 1 semaine allégée −30/40 %).
+
+## Repères de volume vélo (full distance / Ironman)
+
+Pour un full, le volume prime. Ordres de grandeur (à caler sur le profil athlète) :
+- **Volume vélo hebdo** en build : ~6–12 h (souvent 3–4 séances dont 1 longue clé).
+- **Sortie longue clé** : progression **3h30 → 4h → 5h** (END-10/11/12, RACE-LD-5H),
+  pic à la durée vélo de course visée. 1×/semaine, allongée graduellement.
+- **2e séance d'endurance/tempo longue** : END-11, SS-6, TMP-6 (gros volume sous-seuil).
+- **1 séance qualité** : seuil ou VO2 selon la phase.
+- En home-trainer : utiliser les alternatives `-HT` (≈ 2 h max) pour remplacer les
+  très longues, en acceptant un volume moindre compensé par une densité plus haute.
 
 ## Brick
 Le `.zwo` ne couvre que le vélo : jouer RACE-LD/HD (ou SPE-2) puis enchaîner la
