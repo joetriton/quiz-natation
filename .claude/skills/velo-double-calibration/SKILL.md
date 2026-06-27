@@ -167,6 +167,14 @@ relancer. Index dans `bank_zwo/INDEX.md`.
 séance devient structurée (graphe en bas), planifiable et envoyable au
 home-trainer / à la montre.
 
+**Implémentation complète de la bibliothèque** — voir
+`references/implementation-nolio.md` (guide pas-à-pas). Deux voies :
+- **Import groupé** : archives `bank_zwo.zip` / `bank_mrc.zip` / `bank_erg.zip`
+  (toutes les séances + alternatives HT) déposées d'un coup dans Nolio.
+- **Saisie manuelle** : `references/specification-complete.md` détaille chaque
+  séance bloc par bloc (durée · %FTP · watts@FTP · cadence · RPE) pour la
+  recréer dans le constructeur Nolio.
+
 Pour une **séance ponctuelle** hors banque : ajouter une entrée temporaire dans
 `BANK` et régénérer, ou produire un `.zwo` à la volée depuis `templates/seance.zwo`.
 

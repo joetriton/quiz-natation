@@ -22,6 +22,7 @@ import os
 import sys
 import re
 import argparse
+import zipfile
 from xml.sax.saxutils import escape
 
 # --------------------------------------------------------------------------
@@ -584,6 +585,60 @@ def slug(s):
     s = s.replace("'", "").replace('"', "")
     return re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-")
 
+# ---- Spécification bloc-par-bloc (pour implémentation manuelle dans Nolio) ----
+def _bdur(sec):
+    if sec < 60:
+        return f"{sec}s"
+    m, s = divmod(sec, 60)
+    return f"{m}'{s:02d}" if s else f"{m}'"
+
+def _btarget(s, ftp):
+    if s["p0"] == s["p1"]:
+        return f'{round(s["p0"]*100)}% FTP ({round(s["p0"]*ftp)} W)'
+    return f'{round(s["p0"]*100)}→{round(s["p1"]*100)}% FTP ({round(s["p0"]*ftp)}→{round(s["p1"]*ftp)} W)'
+
+def _bcad(s):
+    return f' · {s["cad"]} rpm' if s["cad"] else ''
+
+def _seg_eq(a, b):
+    return (a["p0"], a["p1"], a["cad"], a["dur"], a["msg"]) == (b["p0"], b["p1"], b["cad"], b["dur"], b["msg"])
+
+def _compress(segs):
+    out, i, n = [], 0, len(segs)
+    while i < n:
+        done = False
+        if i + 1 < n:
+            a, b = segs[i], segs[i + 1]
+            r, j = 0, i
+            while j + 1 < n and _seg_eq(segs[j], a) and _seg_eq(segs[j + 1], b):
+                r += 1
+                j += 2
+            if r >= 2:
+                out.append(("pair", r, a, b))
+                i = j
+                done = True
+        if not done:
+            a = segs[i]
+            r, j = 1, i + 1
+            while j < n and _seg_eq(segs[j], a):
+                r += 1
+                j += 1
+            out.append(("single", r, a, None))
+            i = j
+    return out
+
+def block_md(segs, ftp):
+    lines = []
+    for kind, r, a, b in _compress(segs):
+        if kind == "pair":
+            la = f'{_bdur(a["dur"])} @ {_btarget(a, ftp)}{_bcad(a)} — {a["msg"] or ""}'
+            lb = f'{_bdur(b["dur"])} @ {_btarget(b, ftp)}{_bcad(b)} — {b["msg"] or ""}'
+            lines.append(f'- **{r}×** ( {la} **//** {lb} )')
+        else:
+            pre = f'{r}× ' if r > 1 else ''
+            lines.append(f'- {pre}{_bdur(a["dur"])} @ {_btarget(a, ftp)}{_bcad(a)} — {a["msg"] or ""}')
+    return lines
+
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
     ap = argparse.ArgumentParser()
@@ -673,7 +728,78 @@ def main():
         qd.append(f"| {k} | {v} | {phys.get(k,'')} |")
     open(os.path.join(refs, "qualites.md"), "w", encoding="utf-8").write("\n".join(qd) + "\n")
 
-    print(f'{len(BANK)} séances x 3 formats + catalogue + qualités générés [FTP .erg = {a.ftp} W]')
+    # Spécification complète bloc-par-bloc (pour implémentation manuelle dans Nolio)
+    spec = [f"# Spécification complète des séances ({len(BANK)} séances)\n",
+            "Toute la bibliothèque, **bloc par bloc**, pour implémentation manuelle dans",
+            f"le constructeur Nolio. Puissances : **%FTP universel** + watts pour la FTP de",
+            f"référence **{a.ftp} W** (recalculer : `watts = %FTP × FTP/100`).\n",
+            "Notation : `N× ( effort // récup )` = N répétitions. Chaque ligne donne",
+            "durée · cible %FTP (W) · cadence · consigne (zone + RPE).\n",
+            "> Généré par `scripts/generate_bank.py` — ne pas éditer à la main.\n"]
+    for fil in FILIERE_ORDER:
+        ws = [w for w in BANK if w["filiere"] == fil]
+        if not ws:
+            continue
+        spec.append(f"\n# {fil}\n")
+        for w in ws:
+            spec.append(f'\n## {w["code"]} — {w["name"]}')
+            spec.append(f'*Durée {dur_str(total_dur(w["segs"]))} · charge {round(ua(w["segs"]))} UA · '
+                        f'qualités : {quality_str(w)}.*\n')
+            spec += block_md(w["segs"], a.ftp)
+            if w["ht"]:
+                spec.append(f'\n**Alternative home-trainer** (même charge {round(ua(w["ht"]))} UA · '
+                            f'durée {dur_str(total_dur(w["ht"]))}) — {w["ht_desc"]}\n')
+                spec += block_md(w["ht"], a.ftp)
+    open(os.path.join(refs, "specification-complete.md"), "w", encoding="utf-8").write("\n".join(spec) + "\n")
+
+    # Archives ZIP par format (import groupé dans Nolio)
+    def zip_dir(fmt):
+        zp = os.path.join(root, f"bank_{fmt}.zip")
+        with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED) as z:
+            for f in sorted(os.listdir(dirs[fmt])):
+                if f.endswith("." + fmt):
+                    z.write(os.path.join(dirs[fmt], f), arcname=f)
+        return os.path.basename(zp)
+    zips = [zip_dir(fmt) for fmt in ("zwo", "mrc", "erg")]
+
+    # Guide d'implémentation Nolio
+    nb_files = len([f for f in os.listdir(dirs["zwo"]) if f.endswith(".zwo")])
+    guide = [
+        "# Implémenter la bibliothèque dans Nolio\n",
+        f"La bibliothèque = **{len(BANK)} séances** ({nb_files} fichiers/​format avec les",
+        "alternatives home-trainer `-HT`). Puissance en %FTP → **Nolio applique la FTP de",
+        "chaque athlète** ; le RPE s'affiche pendant la séance. Charge route = charge HT (UA).\n",
+        "## Option A — Import groupé (recommandé)\n",
+        "1. Choisir le format : **`.zwo`** ou **`.mrc`** (universels, %FTP). `.erg` = watts",
+        f"   fixes pour FTP {a.ftp} W (régénérer avec `--ftp` pour un autre athlète).",
+        "2. Récupérer l'archive : `bank_zwo.zip` (ou `bank_mrc.zip` / `bank_erg.zip`).",
+        "3. Dans Nolio : Calendrier → menu **« … »** → **« Importer un fichier de séance »**",
+        "   → déposer le `.zip` (Nolio accepte une archive contenant tous les fichiers).",
+        "4. Les séances arrivent **structurées** (graphe) → réutilisables comme modèles,",
+        "   planifiables, et envoyées au home-trainer / à la montre.\n",
+        "## Option B — Saisie manuelle dans le constructeur\n",
+        "Suivre `references/specification-complete.md` : chaque séance y est détaillée",
+        "bloc par bloc (durée · %FTP · watts · cadence · RPE). Recréer chaque bloc dans",
+        "le workout builder Nolio (échauffement / intervalle Répéter N / récup / retour au calme).\n",
+        "## Avant d'importer : régler l'athlète\n",
+        "- Renseigner la **FTP** de l'athlète dans Nolio (les % se convertissent en watts).",
+        "- Vérifier/définir les zones si besoin (voir `references/zones-rpe.md`).\n",
+        "## Fichiers de référence\n",
+        "- `references/catalogue-seances.md` — catalogue (filière, durée, UA, qualités)",
+        "- `references/alternatives-ht.md` — durées + alternatives HT à charge égale",
+        "- `references/specification-complete.md` — détail bloc par bloc",
+        "- `references/qualites.md` — taxonomie des qualités",
+        "- `bank_zwo/INDEX.md` — index des fichiers\n",
+        f"## Régénérer / personnaliser\n",
+        "```\npython3 scripts/generate_bank.py            # FTP .erg = "
+        f"{a.ftp} W\npython3 scripts/generate_bank.py --ftp 250  # .erg pour FTP 250 W\n```",
+        "Ajouter une séance = une entrée `add(...)` ; une alternative HT = une entrée",
+        "`HT_ALTS` (sa durée se cale automatiquement sur l'UA de la séance route).\n",
+    ]
+    open(os.path.join(refs, "implementation-nolio.md"), "w", encoding="utf-8").write("\n".join(guide) + "\n")
+
+    print(f'{len(BANK)} séances x 3 formats + catalogue + qualités + spec + guide ; '
+          f'ZIP: {", ".join(zips)} [FTP .erg = {a.ftp} W]')
 
 if __name__ == "__main__":
     main()
