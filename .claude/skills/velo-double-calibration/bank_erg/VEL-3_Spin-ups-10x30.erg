@@ -1,0 +1,77 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 10x30s à 115-125 rpm sans rebond. Vitesse gestuelle. | Qualités : Vélocité & coordination neuromusculaire (cadence, fluidité) + Puissance neuromusculaire / explosivité (sprint). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = VEL-3 Spin-ups 10x30"
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	137
+10.50	137
+10.50	114
+12.00	114
+12.00	137
+12.50	137
+12.50	114
+14.00	114
+14.00	137
+14.50	137
+14.50	114
+16.00	114
+16.00	137
+16.50	137
+16.50	114
+18.00	114
+18.00	137
+18.50	137
+18.50	114
+20.00	114
+20.00	137
+20.50	137
+20.50	114
+22.00	114
+22.00	137
+22.50	137
+22.50	114
+24.00	114
+24.00	137
+24.50	137
+24.50	114
+26.00	114
+26.00	137
+26.50	137
+26.50	114
+28.00	114
+28.00	137
+28.50	137
+28.50	114
+30.00	114
+30.00	137
+38.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+630	récup · RPE 2	90
+720	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+750	récup · RPE 2	90
+840	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+870	récup · RPE 2	90
+960	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+990	récup · RPE 2	90
+1080	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+1110	récup · RPE 2	90
+1200	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+1230	récup · RPE 2	90
+1320	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+1350	récup · RPE 2	90
+1440	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+1470	récup · RPE 2	90
+1560	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+1590	récup · RPE 2	90
+1680	115-125 rpm · 60% FTP · RPE 5 — rester rond	30
+1710	récup · RPE 2	90
+1800	Retour au calme — RPE 2	480
+[END COURSE TEXT]

@@ -1,0 +1,20 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Allure IM continue 70-73% FTP. | Alternative HT de RACE-LD-5H. Qualités : Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance).
+FILE NAME = RACE-LD-5H-HT Allure course IM ~5h (IF 0.68) (home-trainer)
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	72.0
+241.92	72.0
+241.92	60.0
+249.92	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Allure IM 70-73% FTP · RPE 4 (HT continu) — nutrition / pacing	13915
+14515	Retour au calme — RPE 2	480
+[END COURSE TEXT]

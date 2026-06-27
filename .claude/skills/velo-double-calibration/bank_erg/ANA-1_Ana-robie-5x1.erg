@@ -1,0 +1,68 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 5x1 min à 118-122% FTP, récup 4 min. Capacité anaérobie. | Qualités : Capacité anaérobie (production lactique) + Tolérance lactique / capacité à répéter l'effort. Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = ANA-1 Anaérobie 5x1'
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	274
+17.50	274
+17.50	114
+21.50	114
+21.50	274
+22.50	274
+22.50	114
+26.50	114
+26.50	274
+27.50	274
+27.50	114
+31.50	114
+31.50	274
+32.50	274
+32.50	114
+36.50	114
+36.50	274
+37.50	274
+37.50	114
+41.50	114
+41.50	137
+49.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Anaérobie 118-122% FTP · RPE 9	60
+1050	récup longue · RPE 2	240
+1290	Anaérobie 118-122% FTP · RPE 9	60
+1350	récup longue · RPE 2	240
+1590	Anaérobie 118-122% FTP · RPE 9	60
+1650	récup longue · RPE 2	240
+1890	Anaérobie 118-122% FTP · RPE 9	60
+1950	récup longue · RPE 2	240
+2190	Anaérobie 118-122% FTP · RPE 9	60
+2250	récup longue · RPE 2	240
+2490	Retour au calme — RPE 2	480
+[END COURSE TEXT]

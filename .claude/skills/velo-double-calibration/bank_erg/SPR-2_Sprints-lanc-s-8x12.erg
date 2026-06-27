@@ -1,0 +1,86 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 8 sprints lancés de 12s à haute cadence, récup 3'48. | Qualités : Puissance neuromusculaire / explosivité (sprint). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = SPR-2 Sprints lancés 8x12"
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	388
+16.70	388
+16.70	103
+20.50	103
+20.50	388
+20.70	388
+20.70	103
+24.50	103
+24.50	388
+24.70	388
+24.70	103
+28.50	103
+28.50	388
+28.70	388
+28.70	103
+32.50	103
+32.50	388
+32.70	388
+32.70	103
+36.50	103
+36.50	388
+36.70	388
+36.70	103
+40.50	103
+40.50	388
+40.70	388
+40.70	103
+44.50	103
+44.50	388
+44.70	388
+44.70	103
+48.50	103
+48.50	137
+56.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Sprint lancé 110+ rpm · RPE 10	12
+1002	Récup · RPE 2	228
+1230	Sprint lancé 110+ rpm · RPE 10	12
+1242	Récup · RPE 2	228
+1470	Sprint lancé 110+ rpm · RPE 10	12
+1482	Récup · RPE 2	228
+1710	Sprint lancé 110+ rpm · RPE 10	12
+1722	Récup · RPE 2	228
+1950	Sprint lancé 110+ rpm · RPE 10	12
+1962	Récup · RPE 2	228
+2190	Sprint lancé 110+ rpm · RPE 10	12
+2202	Récup · RPE 2	228
+2430	Sprint lancé 110+ rpm · RPE 10	12
+2442	Récup · RPE 2	228
+2670	Sprint lancé 110+ rpm · RPE 10	12
+2682	Récup · RPE 2	228
+2910	Retour au calme — RPE 2	480
+[END COURSE TEXT]

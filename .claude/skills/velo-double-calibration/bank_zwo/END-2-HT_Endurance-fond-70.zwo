@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-2-HT Endurance fond 70' (home-trainer)</name>
+  <description>Endurance continue indoor 70-75% FTP (sans roue libre). | Alternative HT de END-2. Qualités : Endurance aérobie fondamentale + Métabolisme lipidique (fat-max, oxydation des graisses).</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="3970" Power="0.72" Cadence="90">
+      <textevent timeoffset="0" message="Endurance 70-75% FTP · RPE 3-4 (HT continu)"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>SPR-1 Sprints départ arrêté 10x10"</name>
+  <description>10 sprints de 10s départ lent (couple + vitesse), récup 2'50. | Qualités : Puissance neuromusculaire / explosivité (sprint) + Force maximale (couple, basse cadence forte résistance). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.55">
+      <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="10" Power="1.6" Cadence="95">
+      <textevent timeoffset="0" message="Sprint départ lent · couple+vitesse · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="170" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Gabarit Zwift (.zwo) — double calibration %FTP + RPE.
+  Power = fraction de FTP (0.97 = 97 %). Cadence en rpm.
+  Les balises <textevent> affichent la consigne RPE à l'écran pendant la séance.
+  Remplacer les valeurs entre {{ }} puis enregistrer en .zwo dans
+  Documents/Zwift/Workouts/<athleteId>/.
+-->
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>{{NOM_SEANCE}}</name>
+  <description>Double calibration %FTP + RPE. FTP réf {{FTP}} W.
+{{DESCRIPTION_BLOCS}}</description>
+  <sportType>bike</sportType>
+  <tags/>
+  <workout>
+
+    <!-- Échauffement : montée 50 % -> 75 % FTP sur 10 min -->
+    <Warmup Duration="600" PowerLow="0.50" PowerHigh="0.75" Cadence="90">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2 vers 4"/>
+    </Warmup>
+
+    <!-- Bloc principal en intervalles : ex. 3 x (8 min @ 97 % / 4 min @ 55 %) -->
+    <IntervalsT Repeat="{{REPETITIONS}}"
+                OnDuration="{{ON_SEC}}" OnPower="{{ON_FRACTION_FTP}}"
+                OffDuration="{{OFF_SEC}}" OffPower="{{OFF_FRACTION_FTP}}"
+                Cadence="{{CADENCE_ON}}" CadenceResting="{{CADENCE_OFF}}">
+      <textevent timeoffset="0" message="EFFORT — cible RPE {{RPE_ON}}"/>
+      <textevent timeoffset="{{ON_SEC}}" message="RÉCUP — RPE {{RPE_OFF}}"/>
+    </IntervalsT>
+
+    <!-- Exemple de bloc unique (tempo, sweet spot, endurance) -->
+    <SteadyState Duration="{{DUREE_SEC}}" Power="{{FRACTION_FTP}}" Cadence="{{CADENCE}}">
+      <textevent timeoffset="0" message="{{NOM_BLOC}} — RPE {{RPE}}"/>
+    </SteadyState>
+
+    <!-- Retour au calme : 8 min 60 % -> 45 % FTP -->
+    <Cooldown Duration="480" PowerLow="0.60" PowerHigh="0.45" Cadence="85">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+
+  </workout>
+</workout_file>

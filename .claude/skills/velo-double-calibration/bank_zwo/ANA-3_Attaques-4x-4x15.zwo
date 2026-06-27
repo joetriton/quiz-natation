@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>ANA-3 Attaques 4x(4x15")</name>
+  <description>4 séries de 4x15s à ~150% FTP. Répétition d'attaques. | Qualités : Capacité anaérobie (production lactique) + Puissance neuromusculaire / explosivité (sprint). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.55">
+      <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="récup série · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="récup série · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="récup série · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.5" Cadence="110">
+      <textevent timeoffset="0" message="Attaque 15s ~150% FTP · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="45" Power="0.5">
+      <textevent timeoffset="0" message="récup 45s · RPE 2"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

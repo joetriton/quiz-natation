@@ -1,0 +1,56 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Seuil 3x10 min à 96-100% FTP, récup 5 min. | Qualités : Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.
+FILE NAME = SEU-5 Seuil 3x10
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	98.0
+26.50	98.0
+26.50	50.0
+31.50	50.0
+31.50	98.0
+41.50	98.0
+41.50	50.0
+46.50	50.0
+46.50	98.0
+56.50	98.0
+56.50	50.0
+61.50	50.0
+61.50	60.0
+69.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Seuil 96-100% FTP · RPE 7-8	600
+1590	récup · RPE 2	300
+1890	Seuil 96-100% FTP · RPE 7-8	600
+2490	récup · RPE 2	300
+2790	Seuil 96-100% FTP · RPE 7-8	600
+3390	récup · RPE 2	300
+3690	Retour au calme — RPE 2	480
+[END COURSE TEXT]

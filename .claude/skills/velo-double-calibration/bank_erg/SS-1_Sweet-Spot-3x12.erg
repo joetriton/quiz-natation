@@ -1,0 +1,56 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Sweet Spot 3x12 min à 88-92% FTP, RPE 6-7. | Qualités : Charge aérobie optimisée (sweet spot). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = SS-1 Sweet Spot 3x12
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	205
+28.50	205
+28.50	125
+33.50	125
+33.50	205
+45.50	205
+45.50	125
+50.50	125
+50.50	205
+62.50	205
+62.50	125
+67.50	125
+67.50	137
+75.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Sweet Spot 88-92% FTP · RPE 6-7 — tenable	720
+1710	Récup 50-58% FTP · RPE 2	300
+2010	Sweet Spot 88-92% FTP · RPE 6-7 — tenable	720
+2730	Récup 50-58% FTP · RPE 2	300
+3030	Sweet Spot 88-92% FTP · RPE 6-7 — tenable	720
+3750	Récup 50-58% FTP · RPE 2	300
+4050	Retour au calme — RPE 2	480
+[END COURSE TEXT]

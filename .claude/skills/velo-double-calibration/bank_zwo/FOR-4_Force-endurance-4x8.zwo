@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>FOR-4 Force-endurance 4x8'</name>
+  <description>4x8 min à 78-82% FTP en 55 rpm. Force tenue dans la durée. | Qualités : Force-endurance (force tenue dans la durée) + Endurance soutenue sous-seuil (capacité aérobie / tempo). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="480" Power="0.8" Cadence="55">
+      <textevent timeoffset="0" message="Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="480" Power="0.8" Cadence="55">
+      <textevent timeoffset="0" message="Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="480" Power="0.8" Cadence="55">
+      <textevent timeoffset="0" message="Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="480" Power="0.8" Cadence="55">
+      <textevent timeoffset="0" message="Force-end. 78-82% FTP · 55 rpm · RPE jambes 6-7"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.55" Cadence="90">
+      <textevent timeoffset="0" message="Récup 90 rpm · RPE 2"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

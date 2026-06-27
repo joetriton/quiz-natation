@@ -1,0 +1,71 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 3 blocs 8'@92% / 4'@97% / 2'@103% FTP, RPE 7->8, récup 4 min. | Qualités : Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.
+FILE NAME = SEU-2 Seuil progressif 3x(8-4-2)
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	92.0
+24.50	92.0
+24.50	97.0
+28.50	97.0
+28.50	103.0
+30.50	103.0
+30.50	52.0
+34.50	52.0
+34.50	92.0
+42.50	92.0
+42.50	97.0
+46.50	97.0
+46.50	103.0
+48.50	103.0
+48.50	52.0
+52.50	52.0
+52.50	92.0
+60.50	92.0
+60.50	97.0
+64.50	97.0
+64.50	103.0
+66.50	103.0
+66.50	60.0
+74.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Bloc 1 — 8' @ 92% FTP · RPE 7	480
+1470	Bloc 1 — 4' @ 97% FTP · RPE 7,5	240
+1710	Bloc 1 — 2' @ 103% FTP · RPE 8	120
+1830	Récup · RPE 2	240
+2070	Bloc 2 — 8' @ 92% FTP · RPE 7	480
+2550	Bloc 2 — 4' @ 97% FTP · RPE 7,5	240
+2790	Bloc 2 — 2' @ 103% FTP · RPE 8	120
+2910	Récup · RPE 2	240
+3150	Bloc 3 — 8' @ 92% FTP · RPE 7	480
+3630	Bloc 3 — 4' @ 97% FTP · RPE 7,5	240
+3870	Bloc 3 — 2' @ 103% FTP · RPE 8	120
+3990	Retour au calme — RPE 2	480
+[END COURSE TEXT]

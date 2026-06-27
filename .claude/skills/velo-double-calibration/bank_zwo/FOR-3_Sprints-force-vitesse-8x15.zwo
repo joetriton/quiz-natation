@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>FOR-3 Sprints force-vitesse 8x15"</name>
+  <description>8 sprints de 15s max, récup 3 min. Force-vitesse. | Qualités : Puissance neuromusculaire / explosivité (sprint) + Force maximale (couple, basse cadence forte résistance). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.55">
+      <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="15" Power="1.6" Cadence="100">
+      <textevent timeoffset="0" message="SPRINT MAX · RPE 10"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.45">
+      <textevent timeoffset="0" message="Récup complète · RPE 2"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

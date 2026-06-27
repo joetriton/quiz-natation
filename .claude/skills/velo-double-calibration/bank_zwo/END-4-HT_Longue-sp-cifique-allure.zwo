@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-4-HT Longue spécifique allure (home-trainer)</name>
+  <description>Endurance + blocs à l'allure de course (densifié indoor). | Alternative HT de END-4. Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Spécifique course (allure cible, gestion d'effort, nutrition).</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="2166" Power="0.72" Cadence="88">
+      <textevent timeoffset="0" message="Endurance 70% FTP · RPE 3-4"/>
+    </SteadyState>
+    <SteadyState Duration="1445" Power="0.8" Cadence="88">
+      <textevent timeoffset="0" message="Allure course 78-82% FTP · RPE 5"/>
+    </SteadyState>
+    <SteadyState Duration="723" Power="0.68">
+      <textevent timeoffset="0" message="Endurance 68% FTP · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="1445" Power="0.8" Cadence="88">
+      <textevent timeoffset="0" message="Allure course 78-82% FTP · RPE 5"/>
+    </SteadyState>
+    <SteadyState Duration="723" Power="0.68">
+      <textevent timeoffset="0" message="Endurance 68% FTP · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="1445" Power="0.8" Cadence="88">
+      <textevent timeoffset="0" message="Allure course 78-82% FTP · RPE 5"/>
+    </SteadyState>
+    <SteadyState Duration="723" Power="0.68">
+      <textevent timeoffset="0" message="Endurance 68% FTP · RPE 3"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

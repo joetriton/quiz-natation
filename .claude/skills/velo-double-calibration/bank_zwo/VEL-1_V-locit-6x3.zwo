@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>VEL-1 Vélocité 6x3'</name>
+  <description>6x3 min à 108-112 rpm, 70% FTP. Fluidité du coup de pédale. | Qualités : Vélocité &amp; coordination neuromusculaire (cadence, fluidité) + Endurance aérobie fondamentale. Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="180" Power="0.7" Cadence="110">
+      <textevent timeoffset="0" message="70% FTP · 108-112 rpm · RPE 4 — rond"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.55" Cadence="85">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.7" Cadence="110">
+      <textevent timeoffset="0" message="70% FTP · 108-112 rpm · RPE 4 — rond"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.55" Cadence="85">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.7" Cadence="110">
+      <textevent timeoffset="0" message="70% FTP · 108-112 rpm · RPE 4 — rond"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.55" Cadence="85">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.7" Cadence="110">
+      <textevent timeoffset="0" message="70% FTP · 108-112 rpm · RPE 4 — rond"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.55" Cadence="85">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.7" Cadence="110">
+      <textevent timeoffset="0" message="70% FTP · 108-112 rpm · RPE 4 — rond"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.55" Cadence="85">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.7" Cadence="110">
+      <textevent timeoffset="0" message="70% FTP · 108-112 rpm · RPE 4 — rond"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.55" Cadence="85">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

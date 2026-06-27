@@ -1,0 +1,41 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Sur sortie longue : 3x20 min à 88-90% FTP, RPE 6. | Qualités : Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = SS-3 Sweet Spot sur longue 3x20
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	160
+30.00	160
+30.00	203
+50.00	203
+50.00	155
+60.00	155
+60.00	203
+80.00	203
+80.00	155
+90.00	155
+90.00	203
+110.00	203
+110.00	155
+120.00	155
+120.00	155
+135.00	155
+135.00	137
+143.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Endurance 65-75% FTP · RPE 3-4	1200
+1800	Sweet Spot 88-90% FTP · RPE 6	1200
+3000	Endurance 65-72% FTP · RPE 3	600
+3600	Sweet Spot 88-90% FTP · RPE 6	1200
+4800	Endurance 65-72% FTP · RPE 3	600
+5400	Sweet Spot 88-90% FTP · RPE 6	1200
+6600	Endurance 65-72% FTP · RPE 3	600
+7200	Retour endurance 65-72% FTP · RPE 3	900
+8100	Retour au calme — RPE 2	480
+[END COURSE TEXT]

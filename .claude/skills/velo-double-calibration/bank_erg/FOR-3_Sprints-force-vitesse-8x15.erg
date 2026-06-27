@@ -1,0 +1,86 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = 8 sprints de 15s max, récup 3 min. Force-vitesse. | Qualités : Puissance neuromusculaire / explosivité (sprint) + Force maximale (couple, basse cadence forte résistance). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = FOR-3 Sprints force-vitesse 8x15"
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	239
+10.50	239
+10.50	114
+11.50	114
+11.50	239
+12.00	239
+12.00	114
+13.00	114
+13.00	239
+13.50	239
+13.50	114
+14.50	114
+14.50	125
+16.50	125
+16.50	365
+16.75	365
+16.75	103
+19.75	103
+19.75	365
+20.00	365
+20.00	103
+23.00	103
+23.00	365
+23.25	365
+23.25	103
+26.25	103
+26.25	365
+26.50	365
+26.50	103
+29.50	103
+29.50	365
+29.75	365
+29.75	103
+32.75	103
+32.75	365
+33.00	365
+33.00	103
+36.00	103
+36.00	365
+36.25	365
+36.25	103
+39.25	103
+39.25	365
+39.50	365
+39.50	103
+42.50	103
+42.50	137
+50.50	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	SPRINT MAX · RPE 10	15
+1005	Récup complète · RPE 2	180
+1185	SPRINT MAX · RPE 10	15
+1200	Récup complète · RPE 2	180
+1380	SPRINT MAX · RPE 10	15
+1395	Récup complète · RPE 2	180
+1575	SPRINT MAX · RPE 10	15
+1590	Récup complète · RPE 2	180
+1770	SPRINT MAX · RPE 10	15
+1785	Récup complète · RPE 2	180
+1965	SPRINT MAX · RPE 10	15
+1980	Récup complète · RPE 2	180
+2160	SPRINT MAX · RPE 10	15
+2175	Récup complète · RPE 2	180
+2355	SPRINT MAX · RPE 10	15
+2370	Récup complète · RPE 2	180
+2550	Retour au calme — RPE 2	480
+[END COURSE TEXT]

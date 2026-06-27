@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>TMP-5 Tempo progressif 3x12</name>
+  <description>3x12 min montant 80-&gt;84-&gt;88% FTP. Transition tempo vers sweet spot. | Qualités : Endurance soutenue sous-seuil (capacité aérobie / tempo) + Charge aérobie optimisée (sweet spot). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="720" Power="0.8" Cadence="90">
+      <textevent timeoffset="0" message="12&apos; @ 80% FTP · RPE 5"/>
+    </SteadyState>
+    <SteadyState Duration="300" Power="0.55">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="720" Power="0.84" Cadence="90">
+      <textevent timeoffset="0" message="12&apos; @ 84% FTP · RPE 6"/>
+    </SteadyState>
+    <SteadyState Duration="300" Power="0.55">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="720" Power="0.88" Cadence="90">
+      <textevent timeoffset="0" message="12&apos; @ 88% FTP · RPE 6-7"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>VO2-1 VO2 5x3'</name>
+  <description>VO2max 5x3 min à 110-118% FTP, RPE 8-9, récup 3 min. | Qualités : Consommation maximale d'oxygène (PMA / VO2max). Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="30" Power="1.05">
+      <textevent timeoffset="0" message="RPE 8 (activation)"/>
+    </SteadyState>
+    <SteadyState Duration="60" Power="0.5">
+      <textevent timeoffset="0" message="RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="120" Power="0.55">
+      <textevent timeoffset="0" message="Transition avant le corps — RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="1.13" Cadence="95">
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="1.13" Cadence="95">
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="1.13" Cadence="95">
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="1.13" Cadence="95">
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="1.13" Cadence="95">
+      <textevent timeoffset="0" message="VO2 110-118% FTP · RPE 8-9 — respiration max"/>
+    </SteadyState>
+    <SteadyState Duration="180" Power="0.5">
+      <textevent timeoffset="0" message="Récup 45-55% FTP · RPE 2"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

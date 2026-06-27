@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>RACE-LD-HT Allure course longue distance (IF 0.70) (home-trainer)</name>
+  <description>Allure course longue distance continue. | Alternative HT de RACE-LD. Qualités : Spécifique course (allure cible, gestion d'effort, nutrition) + Durabilité / résistance à la fatigue (tenue de puissance).</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="6620" Power="0.73" Cadence="88">
+      <textevent timeoffset="0" message="Allure course LD 70-74% FTP · RPE 4 (HT continu) — nutrition"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

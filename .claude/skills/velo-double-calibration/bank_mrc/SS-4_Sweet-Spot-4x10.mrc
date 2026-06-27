@@ -1,0 +1,62 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Sweet Spot 4x10 min à 88-92% FTP, récup 4 min. | Qualités : Charge aérobie optimisée (sweet spot). Double calibration %FTP + RPE.
+FILE NAME = SS-4 Sweet Spot 4x10
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	90.0
+26.50	90.0
+26.50	55.0
+30.50	55.0
+30.50	90.0
+40.50	90.0
+40.50	55.0
+44.50	55.0
+44.50	90.0
+54.50	90.0
+54.50	55.0
+58.50	55.0
+58.50	90.0
+68.50	90.0
+68.50	55.0
+72.50	55.0
+72.50	60.0
+80.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Sweet Spot 88-92% FTP · RPE 6-7	600
+1590	récup · RPE 2	240
+1830	Sweet Spot 88-92% FTP · RPE 6-7	600
+2430	récup · RPE 2	240
+2670	Sweet Spot 88-92% FTP · RPE 6-7	600
+3270	récup · RPE 2	240
+3510	Sweet Spot 88-92% FTP · RPE 6-7	600
+4110	récup · RPE 2	240
+4350	Retour au calme — RPE 2	480
+[END COURSE TEXT]

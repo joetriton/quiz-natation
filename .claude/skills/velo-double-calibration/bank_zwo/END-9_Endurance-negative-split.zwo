@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>END-9 Endurance negative split</name>
+  <description>1ère moitié à 66%, 2e à 74% FTP. Finir plus fort (durabilité). | Qualités : Durabilité / résistance à la fatigue (tenue de puissance) + Endurance aérobie fondamentale. Double calibration %FTP + RPE.</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="2400" Power="0.66" Cadence="88">
+      <textevent timeoffset="0" message="1ère moitié 66% FTP · RPE 3"/>
+    </SteadyState>
+    <SteadyState Duration="2400" Power="0.74" Cadence="90">
+      <textevent timeoffset="0" message="2e moitié 74% FTP · RPE 4-5 — finir fort"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

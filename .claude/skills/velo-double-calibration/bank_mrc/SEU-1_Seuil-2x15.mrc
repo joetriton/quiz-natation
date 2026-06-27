@@ -1,0 +1,50 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Seuil 2x15 min à 95-100% FTP, RPE 7-8. | Qualités : Puissance au seuil (FTP / seuil lactique). Double calibration %FTP + RPE.
+FILE NAME = SEU-1 Seuil 2x15
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	105.0
+10.50	105.0
+10.50	50.0
+11.50	50.0
+11.50	105.0
+12.00	105.0
+12.00	50.0
+13.00	50.0
+13.00	105.0
+13.50	105.0
+13.50	50.0
+14.50	50.0
+14.50	55.0
+16.50	55.0
+16.50	98.0
+31.50	98.0
+31.50	50.0
+39.50	50.0
+39.50	98.0
+54.50	98.0
+54.50	50.0
+62.50	50.0
+62.50	60.0
+70.50	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	RPE 8 (activation)	30
+630	RPE 2	60
+690	RPE 8 (activation)	30
+720	RPE 2	60
+780	RPE 8 (activation)	30
+810	RPE 2	60
+870	Transition avant le corps — RPE 2	120
+990	Seuil 95-100% FTP · RPE 7-8 — mots isolés	900
+1890	Récup 45-55% FTP · RPE 2	480
+2370	Seuil 95-100% FTP · RPE 7-8 — mots isolés	900
+3270	Récup 45-55% FTP · RPE 2	480
+3750	Retour au calme — RPE 2	480
+[END COURSE TEXT]

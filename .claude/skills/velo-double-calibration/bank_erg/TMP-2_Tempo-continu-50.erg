@@ -1,0 +1,20 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Tempo continu 50 min à 78-83% FTP, RPE 5. | Qualités : Endurance soutenue sous-seuil (capacité aérobie / tempo) + Durabilité / résistance à la fatigue (tenue de puissance). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = TMP-2 Tempo continu 50'
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	182
+60.00	182
+60.00	137
+68.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Tempo continu 78-83% FTP · RPE 5 — régulier	3000
+3600	Retour au calme — RPE 2	480
+[END COURSE TEXT]

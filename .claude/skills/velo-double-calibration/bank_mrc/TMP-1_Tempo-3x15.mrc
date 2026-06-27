@@ -1,0 +1,35 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Tempo 3x15 min à 80-85% FTP, RPE 5-6. | Qualités : Endurance soutenue sous-seuil (capacité aérobie / tempo). Double calibration %FTP + RPE.
+FILE NAME = TMP-1 Tempo 3x15
+MINUTES PERCENT
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	50.0
+10.00	72.0
+10.00	83.0
+25.00	83.0
+25.00	55.0
+30.00	55.0
+30.00	83.0
+45.00	83.0
+45.00	55.0
+50.00	55.0
+50.00	83.0
+65.00	83.0
+65.00	55.0
+70.00	55.0
+70.00	60.0
+78.00	45.0
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	Tempo 80-85% FTP · RPE 5-6 — phrases courtes	900
+1500	Récup 50-58% FTP · RPE 2	300
+1800	Tempo 80-85% FTP · RPE 5-6 — phrases courtes	900
+2700	Récup 50-58% FTP · RPE 2	300
+3000	Tempo 80-85% FTP · RPE 5-6 — phrases courtes	900
+3900	Récup 50-58% FTP · RPE 2	300
+4200	Retour au calme — RPE 2	480
+[END COURSE TEXT]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workout_file>
+  <author>Skill velo-double-calibration</author>
+  <name>SS-6-HT Sweet Spot sur longue 4x25' (home-trainer)</name>
+  <description>Sweet spot indoor à charge égale (sans le volume route). | Alternative HT de SS-6. Qualités : Charge aérobie optimisée (sweet spot) + Durabilité / résistance à la fatigue (tenue de puissance).</description>
+  <sportType>bike</sportType>
+  <tags><tag name="DoubleCalibration"/></tags>
+  <workout>
+    <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.72">
+      <textevent timeoffset="0" message="Échauffement progressif — RPE 2-&gt;4"/>
+    </Warmup>
+    <SteadyState Duration="2050" Power="0.9" Cadence="88">
+      <textevent timeoffset="0" message="Sweet Spot 88-92% FTP · RPE 6-7"/>
+    </SteadyState>
+    <SteadyState Duration="615" Power="0.55">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="2049" Power="0.9" Cadence="88">
+      <textevent timeoffset="0" message="Sweet Spot 88-92% FTP · RPE 6-7"/>
+    </SteadyState>
+    <SteadyState Duration="615" Power="0.55">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <SteadyState Duration="2049" Power="0.9" Cadence="88">
+      <textevent timeoffset="0" message="Sweet Spot 88-92% FTP · RPE 6-7"/>
+    </SteadyState>
+    <SteadyState Duration="615" Power="0.55">
+      <textevent timeoffset="0" message="récup · RPE 2"/>
+    </SteadyState>
+    <Cooldown Duration="480" PowerLow="0.6" PowerHigh="0.45">
+      <textevent timeoffset="0" message="Retour au calme — RPE 2"/>
+    </Cooldown>
+  </workout>
+</workout_file>

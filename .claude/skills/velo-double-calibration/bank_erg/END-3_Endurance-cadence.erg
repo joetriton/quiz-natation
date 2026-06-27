@@ -1,0 +1,35 @@
+[COURSE HEADER]
+VERSION = 2
+UNITS = ENGLISH
+DESCRIPTION = Endurance + vélocité. Blocs à 100-105 rpm. | Qualités : Endurance aérobie fondamentale + Vélocité & coordination neuromusculaire (cadence, fluidité). Double calibration %FTP + RPE. (FTP 228 W)
+FILE NAME = END-3 Endurance + cadence
+MINUTES WATTS
+[END COURSE HEADER]
+[COURSE DATA]
+0.00	114
+10.00	164
+10.00	160
+20.00	160
+20.00	137
+25.00	137
+25.00	160
+35.00	160
+35.00	137
+40.00	137
+40.00	160
+50.00	160
+50.00	137
+55.00	137
+55.00	137
+63.00	103
+[END COURSE DATA]
+[COURSE TEXT]
+0	Échauffement progressif — RPE 2->4	600
+600	68-72% FTP · RPE 4 — 100-105 rpm	600
+1200	55-65% FTP · RPE 2 — cadence libre	300
+1500	68-72% FTP · RPE 4 — 100-105 rpm	600
+2100	55-65% FTP · RPE 2 — cadence libre	300
+2400	68-72% FTP · RPE 4 — 100-105 rpm	600
+3000	55-65% FTP · RPE 2 — cadence libre	300
+3300	Retour au calme — RPE 2	480
+[END COURSE TEXT]
